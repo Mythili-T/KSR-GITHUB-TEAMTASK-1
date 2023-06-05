@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+    height: 100vh;
+    font-family: 'Lobster', cursive;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;
+    text-align: center;
+    background-color: black;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap'); */
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    display: block;
+    background-color: black;
+    position: relative;
+
+}
+
+.inner-header {
+    /* width: 1500px; */
+    height: 100%;
+    display: block;
+    background-color: black;
+}
+
+.logo-container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo-container h1 {
+    color: aliceblue;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 200;
+    font-family: 'Passions Conflict', cursive;
+    font-size: 20px;
+}
+
+.logo-container h1 samp {
+    font-weight: 300;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+#logo {
+    width: 50px;
+    margin: 20px 20px 15px 50px;
+    border-radius: 5px;
+}
+
+.nevigation {
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.fa-solid:hover{
+    cursor:pointer;
+    color: black;
+    background-color: silver;
+    
+
+}
+
+.nevigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.nevigation li a {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+  
+}
+
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search {
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+    border-radius: 20px;
+    border-color: orangered;
+    border: 3px solid orangered;
+}
+
+i {
+    position: absolute;
+    color: orangered;
+    display: flex;
+    left: 350px;
+}
+
+.nevigation ul li :hover {
+    background-color: orangered;
+    padding: auto;
+    border-radius: 20px;
+
+}
+
+.nevigation .subm ul li ul {
+    position: relative;
+    left: 0%;
+    width: 200px;
+}
+
+.submenu {
+    display: block;
+    position: absolute;
+    top: 48px;
+    padding-bottom: 10px;
+}
+
+.submenu {
+    display: none;
+    cursor: pointer;
+}
+
+.nevigation li:hover .submenu  {
+    display: block;
+    background-color: black;
+    border-radius: 10px;
+}
+.nevigation li a:hover{
+    color: orangered;
+}
+.submenu ul {
+    display: block;
+}
+.submenu ul li {
+    padding: 10px;
+}
+.submenu ul li a {
+    color: orangered;  
+}
+.submenu ul li a:hover{
+    background-color: white;
+}
+.logo-container h1:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
+
+footer {
+    background: black;
+    font-family: 'Franklin Gothic Medium';
+    padding-top: 20px;
+    color: white;
+    bottom: 0 ;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100px;
+    
+}
+.footer-content {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.footer-content h3,p:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.center-tag{
+    position:relative;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    background-color: black;
+    
+}
+
+.center-tag li a{
+    color: aliceblue;
+}
+.center-tag li a:hover{
+    color: orangered;
+}
+#videoloop{ 
+    width: 1250px;
+    
+   
+}

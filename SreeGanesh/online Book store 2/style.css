@@ -1,0 +1,295 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+    
+    background-image: url(bookimg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    display: block;
+    background-color: black;
+    position: relative;
+
+}
+
+.inner-header {
+    /* width: 1500px; */
+    height: 100%;
+    display: block;
+    background-color: black;
+}
+
+.logo-container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo-container h1 {
+    color: aliceblue;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 200;
+    font-family: 'Passions Conflict', cursive;
+    font-size: 20px;
+}
+
+.logo-container h1 samp {
+    font-weight: 300;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+#logo {
+    width: 50px;
+    margin: 20px 20px 15px 50px;
+    border-radius: 5px;
+}
+
+.nevigation {
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.nevigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.nevigation li a {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+  
+}
+
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search {
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+    border-radius: 20px;
+    border-color: orangered;
+}
+
+i {
+    position: absolute;
+    color: orangered;
+    display: flex;
+    left: 350px;
+}
+
+.nevigation ul li :hover {
+    background-color: orangered;
+    padding: auto;
+    border-radius: 20px;
+
+}
+
+.nevigation .subm ul li ul {
+    position: relative;
+    left: 0%;
+    width: 200px;
+}
+
+.submenu {
+    display: block;
+    position: absolute;
+    top: 48px;
+    padding-bottom: 10px;
+}
+
+.submenu {
+    display: none;
+    cursor: pointer;
+}
+
+.nevigation li:hover .submenu  {
+    display: block;
+    background-color: black;
+    border-radius: 10px;
+}
+.submenu ul {
+    display: block;
+}
+
+.submenu ul li {
+    padding: 10px;
+}
+
+.submenu ul li a {
+    color: orangered;
+    
+}
+.submenu ul li a:hover{
+    background-color: white;
+}
+
+.logo-container h1:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.nevigation li a:hover{
+    color: orangered;
+}
+
+.footer-content {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.footer-content h3,p:hover{
+    color: orangered;
+    cursor: pointer;
+}
+footer {
+    display: block;
+    background: black;
+    font-family: 'Franklin Gothic Medium';
+    padding-top: 20px;
+    margin-top: 800px;
+    color: white;
+    bottom: 0 ;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: relative;
+    height:100px;
+}
+
+.footer-content {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.center{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-50% -50%);
+    width: 400px;
+    background:orangered white;
+    border-radius: 10px;
+    color:black;
+    padding-bottom: 20px;
+    backface-visibility: visible;
+    padding-right: 10px;
+    padding-left: 25px;
+    padding-bottom: 40px;
+    border: 10px solid black;
+    opacity: 30px;
+    margin-bottom: 100px;
+}
+form .text-field{
+    position: absolute;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+#h1{
+    margin-top: 10px;
+    padding-top: 20px;
+    text-align: left;
+    margin-left: 50px;
+    margin-left: 30px;
+    
+}
+input{
+    border-radius: 10px;
+    border: 3px solid black;
+    padding-left: 10px;
+    margin-left: 30px;
+    font-stretch: expanded;
+    text-align: center;
+}
+#login{
+
+    padding-left: 20px;
+    padding-right: 20px;   
+    color:white;
+    border-radius: 10px;
+    background-color: black;
+    font-size:larger;  
+    margin-left: 110px;
+}
+#login:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+#username{
+    padding-left: 7px;
+
+}
+.text-field.input{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+#username , #name , #number,#email {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 50px;
+}
+#password ,#confirmpassword{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 50px;
+}
+.pass{
+    text-align:center;
+}
+.signup-link{
+    text-align:center;
+}
+
+#username-error{
+    color:red;
+
+}
+#password-error{
+    color:red;
+    
+}
+#name-error{
+    color:red;
+}
+#number-error{
+    color: red;
+}
+
+#email-error{
+    color: red;
+}
+#confirmpassword-error{
+    color: red;
+}
