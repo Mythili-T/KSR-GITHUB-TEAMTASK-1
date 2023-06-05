@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    /* top page  */
+    .top {
+      height: 130px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      color: rgb(10, 10, 10);
+      box-shadow: 1px 1px 1px 0.3px;
+      background-color: powderblue;
+    }
+    .top-left {
+      margin-top: 7%;
+      display: inline;
+      margin-left: 15%;
+    }
+    .top-left a {
+      color: rgb(18, 18, 18);
+      text-decoration: none;
+      border: solid white 1px;
+      box-shadow: 1px 1px 1px 0.3px;
+      font-size: 18px;
+
+      text-align: center;
+      margin: 2%;
+      border-radius: 8%;
+      padding: 2%;
+    }
+    .top-left a.activebtn {
+      background-color: rgb(78, 78, 226);
+      height: 10%;
+      width: 10%;
+      color: white;
+    }
+    .top-left a:hover {
+      background-color: rgb(66, 66, 193);
+      height: fit-content;
+      width: fit-content;
+      color: white;
+    }
+    .top-left a:hover {
+      background-color: rgb(66, 66, 193);
+      height: fit-content;
+      width: fit-content;
+    }
+
+    .top-right {
+      display: grid;
+      grid-template-columns: 15% 80%;
+      margin-left: 30%;
+      margin-top: 5%;
+    }
+    .top-right h1 {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-style: italic;
+      padding-right: 10px;
+    }
+    .top-right img {
+      border-radius: 60%;
+      height: 60px;
+      width: 60px;
+      margin-top: -8%;
+    }
+    .top-right h1 {
+      color: white;
+    }
+
+    .top-right h1 span {
+      color: rgb(66, 66, 193);
+    }
+
+    #welcome {
+      margin-top: 3%;
+      margin-bottom: 3%;
+      margin-left: 18%;
+      font-family: sans-serif;
+      letter-spacing: 2px;
+      font-size: 2.5rem;
+      -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+      color: transparent;
+    }
+    /* bootom page */
+    .about-us {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 200px;
+      width: 100%;
+      margin-top: 5px;
+    }
+    .about-para {
+      margin-top: 100px;
+    }
+    .about-para .para {
+      margin-left: 180px;
+      font-size: 20px;
+      font-family: sans-serif;
+      line-height: 30px;
+    }
+    .about-para button {
+      margin-left: 180px;
+      height: 40px;
+      width: 150px;
+      border-radius: 30px;
+      background-color: rgb(66, 66, 193);
+      text-align: center;
+      margin-top: 20px;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 15px;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .about-para button:hover {
+      opacity: 0.9;
+    }
+    .para-imag {
+      margin-top: 50px;
+    }
+
+    .para-imag img {
+      border-radius: 50%;
+      margin-left: 50px;
+      padding: 5px;
+
+      justify-content: center;
+    }
+    .more-text {
+      display: none;
+    }
+    .show-more .more-text {
+      display: inline;
+    }
+    .show-more .Dots {
+      display: none;
+    }
+    .footer {
+      position: relative;
+      left: 0;
+      top: 450px;
+      width: 100%;
+      /* background-color: rgb(22, 21, 21); */
+      background-color: powderblue;
+      /* color:white; */
+      color: black;
+    }
+    .Footer-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-left: 10%;
+    }
+
+    #about:hover {
+      text-decoration: underline rgb(66, 66, 193) 3px;
+    }
+    #why:hover {
+      text-decoration: underline rgb(66, 66, 193) 3px;
+    }
+    #provide:hover {
+      text-decoration: underline rgb(66, 66, 193) 3px;
+    }
+    #contact:hover {
+      text-decoration: underline rgb(66, 66, 193) 3px;
+    }
+
+    .Footer-top h3 {
+      font-family: sans-serif;
+      margin: 2%;
+      /* color: rgb(255, 253, 253); */
+      color: black;
+      text-decoration: underline rgb(66, 66, 193) 3px;
+    }
+    /* .contactfooter{
+        
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+        
+       } */
+
+    .socialmedia {
+      display: inline-block;
+      margin-top: 2%;
+    }
+    .socialmedia i {
+      margin-top: 5%;
+      margin: 3%;
+      padding: 10px;
+    }
+    .bxl-facebook:hover {
+      color: rgb(66, 66, 193);
+      box-shadow: 1px 1px 6px 0.1px;
+      border-radius: 50%;
+    }
+
+    .bxl-twitter:hover {
+      color: rgb(66, 66, 193);
+      box-shadow: 1px 1px 6px 0.1px;
+      border-radius: 50%;
+    }
+    .bxl-instagram:hover {
+      color: rgb(66, 66, 193);
+      box-shadow: 1px 1px 6px 0.1px;
+      border-radius: 50%;
+    }
+    .bxl-linkedin:hover {
+      color: rgb(66, 66, 193);
+      box-shadow: 1px 1px 6px 0.1px;
+      border-radius: 50%;
+    }
+
+    #linefooder {
+      width: 50%;
+      color: rgb(66, 66, 193);
+      margin: 1%;
+      margin-left: 25%;
+    }
+
+    .homelinks a {
+      margin: 1%;
+      text-decoration: none;
+      /* color: white; */
+      color: black;
+      line-height: 1.6;
+    }
+    .homelinks a span {
+      margin: 2%;
+      text-decoration: none;
+      color: white;
+      color: black;
+    }
+    .address p span {
+      margin: 2%;
+      font-size: medium;
+    }
+    .call p {
+      margin-top: 2%;
+    }
+    .call-number {
+      margin-top: 6%;
+    }
+    .Low-FooterContent {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="contain">
+      <!-- top -->
+      <div class="top">
+        <div class="top-right">
+          <img src="pic symbol3.png" alt="" />
+          <h1><span>AKS </span> HOSTEL</h1>
+        </div>
+        <!-- top right -->
+        <div class="top-left">
+          <a class="activebtn" href="G:\Office\project 2\new-1.html">
+            <i class="fa fa-home" aria-hidden="true"></i> Home</a
+          >
+          <a href="about-us-new.html">
+            <i class="fa fa-users" aria-hidden="true"></i> About-us</a
+          >
+          <a href="G:\Office\project 2\contact-us.html">
+            <i class="fa fa-envelope" aria-hidden="true"></i> contact us</a
+          >
+          <a href="G:\Office\aspire\login-dash.html">
+            <i class="fa fa-sign-in" aria-hidden="true"></i> log-in</a
+          >
+        </div>
+      </div>
+      <!-- bottom page -->
+
+      <div class="about-us">
+        <div class="about-para">
+          <h2 id="welcome">welcome</h2>
+          <div class="para">
+            AKS Hostel ,Triruchencode was starded under Arthi educational and
+            charictable trust in the year 2001 by our founder Dr .Kiran and
+            currently managed by our younger don of our founder &chairman,Thiru
+            Dineshkumar.<span class="Dots">.....</span>
+            <span class="more-text"
+              >The college maintains its reputation for high standards of the
+              Hostel.The hostels being home away form home designed to be
+              comfortable for studies and stay.</span
+            >
+          </div>
+
+          <button class="butn">more about</button>
+        </div>
+        <div class="para-imag">
+          <img src="image_joy.jpg" alt="" width="60%" />
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <div class="Footer-top">
+            <div class="homelinks">
+              <h3>Quick access</h3>
+
+              <a id="about" href="#about">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><span>about us</span> </a
+              ><br />
+              <a id="why" href="#why">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><span>why</span> </a
+              ><br />
+              <a id="provide" href="#provide">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><span>provide</span> </a
+              ><br />
+              <a id="contact" href="#contact us"
+                ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                ><span>contact us</span>
+              </a>
+            </div>
+
+            <div class="address">
+              <h3>Email us</h3>
+              <br />
+              <p>
+                <i class="bx bx-envelope"></i> <span>akshostels@gmail.com</span>
+              </p>
+            </div>
+            <div class="call">
+              <h3>Office no</h3>
+              <div class="call-number">
+                <p><i class="bx bx-phone-call"></i>0440-87535</p>
+                <p><i class="bx bx-phone-call"></i>0440-87535</p>
+              </div>
+            </div>
+            <!-- </div> -->
+            <div class="socialmedia">
+              <h3>Follow us</h3>
+              <i class="bx bxl-facebook bx-sm"></i>
+              <i class="bx bxl-twitter bx-sm"></i>
+              <i class="bx bxl-instagram bx-sm"></i>
+              <i class="bx bxl-linkedin bx-sm"></i>
+            </div>
+          </div>
+          <hr id="linefooder" />
+          <div class="Low-FooterContent">
+            <p>copyright&#169; All rights reserved 2022</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      const butn = document.querySelector(".butn");
+      const para = document.querySelector(".para");
+
+      butn.addEventListener("click", (e) => {
+        para.classList.toggle("show-more");
+        if (butn.innerText === "more about") {
+          butn.innerText = "read less";
+        } else {
+          butn.innerText = "more about";
+        }
+      });
+    </script>
+  </body>
+</html>
