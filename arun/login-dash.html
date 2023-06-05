@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-dash</title>
+    <link rel="stylesheet" href="login-dash.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <div class="grid two-columns">
+
+            <div class="content">
+                <div class="text">
+                    <h1>AKS <br> HOSTELS</h1>
+                    <P>WELCOMING YOU TO LOGIN</P>
+                    <img src="login.png" alt="">
+                </div>
+            </div>
+
+            <div class="login-form">
+                <h1>Login</h1>
+                <form onsubmit="return registerValidated()"
+                              action="G:\Office\Try\d-b.html">
+                    <input type="text" placeholder="Email Id" id="username" onkeyup="validateEmail()"><br>
+                    <span id="email-error"></span>
+                    <br>
+                    <input type="text" placeholder="Password" id="Password" onkeyup="validatePass()"> <br>
+                    <span id="password-error"></span>
+                    <br>
+                    <a href="#" id="forget">Forgot Password?</a>
+                    <p id="newUser">New user<a href="new-registration.html"> click here</a></p> 
+                    <button type="submit">submit</button><br><br>
+                </form>
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+</body>
+<script>
+
+    //   VALIDATION
+    var emailError = document.getElementById("email-error");
+    var passwordError = document.getElementById("password-error");
+    function validateEmail() {
+
+        var emvalidate = "^[0-9a-zA-Z]+[._]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$";
+
+        var email = document.getElementById("username").value;
+        if (email.length == 0) {
+
+            emailError.innerHTML = 'Email Number is Required';
+
+            return false;
+        }
+        if (!email.match(emvalidate)) {
+            emailError.innerHTML = 'Invalid Email Formate';
+
+            return false;
+        }
+        if(email!='ajayarun348@gmail.com'){
+            emailError.innerHTML = 'Wrong Email Id';
+            return false;
+        }
+        emailError.innerHTML = '';
+        return true;
+
+    }
+
+    function validatePass() {
+
+        var pass = document.getElementById("Password").value;
+        var passvalidate = "^(.{0,6}|[^0-9]*|[^A-Z]*|[^a-z]*|[a-zA-Z0-9]*)$";
+        var passmatch = "Aa1111!";
+
+        if (pass.length == 0) {
+
+            passwordError.innerHTML = ' Password Number is Required';
+
+            return false;
+        }
+        if (pass.match(passvalidate)) {
+
+            passwordError.innerHTML = 'Password Required(Capital,Small,Number,special charater,lenght min 7 digit )';
+
+            return false;
+        }
+        if(!pass.match(passmatch) ){
+            passwordError.innerHTML = ' Wrong Password';
+
+            return false;
+
+        }
+        passwordError.innerHTML = '';
+        return true;
+
+    }
+
+
+    function registerValidated() {
+                if (validateEmail() && validatePass() ) {
+                    window.open("d-b.html");
+                    return true;
+                }
+                else {
+                    alert("Enter Valid Details");
+                    return false;
+                }
+            }
+
+
+</script>
+
+</html>
