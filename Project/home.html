@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Education Loan Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_Img">
+            <img src="Images/download.png" alt="">
+            <p>| BOA |</p>
+            <h1>
+                Education Loan Management System
+            </h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li class="home"> <a href="#">
+                    <p><i class="fa fa-home"></i> Home</p>
+                </a> </li>
+            <li> <a href="about.html">
+                    <p><i class="fa fa-address-book"></i> About</p>
+                </a></li>
+            <li><a href="service.html">
+                    <p><i class="fa fa-file-text"></i> service</p>
+                </a>
+                <div class="down">
+                    <a href="loanDetails.html">
+                        <p>loan details</p>
+                    </a>
+                </div>
+            </li>
+
+            <li> <a href="contact.html">
+                    <p><i class="fa fa-phone"></i> Contact</p>
+                </a>
+            </li>
+            <li> <a href="userlogin.html">
+                    <p><i class="fa fa-sign-in" aria-hidden="true"></i>
+                        Login</p>
+                </a>
+
+            </li>
+
+        </ul>
+    </nav>
+    <div class="a3">
+        <img src="Images/green.png" alt="">
+        <div class="a5">
+            <p>Let Your Dreams Take Flight With BOA <br> Education Loan! <br>
+                <span> Education is the passport to the future for tomorrow belongs to those who prepare for it today.
+                    <br>
+                    A man's mind, stretched by new ideas, may never return to its original dimensions
+                </span>
+            </p>
+            <button onclick="button()"><span> Explore</span></button>
+        </div>
+    </div>
+    <p class="a6">GET AN EDUCATION LOAN FOR ABROAD STUDY PLANS</p>
+    <div class="a7">
+        <div class="a8">
+            <p>Education loan <br>for <br> <span class="s" data-val="22"> 00</span>+ <br> countries</p>
+            <img src="Images/location.png" alt="">
+        </div>
+        <div class="a9">
+            <p>Tie-ups <br>with <br><span class="s" data-val="400">00</span>+<br> universities</p>
+            <img src="Images/university.png" alt="">
+        </div>
+        <div class="a10">
+            <p> <span class="s" data-val="200">00+</span>+<br> <br> Courses <br> Recognized </p>
+            <img src="Images/course.png" alt="">
+        </div>
+        <div class="a11">
+            <p><span class="s" data-val="100"> 000</span>+ <br> <br>
+                Students <br>already <br>funded</p>
+            <img src="Images/student.png" alt="">
+        </div>
+    </div>
+    <div class="a12">
+        <div class="a13">
+            <p>The BOA advantage</p>
+        </div>
+        <div class="santy">
+            <div class="santy1">
+                <div class="a14">
+                    <img src="Images/icon1.png" alt="">
+                    <p>100% Finance for abroad studies. Covers course fee, travel, living & other costs.</p>
+                </div>
+                <div class="a15">
+                    <img src="Images/icon2.png" alt="">
+                    <p>Unsecured/Secured Loan Options (Unsecured loan up to Rs 75 lacs)</p>
+                </div>
+                <div class="a16">
+                    <img src="Images/icon3.png" alt="">
+                    <p>Loan Sanction within 72hrs</p>
+                </div>
+            </div>
+            <div class="santy2">
+                <div class="a17">
+                    <img src="Images/icon4.png" alt="">
+                    <p>Attractive Interest Rate starting from 9.5% and Processing fees 1% onward</p>
+                </div>
+                <div class="a18">
+                    <img src="Images/icon5.png" alt="">
+                    <p>Flexible Repayment Options</p>
+                </div>
+                <div class="a19">
+                    <img src="Images/icon6.png" alt="">
+                    <p>Loan tenure up to 15 years</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="a20">
+        <p class="p">Opt for a student loan today, and give yourself a <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bright future tomorrow!</p>
+        <a href="#"> <button>Apply now</button></a>
+        <p class="p1">Bank of Aspire (India) Pvt. Ltd.
+            1/D-1, SIPCOT IT PARK
+            Siruseri, Chennai - 603 103
+            Tamil Nadu, India
+            Fax: +91-44-6740 4234</p>
+    </div>
+    <footer>
+        <div class="copy">
+            <p>&copy; copyright 2023 | Bank of Aspire</p>
+        </div>
+        <div class="copy1">
+            <p><a href="#">Home</a>&nbsp;&nbsp;&nbsp;|
+                <a href="#">About</a>&nbsp;&nbsp;&nbsp;|
+                <a href="#">Services</a>&nbsp;&nbsp;&nbsp;|
+                <a href="#">Contact Us</a>
+            </p>
+        </div>
+        <div class="copy2">
+            <a href="#"><img src="Images/facebook (1).png" alt="" width="35px"></a>
+            <a href="#"><img src="Images/instagram.png" alt="" width="35px"></a>
+            <a href="#"><img src="Images/email.png" alt="" width="35px"></a>
+        </div>
+        <div class="copy3">
+            <a href="#">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </div>
+    </footer>
+    <script>
+        function button() {
+            location.replace("userlogin.html");
+        }
+        var value = document.querySelectorAll(".s");
+        // var count = 20000;
+        value.forEach((valueDisplay) => {
+            let start = 0;
+            let end = parseInt(valueDisplay.getAttribute("data-val"));
+            // console.log(end);
+            // let duration = Math.floor(count / end);
+            let ans = setInterval(() => {
+                start += 1;
+                valueDisplay.textContent = start;
+                if (start == end) {
+                    clearInterval(ans);
+
+                }
+            }, 100);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="admindash.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+<dialog id="toggle" class="toggle">
+     <!-- <p>profile</p>  -->
+     <img src="Images/profile.png" alt="" width="100px">
+     <p>Name: </p>
+     <p>Admin id:</p>
+     <p>Email:</p>
+     <p>Phone No:</p>
+     <p>Address:</p>
+
+</dialog>
+
+    <header>
+        <div class="a1">
+            <img src="Images/download.png" alt="">
+            <p>| BOA |</p>
+
+            <h1>
+                Admin Dashboard
+            </h1>
+            <div class="a2" id="image" onclick="image()">
+                <img src="Images/profile.png" alt="" >
+                <p>Profile</p>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="main-grid">
+        <div class="sub-grid1">
+            <div class="x" id="dashboard">
+                <p><button> Dashboard </button></p>
+            </div>
+            <div class="x" id="change" >
+                <p><button> User Details</button></p>
+            </div>
+            <div class="x" id="change1" >
+                <p><button> Loan applied</button></p>
+            </div>
+            <div class="x" id="change2" >
+                <p><button> Loan pending </button></p>
+            </div>
+            <div class="x" id="change3"  >
+                <p><button> Loan status </button></p>
+            </div>
+            <div class="x" id="change4" >
+                <p><button> Loan approved </button></p>
+            </div>
+        </div>
+        <div class="subgrid2">
+            <div class="dashboard" >
+                <p>Welcome Admin</p>
+            </div>
+            <div class="userDetails">
+                <p>User Details</p>
+            </div>
+            <div class="loanApplied">
+                <p>Loan Applied</p>
+            </div>
+            <div class="loanPending">
+                <p>Loan Pending</p>
+            </div>
+            <div class="loanStatus">
+                <p>Loan Status</p>
+            </div>
+            <div class="loanApproved">
+                <p>Loan Approved</p>
+            </div>
+        </div>
+    </div>
+    
+  <script src="index.js"></script>
+</body>
+
+</html>

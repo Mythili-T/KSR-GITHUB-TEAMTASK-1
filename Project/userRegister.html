@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="userRegister.css">
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="u">
+        <img src="Images/register.png" alt="" width="80px">
+        <p>User Registration / <a href="/home.html">Home page</a></p>
+    </div>
+    <div class="register">
+        <div class="u1" id="form">
+            <img src="Images/register1 (1).png" onclick="img()" alt="" width="5%">
+        </div>
+        <div class="u2" id="clickhere">
+            <img src="Images/click.png" alt="" width="50px">
+            <p>Click here!</p>
+        </div>
+        <form action="#" id="showRegister">
+            <div class="f1">
+                <i class="fa fa-user" id="correctFirst" aria-hidden="true"></i> <input type="text"
+                    onkeyup="validateFirstname()" maxlength="16" placeholder="First name" id="firstName" required>
+                <p id="first" style="position:absolute; color:red; padding-left: 5%; padding-top: 1%;"></p>
+            </div>
+            <div class="f1">
+                <i class="fa fa-user-o" id="correctLast" aria-hidden="true"></i> <input type="text" maxlength="16"
+                    onkeyup="validateLastname()" placeholder="Lastname" id="lastname" required>
+                <p id="last" style="position:absolute; color:red; padding-left: 5%; padding-top: 1%;"></p>
+            </div>
+
+            <div class="f1">
+                <i class="fa fa-phone" id="correctPhone" aria-hidden="true"></i> <input type="text" maxlength="10"
+                    onkeyup="validatePhone()" placeholder="Phone No" id="phoneno" required>
+                <p id="phone" style="position:absolute; color:red; padding-left:5%; padding-top: 1%;"></p>
+            </div>
+
+            <div class="f1">
+                <i class="fa fa-envelope"id="correctEmail" aria-hidden="true"></i> <input type="email" onkeyup="validateEmail()" id="email" placeholder="Email" required>
+                <p id="emailId" style="position:absolute; color:red; padding-left:5%; padding-top: 1%;"></p>
+            </div>
+
+
+            <div class="f1">
+                <i class="fa fa-key" id="correctNew" aria-hidden="true"></i> <input type="password" maxlength="10"
+                    onkeyup="validateNewpass()" placeholder="New password" id="password" required>
+                <p id="newPass" style="position:absolute; color:red; padding-left: 5%; padding-top: 1%;"></p>
+            </div>
+
+            <div class="f1">
+                <i class="fa fa-unlock-alt" id="correctConfirm" aria-hidden="true"></i><input type="password"
+                    onkeyup="validateConpass()" placeholder="Confirm password" id="conpass" required>
+                <p id="confirmPass" style="position:absolute; color:red; padding-left:5%; padding-top: 1%;"></p>
+            </div>
+
+            <Button onclick="regValidate()">Register</Button>
+        </form>
+        <div class="footer" id="footer">
+            <img src="Images/back2.png" alt="" width="50px" onclick="back()">
+        </div>
+    </div>
+
+    <script>
+        function back() {
+            location.replace("userlogin.html");
+        }
+
+        function img() {
+            var showDiv = document.querySelector("#form");
+
+            showDiv.addEventListener('click', function () {
+                document.getElementById("showRegister").classList.add("showDiv");
+                document.getElementById("clickhere").classList.add("showDiv1");
+                document.getElementById("footer").classList.add("showDiv2");
+
+            });
+        }
+        function validateFirstname() {
+            var fName = document.getElementById("firstName").value;
+            var errorFirstname = document.getElementById("first");
+            var validateCorrect = document.getElementById("correctFirst");
+            var regexFirstname = /^[A-Za-z]+$/;
+            if (!fName.match(regexFirstname)) {
+                errorFirstname.innerHTML = "Enter the  Firstname only alphabets";
+                validateCorrect.style.color = "red";
+                return false;
+            }
+            errorFirstname.innerHTML = "";
+            validateCorrect.style.color = "green";
+            return true;
+        }
+        function validateLastname() {
+            var lName = document.getElementById("lastname").value;
+            var errorLastname = document.getElementById("last");
+            var validateCorrect = document.getElementById("correctLast");
+            var regexLastname = /^[A-Za-z]+$/;
+            if (!lName.match(regexLastname)) {
+                errorLastname.innerHTML = "Enter the Lastname only alphabets";
+                validateCorrect.style.color = "red";
+                return false;
+            }
+            errorLastname.innerHTML = "";
+            validateCorrect.style.color = "green";
+            return true;
+        }
+        function validatePhone() {
+            var phoneNum = document.getElementById("phoneno").value;
+            var errorPhone = document.getElementById("phone");
+            var validateCorrect = document.getElementById("correctPhone");
+            var regexPhoneno = /^[6-9]{1}[0-9]{9}$/;
+            if (!phoneNum.match(regexPhoneno)) {
+                errorPhone.innerHTML = "Enter the valid number"
+                validateCorrect.style.color = "red";
+                return false;
+            }
+            errorPhone.innerHTML = "";
+            validateCorrect.style.color = "green";
+            return true;
+        }
+       function validateEmail(){
+          var emailID=document.getElementById("email").value;
+          var errorEmail=document.getElementById("emailId");
+          var validateCorrect=document.getElementById("correctEmail");
+          var regexEmail=/^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+          if(!emailID.match(regexEmail)){
+            errorEmail.innerHTML="Enter email in only dinesh@gmail.com this format...";
+            validateCorrect.style.color = "red";
+            return false;
+          }
+          errorEmail.innerHTML = "";
+         validateCorrect.style.color = "green";
+            return true;
+       }
+        function validateNewpass() {
+            var newPassword = document.getElementById("password").value;
+            var errorNewpass = document.getElementById("newPass");
+            var validateCorrect = document.getElementById("correctNew");
+            var regexNewpass = "^(.{0,6}|[^0-9]*|[^A-Z]*|[^a-z]*|[a-zA-Z0-9]*)$";
+            if (newPassword.match(regexNewpass)) {
+                errorNewpass.innerHTML = "Create strong password..like(A-a-@-1)";
+                validateCorrect.style.color = "red";
+                return false;
+            }
+            errorNewpass.innerHTML = "";
+            validateCorrect.style.color = "green";
+            return true;
+        }
+        function validateConpass() {
+            var newPassword = document.getElementById("password").value;
+            var confirm = document.getElementById("conpass").value;
+            var validateCorrect = document.getElementById("correctConfirm");
+            var errorConpass = document.getElementById("confirmPass");
+            if (newPassword != confirm) {
+                errorConpass.innerHTML = "Password not matched";
+                validateCorrect.style.color = "red";
+                return false;
+            }
+            
+            errorConpass.innerHTML = "";
+            validateCorrect.style.color = "green";
+            return true;
+        }
+        function regValidate() {
+            if (validateFirstname() && validateLastname() && validateEmail() && validatePhone() && validateNewpass() && validateConpass()) {
+                alert('Register successful');
+                window.open("userlogin.html");
+                return true;
+            }
+            else {
+                alert('Enter valid details');
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

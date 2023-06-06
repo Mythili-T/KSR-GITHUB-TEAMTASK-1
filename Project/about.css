@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header
+{
+    display: flex;
+    /* position: fixed; */
+    padding: 1%;
+    width: 100%;
+    background-color: aquamarine;
+}
+.a1{
+    display: flex;
+    margin-left: 3%;
+}
+.a1 img{
+    width: 15%;
+}
+.a1 h1{
+    margin-top: 4%;
+    margin-left: 5%;
+}
+.a1 p{
+    margin-top: 5%;
+    color: red;
+}
+header:hover{
+    background-color: rgb(178, 218, 204);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 2%;
+    position: relative;
+}
+nav ul li {
+    padding: 1% 5% 1% 5%;
+    text-decoration: none;
+    font-size: 20px;
+    
+    border-radius: 25px;
+    list-style: none;
+   }
+.about{
+    background-color: rgb(126, 226, 193);
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:hover{
+    background-color: rgb(126, 226, 193);
+}
+  
+.down {
+    display: none;
+    position: absolute;
+       margin-top: 1%;
+    
+  }
+.down a p{
+    padding: 15px 20px;
+    border-radius: 15px;
+}
+.down a :hover{
+    background-color: rgb(137, 245, 214);
+
+}
+  nav ul li:hover .down {
+    display: block;
+}
+.aboutValue-img{
+    display: flex;
+}
+.aboutValue-img p{
+    margin-top: 10%;
+    margin-right: 5%;
+    font-size: 16.5px;
+    font-weight: 500;
+}
+.aboutValue-img p:hover{
+    color: rgb(65, 66, 65);
+    
+}

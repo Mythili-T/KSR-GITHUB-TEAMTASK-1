@@ -1,0 +1,127 @@
+* {
+    /* background-color: beige; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body,
+div,
+form,
+input {
+    padding: 0;
+    margin: 0;
+    outline: none;
+
+    /* background-color: rgb(193, 214, 253); */
+    color: rgb(8, 8, 8);
+}
+
+.u {
+    /* margin: 3%; */
+    display: flex;
+    padding: 3%;
+    font-size: 30px;
+    font-weight: bolder;
+    width: 100%;
+    padding-left: 5%;
+    background-color: rgb(178, 218, 204);
+}
+
+.u:hover {
+    background-color: rgb(137, 243, 208);
+}
+
+.u p {
+    padding-top: 2%;
+    margin-left: 2%;
+}
+.u a{
+    text-decoration: none;
+    color: black;
+}
+
+.u1 {
+    display: flex;
+    justify-content: center;
+    /* margin-left: 60%; */
+    /* margin-top: 2%; */
+    /* position: fixed; */
+}
+.u2{
+    display: block;
+    margin-top: 2%;
+    margin-left: 48%;
+  
+}
+.u2 p{
+    font-size: 25px;
+    font-weight: bolder;
+    /* padding-right: 20%; */
+    margin-top: 2%;
+}
+input {
+    font-size: 15px;
+    margin-top: 18%;
+    /* padding-left: 2%; */
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+}
+
+input::placeholder {
+    color: rgb(99, 99, 99);
+  
+    /* padding-left: 2%; */
+}
+
+button {
+    background-color: rgb(137, 243, 208);
+    border: rgb(22, 145, 138);
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 80px;
+    margin-top: 10%;
+}
+
+button:hover {
+    background-color: rgb(174, 218, 202);
+    color: rgb(0, 0, 0);
+}
+
+form {
+    /* background-color: aliceblue; */
+    display: none;
+    padding: 0.5% 5% 0.5% 5%;
+    margin-left: 37%;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: fixed;
+}
+
+form:hover {
+    border: 2px solid black;
+}
+
+.showDiv {
+    display: block;
+}
+.showDiv1{
+    display: none;
+}
+.showDiv2{
+    padding-top: 8%;
+}
+.footer {
+    margin-top: 17%;
+    padding-left: 5%;
+}
+
+.footer:hover img {
+    width: 60px;
+    background-color: rgb(158, 247, 217);
+    border-radius: 30px;
+}

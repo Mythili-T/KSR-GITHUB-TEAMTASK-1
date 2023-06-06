@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    /* position: fixed; */
+    padding: 1%;
+    width: 100%;
+    background-color: aquamarine;
+}
+.header_Img{
+    display: flex;
+    margin-left: 3%;
+}
+.header_Img img{
+    width: 15%;
+}
+.header_Img h1{
+    margin-top: 4%;
+    margin-left: 5%;
+}
+.header_Img p{
+    margin-top: 5%;
+    color: red;
+}
+header:hover{
+    background-color: rgb(178, 218, 204);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 2%;
+    position: relative;
+}
+
+nav ul li {
+    padding: 1% 5% 1% 5%;
+    text-decoration: none;
+    font-size: 20px;
+    
+    border-radius: 25px;
+    list-style: none;
+   }
+.home{
+    background-color: rgb(126, 226, 193);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:hover{
+    background-color: rgb(126, 226, 193);
+}
+  
+.down {
+    display: none;
+    position:absolute;
+    margin-top: 1%;
+  }
+.down a p{
+    padding: 10px 25px;
+    border-radius: 15px;
+}
+.down a :hover{
+    background-color: rgb(137, 245, 214);
+
+}
+  nav ul li:hover .down {
+    display: block;
+  }
+  .a3{
+    display: flex;
+      align-items: center;
+}
+.a3 img{
+    width: 40%;
+    margin-left: 3%;
+}
+.a5 {
+    font-size: 30px;
+    margin-bottom: 8%;
+} 
+span{
+    font-size: 15px;
+}
+button{
+    margin-top: 5%;
+    padding: 2% 10% 2% 10%;
+    border-radius: 25px;
+    background-color: rgb(126, 226, 193);
+    border: none;
+    transition: 1s;
+}
+button:hover{
+    background-color: rgb(51, 179, 19);
+    transform: translateY(15px);
+    padding: 2% 12% 2% 12%;
+}
+.a6{
+    font-weight: 800;
+    font-size: 25px;
+    color: black;
+    margin-left: 7%;
+}
+.a7{
+    display: flex;
+    justify-content:center;
+    margin-top: 4%;
+}
+.a8,.a9,.a10,.a11{
+    display: flex;
+      margin-left: 1%;
+}
+.a8{
+    background-color:  #fdc119;
+    border-radius: 10px;
+}
+.a9{
+    background-color:  #86f00d;
+    border-radius: 10px;
+}
+.a10{
+    background-color:  #00a2ff;
+    border-radius: 10px;
+}
+.a11{
+    background-color:  #1b8593;
+    border-radius: 10px;
+    padding: 3%;
+}
+.a8,.a9,.a10,.a11 p{
+      padding: 2%;
+     font-size: 20px;
+}
+.s{
+    font-weight: 600;
+    color: black;
+    font-size: 25px;
+}
+.a12{
+    margin-top: 5%;
+    padding: 3%;
+    /* position: fixed; */
+    background-color: #f3f2f2;
+}
+.a12:hover{
+    background-color: aquamarine;
+}
+.a13{
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 4%;
+    transition: 1.5s;
+    /* position: relative; */
+}
+.a13:hover{
+    padding-left: 2%;
+    font-size: 30px;
+}
+.santy{
+    display: flex;
+}
+.santy2{
+    margin-left: 2% ;
+    margin-top: 3px;
+}
+.a18,.a19{
+    margin-top: 4px;
+}
+.a14,.a15,.a16,.a17,.a18,.a19 {
+    display: flex;
+    align-items: flex-start;
+    padding: 4%;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(12, 12, 12);
+}
+.a14 img{
+   margin-right: 5%;
+}
+.a15 img{
+    margin-right: 5%;
+ }
+
+ .a16 img{
+    margin-right: 5%;
+ }
+
+ .a17 img{
+    margin-right: 5%;
+ }
+
+ .a18 img{
+    margin-right: 5%;
+ }
+ .a19 img{
+    margin-right: 5%;
+ }
+ .a20 p{
+    display: flex;
+     justify-content: center;
+     margin-top: 4%;
+ }
+ .p{
+    font-weight: bolder;
+    font-size: 30px;
+ }
+ .p1
+ {
+    font-weight: bold;
+    font-size: 20px;
+ }
+ .a20 button{
+    margin-left:37%;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+
+ }
+ footer{
+    margin-top: 3%;
+    display: flex;
+    background-color: rgb(128, 124, 124);
+    padding-top: 1%;
+    /* justify-content:; */
+ }
+ .copy{
+    display: flex;
+     padding-left: 10%;  
+ }
+ .copy1,.copy2{
+     padding-left: 14% ;
+ }
+.copy p{
+    padding-top: 5%;
+}
+.copy1{
+    padding-top: 7px;
+}
+.copy1 a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+.copy2 img:hover {
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+.copy3
+
+{ 
+    margin-left: 10%; 
+    /* margin-bottom: 2%; */
+    padding: 15px;
+    background-color:rgb(255, 255, 255) ;
+    border-radius: 35px;
+}
+
+ 
+

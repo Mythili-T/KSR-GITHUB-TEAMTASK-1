@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    /* position: fixed; */
+    padding: 1%;
+    width: 100%;
+    background-color: aquamarine;
+}
+.a1{
+    display: flex;
+    margin-left: 3%;
+}
+.a1 img{
+    width: 15%;
+}
+.a1 h1{
+    margin-top: 4%;
+    margin-left: 5%;
+}
+.a1 p{
+    margin-top: 5%;
+    color: red;
+}
+header:hover{
+    background-color: rgb(178, 218, 204);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 2%;
+    position: relative;
+}
+nav ul li {
+    padding: 1% 5% 1% 5%;
+    text-decoration: none;
+    font-size: 20px;
+    
+    border-radius: 25px;
+    list-style: none;
+   }
+.contact{
+    background-color: rgb(126, 226, 193);
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:hover{
+    background-color: rgb(126, 226, 193);
+}
+  
+.down {
+    display: none;
+    position: absolute;
+       margin-top: 1%;
+    
+  }
+.down a p{
+    padding: 15px 20px;
+    border-radius: 15px;
+}
+.down a :hover{
+    background-color: rgb(137, 245, 214);
+
+}
+  nav ul li:hover .down {
+    display: block;
+}
+.pic{
+    /* background-color: aquamarine; */
+    /* margin: 1%; */
+    margin-top: 2%;
+    border-radius: 10%;
+}
+.pic img{
+    margin-left: 28%;
+}
+.x{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.x .y1{
+    /* background-color: bisque; */
+    margin: 3%;
+    padding: 2%;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 9px 7px rgba(0,0,0,0.15);
+
+}
+.y1 img{
+    margin-bottom: 5%;
+    margin-left: 40%;
+}
+.y1 p{
+    text-align: center;
+}
+.y1 h2{
+    text-align: center;
+}
+.s{
+    text-align: center;
+    margin-top:5% ;
+}
+.s p{
+    font-size: 18px;
+}
+h2:hover{
+   color: red;
+}
+p:hover{
+    color: blue;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+.form{
+    background-color: rgb(137, 245, 214);
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 9px 7px rgba(0,0,0,0.15);
+
+}
+input{
+    padding-right: 30%;
+    padding-left: 2%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    margin-left: 2% ;
+    margin-top: 2%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px 7px rgba(0,0,0,0.1);
+    border: 0.05px solid #333;
+
+}
+input::placeholder{
+    font-size: 15px;
+    color: black;
+}
+textarea{
+    margin-left: 2%;
+    margin-top: 2%;
+    padding: 1%;
+    padding-left: 2%;
+    border: 0.1px solid black;
+}
+textarea::placeholder{
+    color: black;
+    font-size: 15px;
+}
+button{
+    margin-left: 43%;
+    padding: 1.5% 3% 1.5% 3%;
+    margin-top: 3%;
+    border-radius: 25px;
+    border: none;
+    font-weight: bolder;
+
+}
+button:hover{
+    background-color: #333;
+    color: white;
+}
+footer{
+    margin-top: 3%;
+    display: flex;
+    background-color: rgb(128, 124, 124);
+    padding-top: 1%;
+    /* justify-content:; */
+ }
+ .copy{
+    display: flex;
+     padding-left: 10%;  
+ }
+ .copy1,.copy2{
+     padding-left: 14% ;
+ }
+.copy p{
+    padding-top: 5%;
+}
+.copy1{
+    padding-top: 7px;
+}
+.copy1 a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+.copy1 a:hover{
+    color: aliceblue;
+}
+.copy2 img:hover {
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+.copy3
+{ 
+    margin-left: 10%; 
+    /* margin-bottom: 2%; */
+    padding: 15px;
+    background-color:rgb(255, 255, 255) ;
+    border-radius: 35px;
+}
+
+ 
+

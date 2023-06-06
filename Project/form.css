@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    /* position: fixed; */
+    padding: 1%;
+    width: 100%;
+    background-color: aquamarine;
+}
+.header_Img{
+    display: flex;
+    margin-left: 3%;
+}
+.header_Img img{
+    width: 20%;
+}
+.header_Img h1{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.header_Img p{
+    margin-top: 7%;
+    color: red;
+}
+header:hover{
+    background-color: rgb(178, 218, 204);
+}
+ #personForm {
+      width: 100%;
+      height: 100%;
+      padding: 2% 0% 2% 0%;
+      border: 1px solid black;
+      border-radius: 35px;
+
+      background-color: white;
+      display: block;
+    }
+
+
+    #studyForm {
+        width: 100%;
+      height: 100%;
+     padding: 2% 0% 2% 0%;
+      border: 1px solid black;
+      border-radius: 35px;
+
+      background-color: white;
+      display: none;
+    }
+
+
+    #accForm {
+        width: 100%;
+        height: 100%;
+        padding: 2% 0% 2% 0%;
+        border: 1px solid black;
+        border-radius: 35px;
+        background-color: white;
+        display: none;
+    }
+
+
+    #loanForm {
+        width: 100%;
+        height: 100%;
+        padding: 2% 0% 2% 0%;
+        border: 1px solid black;
+        border-radius: 35px;
+        background-color: white;
+        display: none;
+    }
+    .navBar{
+        margin-left: 7%;
+    }
+    button{
+        border: none;
+        padding: 2% 7% 2% 7%;
+        font-weight:bolder;
+        font-size: 15px;
+    }
+    #backColor1{
+        background-color: rgb(178, 218, 204);
+    }
+    
+    .person {
+        margin-top: 2%;
+    }
+    .person label{
+        display: inline-block;
+        width: 330px;
+        text-align:right;
+        font-size: 20px;
+        font-weight: bolder;
+    } 
+    .person input{
+        padding-right: 5%;
+        padding-top: 1%;
+        padding-left: 0.5%;
+        padding-bottom: 0.5% ;
+        border: 1px solid black;
+        outline: 0;
+        border-radius: 5px;
+    }
+    #dob{
+        padding-left: 5%;
+    }
+    .person1{
+        margin-top: 2%;
+        /* margin-right: 20% ; */
+    }
+.person1 label{
+    display: inline-block;
+    width: 325px;
+    text-align:right;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.person1 textarea {
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: 0; 
+    padding-left: 0.5%;
+    padding-top: 0.5%;
+}
+.person1 select{
+    padding: 0.7% 6% 0.7% 7%;
+    border: 1px solid black;
+    outline: 0;
+    border-radius: 5%
+    /* margin-bottom: ; */
+}
+.person2{
+    margin-top: 2%;
+}
+.person2 label{
+    display: inline-block;
+    width: 330px;
+    text-align:right;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.person2 #file{
+    padding-right: 5%;
+        padding-top: 1%;
+        padding-left: 0.5%;
+        padding-bottom: 0.5% ;
+        border: 1px solid black;
+        outline: 0;
+        border-radius: 5px;
+}
+.file{
+    margin-left: 5%;
+}
+#button{
+    margin-left: 45%;
+    margin-top: 2%;
+    background-color: rgb(178, 218, 204);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 1% 3% 1% 3%;
+    border: none;
+    outline: 0;
+    font-weight: bold;
+}
+#button:hover{
+    background-color: aquamarine;
+}
+span{
+    color: red;
+}
+#marksheet{
+    border: none;
+}
+h2{
+    text-align: center;
+    font-size: 30px ;
+    font-weight: bolder;
+}
+#address{
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: 0; 
+    padding-left: 0.5%;
+    padding-top: 0.5%;
+}
+.person select{
+    padding: 0.7% 6% 0.7% 8%;
+    border: 1px solid black;
+    outline: 0;
+    border-radius: 5%
+}
+.butt{
+    margin-left: 1%;
+    margin-top: 1%;
+}
+#button1{
+    margin-left: 38%;
+    margin-top: 2%;
+    background-color: rgb(178, 218, 204);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 1% 3% 1% 3%;
+    border: none;
+    outline: 0;
+    font-weight: bold;
+}
+#button1:hover{
+    background-color: aquamarine;
+}
+#button2{
+    margin-left: 2%;
+    margin-top: 2%;
+    background-color: rgb(178, 218, 204);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 1% 4% 1% 4%;
+    border: none;
+    outline: 0;
+    font-weight: bold;
+}
+#button2:hover{
+    background-color: aquamarine;
+}
+.person3{
+    text-align: center;
+    margin-top: 2%;
+}
