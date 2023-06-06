@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    sign-in page
+  </title>
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- menu-bar starts -->
+  <header>
+    <nav class="menu-bar">
+        <ul>
+          <li onclick="alerthomepage()"><a><i class="fa-solid fa-house"></i>Home</a></li>
+          <li onclick="alerthomepage()"><a><i class="fa-solid fa-users"></i>About</a></li>
+          <li onclick="alerthomepage()"><a><i class="fa-solid fa-book"></i>Notes</a> </li>
+          <li onclick="alerthomepage()"><a><i class="fa-solid fa-phone"></i>Contact</a></li>
+          <li><a href="View/login.html"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+        </ul>
+    </nav>
+  </header>
+  <!-- menu-bar ends -->
+
+  <!-- body of the page starts -->
+
+  <div class="body-content">
+    <img id="logo-sigin" src="./Static/images/My project.png" onmouseover="logobig(this)" onmouseout="logosmall(this)" alt="image"
+      width="70px" height="70px">
+    <h1><br>&nbsp;&nbsp;STUDY MATERIAL MANAGEMENT SYSTEM</h1>
+    <br><br><br>
+    <p>
+      "Helping students to find a path to purpose is<br> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;one of the noblest aspects of teaching !...."<br><br>
+      We are here to help you please <b>Sign-In</b> to your account...
+    </p><br><br>/
+
+    <!-- button for sign-in page -->
+
+    <!-- <button onclick="openpage()">Sign-In</button> -->
+  </div>
+  <!-- body ends -->
+
+  <!-- footer starts -->
+  <footer class="signin-footer">
+    <div class="copyrights">
+      <p>Copyright<i class="fa-solid fa-copyright"></i> Mythili | All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- <footer ends -->
+
+  <!-- script for signin page starts -->
+  <script>
+    function logobig(x) {
+      x.style.height = "90px";
+      x.style.width = "90px"
+    }
+    function logosmall(x) {
+      x.style.height = "70px";
+      x.style.width = "70px"
+    }
+    function alerthomepage() {
+      alert("Please Sign-In to Continue!!!");
+      return false;
+    }
+
+    // function openpage() {
+    //   alert("Redirecting to login page..");
+    //   window.open("login.html", "_self");
+    //   return false;
+    // }
+  </script>
+  <!-- script for signin page ends -->
+</body>
+
+</html>

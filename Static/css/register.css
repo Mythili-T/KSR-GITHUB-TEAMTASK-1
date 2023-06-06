@@ -1,0 +1,186 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.register-form{
+    background-image: url('https://c0.wallpaperflare.com/preview/256/741/293/ballpen-cell-phone-company-contemporary.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+nav{
+    font-family: sans-serif;
+}
+.menu-bar {
+    background-color: rgb(0, 100, 0);
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.current-page,
+.menu-bar ul li:hover {
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+.menu-bar .fa-solid {
+    margin-right: 6px;
+}
+
+.Register-container {
+    max-width: 830px;
+    height: 700px;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 350px;
+    padding: 25px 30px;
+    border-radius: 35px;
+    background-color: rgba(188, 198, 190, 0.555);
+}
+
+.Register-container .heading {
+    font-size: 38px;
+    font-weight: 800;
+    color: rgb(10, 102, 28);
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.Register-container .heading::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(135deg, rgb(5, 116, 53), rgb(5, 137, 5));
+}
+
+.Register-container form .register {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.Register-container form .register .teacherBox p {
+    position: absolute;
+}
+
+form .register .teacherBox {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.register .teacherBox .teacherdetails {
+    display: block;
+    font-weight: 600;
+    color: rgb(5, 96, 34);
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.register .teacherBox input {
+    height: 37px;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid rgb(4, 118, 51);
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    /* cursor: pointer; */
+}
+
+form .radio-button .teach-year {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(10, 82, 32);
+    text-decoration: none;
+    /* margin-left: 0px !important; */
+    margin-right: 195px !important;
+}
+
+form .radio-button .category {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: rgba(10, 82, 32);
+    /* margin-left: 0% !important; */
+
+}
+
+form .button {
+    text-align: center;
+    
+}
+
+form .button button {
+    padding: 10px 0;
+    /* margin-top: px; */
+    height: 100%;
+    width: 35%;
+    outline: none;
+    color: rgba(8, 64, 29, 0.792);
+    border: none;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, rgb(43, 138, 43), rgb(163, 207, 183));
+    cursor: pointer;
+}
+
+form .button button:hover {
+    background: linear-gradient(-135deg, rgb(6, 129, 6), rgb(163, 207, 183));
+}
+.register-footer {
+    background-color: rgba(70, 68, 68, 0.886);
+    display: flex;
+    justify-content: center;
+    padding:5px ;
+    /* margin-top: 10%; */
+    
+}
+
+
+.copyrights {
+    padding-left: 7%;
+    color: #2bab0d;
+    font-family: sans-serif;
+}
+
+.red {
+    color: rgb(242, 41, 41);
+}
+#Depart{
+    width:60%;
+    height: 37px;
+    border-radius: 10px;
+    border: 1px solid rgb(4, 118, 51);
+    padding-left: 20px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* menu-bar style starts */
+.menu-bar {
+    background-color: rgb(0, 100, 0);
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.current-page,
+.menu-bar ul li:hover {
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+.menu-bar .fa-solid {
+    margin-right: 6px;
+}
+
+/* menu-bar style ends */
+
+/* body style starts */
+.body-content {
+    background-image: url('https://img.freepik.com/premium-photo/white-office-work-space-desk-table-with-laptop-pencil-note-book-small-plant-top-view-with-copy-space-flat-lay_39301-197.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 637px;
+}
+
+#logo-sigin {
+    margin: 15px;
+    border-radius: 7px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+.body-content p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #2bab0d;
+    font-weight: 500;
+    padding-left: 80px;
+    font-style: italic;
+}
+
+.body-content h1 {
+    color: #2bab0d;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* button style starts */
+button {
+    background-color: #2bab0d;
+    border: none;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 25%;
+    box-shadow: #3aaf20;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 3px rgb(13, 136, 38);
+    font-size: 20px;
+    color: #fff;
+    font-family: Times New Roman, Times, serif;
+}
+
+button:hover {
+    background: #cbdcc588;
+    color: #2bab0d;
+}
+
+/* button style ends */
+
+/* body style ends */
+
+/* footer starts */
+.signin-footer {
+    background-color: rgba(70, 68, 68, 0.886);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.copyrights
+{
+    padding-left: 7%;
+    color: #2bab0d;
+}
+
+/* footer ends */
