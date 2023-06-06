@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KETTIMELAM</title>
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9c99ff9a8f.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header >
+        <div  class="navbars">
+                <div  class="navbar">
+                    <nav>
+                      <input type="checkbox" id="show-menu">
+                      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                      <div class="content" id="content-active">
+                        <div class="navi">
+                            <div class="logo">
+                                <li><a href="#"><img src="assets/images/ketti1-removebg-preview.png"  id="image"/></a></li>
+                                <li class="list1"><p>Kettimelam</p> </li>
+                               <div class="main">
+                                <input type="search" placeholder="Type to search">
+                                <a href="#"><i class="fa fa-search icon-search" style="font-size: 16px;"></i></a>
+                                </div>
+                            </div>
+                        </div>                        <ul class="links">
+                          <li class="active-btn active"><a href="main.html" >Home</a></li>
+                          <li class="active-btn"><a href="shop"  class="desktop-link">Shop</a>
+                            <input type="checkbox" id="show-services">
+                            <label for="show-services" >Shop</label>
+                            <ul>
+                              <!-- <li><a href="catering.html">Catering</a></li> -->
+                              <li><a href="photo.html">Studio</a></li>
+                              <li><a href="catering.html">Catering</a></li>
+
+                              <li><a>Weddings</a>
+                              <ul><li >
+                                <input type="checkbox" id="show-features">
+      
+                                  <li><a href="traditional.html">Traditional</a></li>
+                                  <li><a href="royal.html">Royal</a></li>
+                                  <li><a href="vintage.html">Vintage</a></li>
+                                  <li><a href="beach.html">Beach</a></li>
+                                  <li><a href="destination.html">Desination</a></li>
+      
+      
+                             </ul>
+                              </li>
+      
+      
+                            </ul>
+                        </li>
+      
+      
+                          <li class="active-btn"><a href="contact.html">Contact</a></li>
+      
+                        <div class="login">   <button class="home-login" id="login-btn">
+                          <a class="login-true" href="Login.html" onclick="login()" style="display: block;">Login</a>
+                          <a  class="logout-true" href="main.html" style="display: none;">Logout</a>
+      
+      
+                          <!-- user profile -->
+                          <!-- <div *ngIf="loginService.isLoggedin"  class="loggedin">
+                          <div *ngIf="users">
+                            <div *ngFor="let items of users">
+                            <div  class="userName">{{items.firstname}}</div>
+                            </div>
+                          </div>
+                          <a   (click)="onLogout()" routerLink="/home">Logout</a>
+                          <a *ngIf="loginService.isLoggedin"  (click)="onLogout()" routerLink="/home">Logout</a>
+                          </div> -->
+      
+      
+                        </button>
+                        </div>
+                          <!-- user profile close-->
+      
+      
+      
+      
+      
+                            <div class="cart"><span>0</span><a href="cart.html"><img src="assets/images/cart.png"></a></div>
+                      </ul>
+                        </div>
+                      <!--<form action="#" class="search-box">
+                        <input type="text" placeholder="Type Something to Search..." required>
+                        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                      </form>-->
+                    </nav>
+                  </div>
+      
+        </div>
+      </header>
+      
+      <!-- front-image -->
+      <div id="content">
+        <div class="bg">
+      
+                <h1><b>Best Wedding Planner of South India</b></h1>
+      
+      
+                <p>We recommand the best to your dream wedding</p>
+      
+        </div>
+      </div>
+    
+    <!--pop up-->
+<!--
+
+   
+    <div class="popup">
+        <div class="contentbox">
+            <div class="close">
+                <img src="assets/images/close.jpg">
+            </div>
+            <div class="bgoffer">
+                <img src="assets/images/offer.jpg" id="popimg">
+            </div>
+            <div class="offername">
+                <img src="assets/images/ketti.jpg" id="poplogo">
+                <p id="popname">Kettimelam</p>
+            </div>
+            <div class="contentOffer">
+                <h1>Special Offer</h1>
+                <h3>upto<span id="offernum">15%</span></h3><br>
+                <p id="offerbook">Book Your Wedding Now </p>
+
+                <a href="#" id="knowmore">Know more !</a>
+                <p id="daysleft">Days left</p>
+            </div>
+            <div class="countdown">
+                00 : 00 : 00 : 00
+
+            </div>
+        </div>
+    </div>                     -->
+
+    
+    <!--Weddings-->
+    
+    <!-- list type for shopping -->
+<div class="categories">
+    <div class="catergories-name">
+     <div class="cat"><h3>SHOPPING LISTS</h3>
+     <p>What are you looking for ?</p></div>
+    </div>
+    <div class="mes-caption"><p>Explore weddings,studio,caterings from the best selected vendors around South India</p></div>
+  </div>
+  
+  <!-- wedding events -->
+  <div class="wedding" id="weds">
+    <div id="wed">
+        <div class="wedtitle">
+        <h3>WEDDINGS</h3></div>
+    </div>
+  
+     <!-- //weddings cart -->
+     <div class="container">
+      <div class="card">
+        <div class="imgbox"><img src="assets/images/beach-title.jpg"></div>
+        <div class="content"><p>BEACH WEDDINGS</p></div>
+      </div>
+      <div class="card">
+        <div class="imgbox"><img src="assets/images/destination-title.webp"></div>
+        <div class="content"><p>DESTINATION WEDDINGS</p></div>
+      </div>
+      <div class="card">
+        <div class="imgbox"><img src="assets/images/royal-title.jpeg"></div>
+        <div class="content"><p>ROYAL WEDDINGS</p></div>
+      </div>
+      <div class="card">
+        <div class="imgbox"><img src="assets/images/traditional-title.webp"></div>
+        <div class="content"><p>TRADITIONAL WEDDINGS</p></div>
+      </div>
+      <div class="card">
+        <div class="imgbox"><img src="assets/images/vintage-title.jpg"></div>
+        <div class="content"><p>VINTAGE WEDDINGS</p></div>
+      </div>
+      <div class="card">
+        <div class="imgbox increase"><img src="assets/images/col.png"></div>
+        <div class="content morebutton-weddings"><button><a href="#">More + </a></button></div>
+      </div>
+     </div>
+  
+        <!------------------------------photography-->
+        <div id="photography"><h3>STUDIO</h3></div>
+ <div class="grid-items">
+     <div class="content-photo-grid">
+      <h4>Photography and Videography</h4>
+         <p> Authentic, vibrant, and honest this is how the photographer
+          describes your wedding photography. The photographer keeps the
+           couple’s lives in the moment where they started.
+           It’s particularly important to capture the
+            intense emotions which make this day so unique
+             and personal.
+               <!-- By including
+              numerous reviews on his website that
+              demonstrates how wonderful the final
+               result is and how happy the customers are.So that
+               is the customers can see what suits them best.
+              -->
+
+         </p>
+         <button class="studio-shop"><a href="photo.html">Shop</a></button>
+     </div>
+         <div class="grid-photo-items">
+             <div class="grid-img">
+                 <img src="assets/images/photo1.jpg">
+                 <img src="assets/images/photo2.jpg">
+             </div>
+             <div class="grid-img">
+                 <img src="assets/images/photo3.jpg">
+                 <img src="assets/images/photo4.jpg">
+             </div>
+         </div>
+
+     </div>
+
+            <!--catering------------------------------->
+            <div class="body"> <h3>CATERINGS</h3>
+
+                <div class="container-catering">
+                  <input type="radio" name="dot" id="one">
+                  <input type="radio" name="dot" id="two">
+                  <div class="main-card">
+                    <div class="cards-catering">
+                      <div class="card-catering">
+                       <div class="content-catering">
+                         <div class="img">
+                          <img src="assets/images/caterone.jpg" alt="">
+                         </div>
+                         <div class="details">
+                           <div class="name">Noosh Catering</div>
+                           <div class="job">Ready to take order</div>
+                         </div>
+                         <div class="media-icons">
+                          <div class="cat-what"> <a routerLink="#"><i class="fa-brands fa-whatsapp"></i> </a> 6345999783</div>
+                           <div class="cat-mail"><a routerLink="#"><i class="fa-solid fa-envelope"></i></a>nooshcater@gmail.com</div>
+                          <div class="cat-loc"><a routerLink="#"><i class="fa-solid fa-location-dot"></i></a>Salem</div>
+                          </div>
+                       </div>
+                      </div>
+                      <div class="card-catering">
+                       <div class="content-catering">
+                         <div class="img">
+                          <img src="assets/images/catertwo.jpg" alt=>
+                         </div>
+                         <div class="details">
+                           <div class="name">Cutler Catering</div>
+                           <div class="job">Ready to take order</div>
+                         </div>
+                         <div class="media-icons">
+                          <div class="cat-what"> <a routerLink="#"><i class="fa-brands fa-whatsapp"></i></a>9994589893</div>
+                          <div class="cat-mail"><a routerLink="#"><i class="fa-solid fa-envelope"></i></a>cultercater@gmail.com</div>
+                         <div class="cat-loc"><a routerLink="#"><i class="fa-solid fa-location-dot"></i></a>Erode</div>
+                
+                              </div>
+                       </div>
+                      </div>
+                      <div class="card-catering">
+                       <div class="content-catering">
+                         <div class="img">
+                          <img src="assets/images/caterthree.jpg" alt=>
+                         </div>
+                         <div class="details">
+                           <div class="name">Healy Catering</div>
+                           <div class="job">Ready to take order</div>
+                         </div>
+                         <div class="media-icons">
+                          <div class="cat-what"> <a routerLink="#"><i class="fa-brands fa-whatsapp"></i></a>8825655512</div>
+                          <div class="cat-mail"><a routerLink="#"><i class="fa-solid fa-envelope"></i></a>healycatr@gmail.com</div>
+                         <div class="cat-loc"><a routerLink="#"><i class="fa-solid fa-location-dot"></i></a>Namakkal</div>
+                
+                               </div>
+                       </div>
+                      </div>
+                    </div>
+                    <div class="cards-catering">
+                
+                
+                      <div class="card-catering">
+                       <div class="content-catering">
+                         <div class="img">
+                          <img src="assets/images/ct7.png" alt=>
+                         </div>
+                         <div class="details">
+                           <div class="name">Red Flook Catering</div>
+                           <div class="job">Ready to take order</div>
+                         </div>
+                         <div class="media-icons">
+                          <div class="cat-what"> <a routerLink="#"><i class="fa-brands fa-whatsapp"></i></a>7299910101</div>
+                           <div class="cat-mail"><a routerLink="#"><i class="fa-solid fa-envelope"></i></a>redflookcater@gmail.com</div>
+                          <div class="cat-loc"><a routerLink="#"><i class="fa-solid fa-location-dot"></i></a>Coimbatore</div>
+                
+                              </div>
+                       </div>
+                      </div>
+                      <div class="card-catering">
+                        <div class="content-catering">
+                          <div class="img">
+                           <img src="assets/images/ct8.jfif" alt=>
+                          </div>
+                          <div class="details">
+                            <div class="name">Taste of Soul</div>
+                            <div class="job">Ready to take order</div>
+                          </div>
+                          <div class="media-icons">
+                            <div class="cat-what"> <a routerLink="#"><i class="fa-brands fa-whatsapp"></i></a>9955533666</div>
+                            <div class="cat-mail"><a routerLink="#"><i class="fa-solid fa-envelope"></i></a>Tasteofsoulcater@gmail.com</div>
+                           <div class="cat-loc"><a routerLink="#"><i class="fa-solid fa-location-dot"></i></a>Chennai</div>
+                
+                                 </div>
+                        </div>
+                       </div>
+                      <div class="card-catering">
+                       <div id="back" class="content-catering">
+                        <div class="more-catering">
+                          <button><a href="catering.html">More</a></button>
+                        </div>
+                       </div>
+                      </div>
+                    </div>
+                  </div><br>
+                  <div class="button">
+                    <label for="one" class=" active one"></label>
+                    <label for="two" class="two"></label>
+                  </div>
+                </div>
+                </div>
+            
+        <!-- <div class="makeover">
+            <div id="photography">
+                <h3>MAKEOVER</h3>
+            </div>
+        </div> -->
+
+        <!--Footer part-->
+        <footer>
+
+            <div class="footercontainer">
+                <div class="footcontent">
+                    <div class="foot-title"><img src="assets/images/ketti1-removebg-preview.png"><h1 class="footertitle">Kettimelam </h1></div>
+                    <p>Best wedding planner of south india where you can get a complete plan for your wedding done with your budget.
+                        This is the place to fullfil your dream wedding with heartful of emotions and mindful of satisfaction.
+                    </p><br>
+                   
+                </div>
+                <div class="footcontent">
+                    <h3>Search Us </h3>
+                    <a href="#">Instagram </a><br>
+                    <a href="#">You Tube</a><br>
+                    <a href="#">Twitter</a><br>
+                    <a href="#">Facebook</a><br>
+
+                </div>
+                <div class="footcontent">
+                    <h3>More on wedding</h3>
+                    <a href="#">Food </a><br>
+                    <a href="#">Decoration</a><br>
+                    <a href="#photography">photography</a><br>
+                    <a href="#">Make over</a><br>
+                    <a href="#">Reviews</a><br>
+
+
+                </div>
+                <div class="footcontent">
+                    <h2>STAY CONNECTED</h2>
+                    <form class="contacthere">
+                        <div class="maillogo">
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <input type="email" class="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="typehere">
+                            <textarea id="typehere" class="typehere" class="text" required
+                                placeholder="Type Something"></textarea>
+                        </div>
+                        <div class="mailsubmit">
+                            <button type="submit" class="mailsubmit" id="mailsubmit">Send</button>
+                        </div>
+
+
+                    </form>
+
+
+                </div>
+            </div>
+            <hr>
+            <p id="copyright">Copyright &#169; 2022 - Kettimelam</p>
+        </footer>
+        <img onclick="topFunction()" id="myScroll" class="scroll"src="assets/images/scrolltop.png">
+
+
+</body>
+
+<script src="cart.js"></script>
+
+</html>

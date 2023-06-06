@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KETTIMELAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="wrapper">
+      <header><div class="name">
+        <li><a href="#"><input type="image" src="assets/images/ketti1.jpg" id="image"></a></li>
+        <p>Kettimelam</p></div>
+        <div class="regi">
+            <p>Login</p>
+        </div></header>
+      <form class="form" name="form" id="form" action="#" method="post" onsubmit="return validate()">
+
+
+        <p class="nametype">Email id</p>
+
+        <div class="field email">
+          <div class="input-area">
+            <input  type="text" id="email" placeholder="Email Address" onkeyup="checkEmail()">
+            <p id="email_icon_error"></p>
+            <p id="email_error"></p>
+            <br>
+            
+            
+        
+        </div>
+        </div>
+
+
+        <p class="nametype">Password</p>
+
+        <div class="field password">
+          <div class="input-area">
+            <input type="password" id="password" placeholder="Password" onkeyup="checkPass()">
+           
+            <p id="pass_icon_error"></p>
+            <p id="pass_error"></p>
+            <br>
+          </div>
+        </div>
+
+        
+        <div class="pass-txt"><a href="#">Forgot password?</a></div>
+        <div class="final">
+          <a id="create" href="register.html">Create account</a>
+        <button type="submit" name="submit" value="Login" id="submit" >Login</button>
+        
+  </div>
+      </form>
+      
+
+</div>
+
+      <div class="popup">
+        <div class="popup-content">
+            <div class="success">
+                <p>Redirecting to Homepage...</p>
+            </div>
+            <div class="pop-buttons">
+                <button class="ok-button" id="ok" onclick="window.location.href='main.html'" >Ok</button>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="main.js"></script>
+  </body>
+  </html>
+ 
+    

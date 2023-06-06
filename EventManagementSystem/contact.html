@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kettimelam-Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9c99ff9a8f.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<br><br><br><br><br>
+
+<body>
+
+    <!--*******************************nav bar******************************-->
+    <header >
+      <div  class="navbars">
+              <div  class="navbar">
+                  <nav>
+                    <input type="checkbox" id="show-menu">
+                    <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                    <div class="content" id="content-active">
+                      <div class="navi">
+                          <div class="logo">
+                              <li><a href="#"><img src="assets/images/ketti1-removebg-preview.png"  id="image"/></a></li>
+                              <li class="list1"><p>Kettimelam</p> </li>
+                             <div class="main">
+                              <input type="search" placeholder="Type to search">
+                              <a href="#"><i class="fa fa-search icon-search" style="font-size: 16px;"></i></a>
+                              </div>
+                          </div>
+                      </div>                        <ul class="links">
+                        <li class="active-btn active"><a href="main.html" >Home</a></li>
+                        <li class="active-btn"><a href="shop"  class="desktop-link">Shop</a>
+                          <input type="checkbox" id="show-services">
+                          <label for="show-services" >Shop</label>
+                          <ul>
+                            <!-- <li><a href="catering.html">Catering</a></li> -->
+                            <li><a href="photo.html">Studio</a></li>
+                            <li><a href="catering.html">Catering</a></li>
+
+                            <li><a>Weddings</a>
+                            <ul><li >
+                              <input type="checkbox" id="show-features">
+    
+                                <li><a href="traditional.html">Traditional</a></li>
+                                <li><a href="royal.html">Royal</a></li>
+                                <li><a href="vintage.html">Vintage</a></li>
+                                <li><a href="beach.html">Beach</a></li>
+                                <li><a href="destination.html">Desination</a></li>
+    
+    
+                           </ul>
+                            </li>
+    
+    
+                          </ul>
+                      </li>
+    
+    
+                        <li class="active-btn"><a href="contact.html">Contact</a></li>
+    
+                      <div class="login">   <button class="home-login" id="login-btn">
+                        <a class="login-true" href="Login.html" onclick="login()" style="display: block;">Login</a>
+                        <a  class="logout-true" href="main.html" style="display: none;">Logout</a>
+    
+    
+                        <!-- user profile -->
+                        <!-- <div *ngIf="loginService.isLoggedin"  class="loggedin">
+                        <div *ngIf="users">
+                          <div *ngFor="let items of users">
+                          <div  class="userName">{{items.firstname}}</div>
+                          </div>
+                        </div>
+                        <a   (click)="onLogout()" routerLink="/home">Logout</a>
+                        <a *ngIf="loginService.isLoggedin"  (click)="onLogout()" routerLink="/home">Logout</a>
+                        </div> -->
+    
+    
+                      </button>
+                      </div>
+                        <!-- user profile close-->
+    
+    
+    
+    
+    
+                          <div class="cart"><span>0</span><a href="cart.html"><img src="assets/images/cart.png"></a></div>
+                    </ul>
+                      </div>
+                    <!--<form action="#" class="search-box">
+                      <input type="text" placeholder="Type Something to Search..." required>
+                      <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    </form>-->
+                  </nav>
+                </div>
+    
+      </div>
+    </header>
+
+    <!--*******************************content****************************-->
+    <div class="conbox">
+
+      <div class="contact-bg contact">
+      </div>
+      <div class="contact" >
+      
+      
+      
+      
+      
+      
+      <div class="contact-us">
+      
+      
+        <h4 class="contact-title">CONTACT US</h4>
+      <div class="contact-page">
+        <div class="contact-icons">
+           <div class="location-icon" id="location-icon"> <i class="fa-sharp fa-solid fa-location-dot fa-beat fa-lg"></i></div>
+            <div class="contact-des"><h6>Address</h6>
+           <p>24,North car street,</p>
+            <p>Chennai.</p></div>
+          </div>
+      
+          <div class="contact-icons">
+            <div class="location-icon" id="phone-icon"> <i class="fa-solid fa-phone fa-shake fa-lg"></i></div>
+            <div class="contact-des"><h6>Phone</h6>
+            <p>+91 6380426608</p></div>
+      
+           </div>
+           <div class="contact-icons">
+            <div class="location-icon" id="mail-icon"> <i class="fa-solid fa-envelope fa-bounce fa-lg"></i></div>
+            <div class="contact-des"><h6>Email</h6>
+            <p>aathmiga24@gmail.com</p></div>
+           </div>
+        </div>
+      <h4 class="connect-us">KEEP IN TOUCH</h4>
+      
+      
+      
+      <form class="form" method="post">
+      
+      
+        <p class="nametype">Name</p>
+        <div class="field Name">
+          <div class="input-area">
+            <input  type="text"  placeholder="Name" >
+        </div>
+        </div><br>
+      
+        <p class="nametype">Email</p>
+        <div class="field Email">
+          <div class="input-area">
+            <input type="text"  placeholder="Email" >
+          </div>
+        </div><br>
+      
+        <p class="nametype">Message</p>
+        <div class="field Message">
+          <div class="input-area" id="input-message">
+            <input type="text"  placeholder="Message here..." >
+          </div>
+        </div>
+      
+        <button type="submit" name="submit" value="Login" id="submit" >Submit</button>
+      
+      
+      </form></div>
+      </div></div>
+
+<!--**********************************footer*********************************-->
+<footer>
+
+    <div class="footercontainer">
+        <div class="footcontent">
+            <h1 class="footertitle">Kettimelam </h1>
+            <p>Best wedding planner of south india where you can get a complete plan for your wedding done with your
+                budget.
+                This is the place to fullfil your dream wedding with heartful of emotions and mindful of
+                satisfaction.
+            </p><br>
+
+        </div>
+        <div class="footcontent">
+            <h3>Search Us </h3>
+            <a href="#">Instagram </a><br>
+            <a href="#">You Tube</a><br>
+            <a href="#">Twitter</a><br>
+            <a href="#">Facebook</a><br>
+
+        </div>
+        <div class="footcontent">
+            <h3>More on wedding</h3>
+            <a href="#">Food </a><br>
+            <a href="#">Decoration</a><br>
+            <a href="#photography">photography</a><br>
+            <a href="#">Make over</a><br>
+            <a href="#">Reviews</a><br>
+
+
+        </div>
+        <div class="footcontent">
+            <h2>STAY CONNECTED</h2>
+            <form class="contacthere">
+                <div class="maillogo">
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input type="email" class="email" placeholder="Enter your email" required>
+                </div>
+                <div class="typehere">
+                    <textarea id="typehere" class="typehere" class="text" required
+                        placeholder="Type Something"></textarea>
+                </div>
+                <div class="mailsubmit">
+                    <button type="submit" class="mailsubmit" id="mailsubmit">Send</button>
+                </div>
+
+
+            </form>
+
+
+        </div>
+    </div>
+    <hr>
+    <p id="copyright">Copyright &#169; 2022 - Kettimelam</p>
+</footer>
+</body>
+</html>

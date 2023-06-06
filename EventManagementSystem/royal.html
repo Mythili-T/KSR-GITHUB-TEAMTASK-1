@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kettimelam-Royal</title>
+    <link rel="stylesheet" href="wed-cat-photo-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9c99ff9a8f.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header >
+        <div  class="navbars">
+                <div  class="navbar">
+                    <nav>
+                      <input type="checkbox" id="show-menu">
+                      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                      <div class="content" id="content-active">
+                        <div class="navi">
+                            <div class="logo">
+                                <li><a href="#"><img src="assets/images/ketti1-removebg-preview.png"  id="image"/></a></li>
+                                <li class="list1"><p>Kettimelam</p> </li>
+                               <div class="main">
+                                <input type="search" placeholder="Type to search">
+                                <a href="#"><i class="fa fa-search icon-search" style="font-size: 16px;"></i></a>
+                                </div>
+                            </div>
+                        </div>                        <ul class="links">
+                          <li class="active-btn active"><a href="main.html" >Home</a></li>
+                          <li class="active-btn"><a href="shop"  class="desktop-link">Shop</a>
+                            <input type="checkbox" id="show-services">
+                            <label for="show-services" >Shop</label>
+                            <ul>
+                              <!-- <li><a href="catering.html">Catering</a></li> -->
+                              <li><a href="photo.html">Studio</a></li>
+                              <li><a href="catering.html">Catering</a></li>
+
+                              <li><a>Weddings</a>
+                              <ul><li >
+                                <input type="checkbox" id="show-features">
+      
+                                  <li><a href="traditional.html">Traditional</a></li>
+                                  <li><a href="royal.html">Royal</a></li>
+                                  <li><a href="vintage.html">Vintage</a></li>
+                                  <li><a href="beach.html">Beach</a></li>
+                                  <li><a href="destination.html">Desination</a></li>
+      
+      
+                             </ul>
+                              </li>
+      
+      
+                            </ul>
+                        </li>
+      
+      
+                          <li class="active-btn"><a href="contact.html">Contact</a></li>
+      
+                        <div class="login">   <button class="home-login" id="login-btn">
+                          <a class="login-true" href="Login.html" onclick="login()" style="display: block;">Login</a>
+                          <a  class="logout-true" href="main.html" style="display: none;">Logout</a>
+      
+      
+                          <!-- user profile -->
+                          <!-- <div *ngIf="loginService.isLoggedin"  class="loggedin">
+                          <div *ngIf="users">
+                            <div *ngFor="let items of users">
+                            <div  class="userName">{{items.firstname}}</div>
+                            </div>
+                          </div>
+                          <a   (click)="onLogout()" routerLink="/home">Logout</a>
+                          <a *ngIf="loginService.isLoggedin"  (click)="onLogout()" routerLink="/home">Logout</a>
+                          </div> -->
+      
+      
+                        </button>
+                        </div>
+                          <!-- user profile close-->
+      
+      
+      
+      
+      
+                            <div class="cart"><span>0</span><a href="cart.html"><img src="assets/images/cart.png"></a></div>
+                      </ul>
+                        </div>
+                      <!--<form action="#" class="search-box">
+                        <input type="text" placeholder="Type Something to Search..." required>
+                        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                      </form>-->
+                    </nav>
+                  </div>
+      
+        </div>
+      </header>
+    <div class="royal-wal">
+        <div class="beach">
+            <img src="assets/images/royalwal.jfif">
+            <div class="beachTitle">
+                <h2>Royal Wedding</h2>
+                <p>Available design</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div class="events1">
+
+        <div class="eventlist">
+
+            <div class="eventname"><div class="image">
+                <img class="image-img"  src="assets/images/royalone.jpg" alt="Bricks">
+                <div class="image-click image__overlay--primary">
+                    <button class="image-view" id="beach1"> <i class="fa-solid fa-eye"></i><p>View</p></button>
+                </div>
+            </div>
+
+            </div> 
+            <!--Pop-up opens-->
+            <div id="myModal" class="modal">
+                
+                <div class="modal-content">
+                    <span class="close" id="close">&times;</span>
+
+                    <div class="display-details">
+                    <div class="model-display">
+                        <img class="model-img" src="assets/images/royalone.jpg">
+                    </div>
+                    <div class="model-display">
+                        <h2>Fancy Decorations</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><span class="count">324</span>
+                        <div class="price-sell">
+                            <p id="price-per">-14%</p><p class="model-price">&#8377;</p><span id="pricetag1">1,55,999</span></div>
+                            <div class="price">
+                            <p id="currency">M.R.P.:</p>
+                            <p id="strikes">&#8377; 1,80,899</p></div>
+                    
+                        <div class="location1"><i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <p>Preferred location</p>
+                        </div>
+                        <div class="call1">
+                            <i class="fa-sharp fa-solid fa-phone"></i>
+                            <a href="#">6734819979</a>
+                        </div>
+                        <div class="model-email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#">fancydecors@gmail.com</a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="model-display">
+                        <h3 id="model-highlights">Highlights</h3>
+                            <ul class="high-list">
+                                <li>Stage dimension  20′ x 10′</li>
+                                <li>Made of Cotton Cloths</li>
+                                <li>Color : Preferred Color</li>
+                                <li>Natural Flowers</li>
+                                <li>Wooden Stricks</li>
+                            </ul>
+                        </h5>
+                    </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            <!--pop-up close -->
+
+            <div class="name">
+                <!--<p>The love of nature where the auspicious moment happens with heartfull of emotions and mindfull of peace.</p>-->
+                <h6>Fancy Decorations</h6>
+                <div class="name-price-sell">
+                    <p id="name-price-per">-14%</p><p class="model-price">&#8377;</p><span id="name-pricetag1">1,55,999</span></div>
+                    <div class="name-price">
+                    <p id="name-currency">M.R.P.:</p>
+                    <p id="name-strikes">&#8377; 1,80,899</p>
+                </div>
+            </div>
+            <div class="button-item">
+                <div class="button1">
+                    <a href="#" class="buttons-add">Add to cart</a>
+                </div>
+                <div class="button2">
+                    <a href="orderNow.html" class="buttons-order">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+<!----------------------2 --------------------------------------------->
+        <div class="eventlist">
+            <div class="eventname"><div class="image">
+                <img class="image-img"  src="assets/images/royalten.jpg" alt="Bricks">
+                <div class="image-click image__overlay--primary">
+                    <button class="image-view" id="beach2"> <i class="fa-solid fa-eye"></i><p>View</p></button>
+                </div>
+            </div>
+
+            </div> 
+            <!--Pop-up opens-->
+            <div id="myModal1" class="modal">
+                
+                <div class="modal-content">
+                    <span class="close1" id="close">&times;</span>
+
+                    <div class="display-details">
+                    <div class="model-display">
+                        <img class="model-img" src="assets/images/royalten.jpg">
+                    </div>
+                    <div class="model-display">
+                        <h2>Mithun Decorations</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><span class="count">324</span>
+                        <div class="price-sell">
+                            <p id="price-per">-19%</p><p class="model-price">&#8377;</p><span id="pricetag1">1,75,499</span></div>
+                            <div class="price">
+                            <p id="currency">M.R.P.:</p>
+                            <p id="strikes">&#8377; 2,17,899</p></div>
+                    
+                        <div class="location1"><i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <p>Preferred location</p>
+                        </div>
+                        <div class="call1">
+                            <i class="fa-sharp fa-solid fa-phone"></i>
+                            <a href="#">7798499987</a>
+                        </div>
+                        <div class="model-email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#">mithundecors@gmail.com</a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="model-display">
+                        <h3 id="model-highlights">Highlights</h3>
+                            <ul class="high-list">
+                                <li>Stage dimension  20′ x 10′</li>
+                                <li>Made of Cotton Cloths</li>
+                                <li>Color : Preferred Color</li>
+                                <li>Natural Flowers</li>
+                                <li>Wooden Stricks</li>
+                            </ul>
+                        </h5>
+                    </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            <!--pop-up close -->
+
+            <div class="name">
+                <h6>Mithun Decorations</h6>
+                <div class="name-price-sell">
+                    <p id="name-price-per">-19%</p><p class="model-price">&#8377;</p><span id="name-pricetag1">1,75,499</span></div>
+                    <div class="name-price">
+                    <p id="name-currency">M.R.P.:</p>
+                    <p id="name-strikes">&#8377; 2,17,899</p>
+                </div>
+            </div>
+
+            <div class="button-item">
+                <div class="button1">
+                    <a href="#" class="buttons-add">Add to cart</a>
+                </div>
+                <div class="button2">
+                    <a href="orderNow.html" class="buttons-order">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-------------------3 event------------------------------------>
+        <div class="eventlist">
+            <div class="eventname"><div class="image">
+                <img class="image-img"  src="assets/images/royalthree.jpg" alt="Bricks">
+                <div class="image-click image__overlay--primary">
+                    <button class="image-view" id="beach3"> <i class="fa-solid fa-eye"></i><p>View</p></button>
+                </div>
+            </div>
+
+            </div> 
+            <!--Pop-up opens-->
+            <div id="myModal2" class="modal">
+                
+                <div class="modal-content">
+                    <span class="close2" id="close">&times;</span>
+
+                    <div class="display-details">
+                    <div class="model-display">
+                        <img class="model-img" src="assets/images/royalthree.jpg">
+                    </div>
+                    <div class="model-display">
+                        <h2>Srusti Decorations</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><span class="count">324</span>
+                        <div class="price-sell">
+                            <p id="price-per">-7%</p><p class="model-price">&#8377;</p><span id="pricetag1">80,499</span></div>
+                            <div class="price">
+                            <p id="currency">M.R.P.:</p>
+                            <p id="strikes">&#8377; 85,999</p></div>
+                    
+                        <div class="location1"><i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <p>preferred location</p>
+                        </div>
+                        <div class="call1">
+                            <i class="fa-sharp fa-solid fa-phone"></i>
+                            <a href="#">9600342499</a>
+                        </div>
+                        <div class="model-email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#">srustidecors@gmail.com</a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="model-display">
+                        <h3 id="model-highlights">Highlights</h3>
+                            <ul class="high-list">
+                                <li>Stage dimension  20′ x 10′</li>
+                                <li>Made of Cotton Cloths</li>
+                                <li>Color : Preferred Color</li>
+                                <li>Natural Flowers</li>
+                                <li>Wooden Stricks</li>
+                            </ul>
+                        </h5>
+                    </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            <!--pop-up close -->
+
+            <div class="name">
+                <h6>Srusti Decorations</h6>
+                <div class="name-price-sell">
+                    <p id="name-price-per">-7%</p><p class="model-price">&#8377;</p><span id="name-pricetag1">80,499</span></div>
+                    <div class="name-price">
+                    <p id="name-currency">M.R.P.:</p>
+                    <p id="name-strikes">&#8377; 85,999</p>
+                </div>  
+            </div>
+            <div class="button-item">
+                <div class="button1">
+                    <a href="#" class="buttons-add">Add to cart</a>
+                </div>
+                <div class="button2">
+                    <a href="orderNow.html" class="buttons-order">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <!--------------------------4 event------------------------------->
+        <div class="eventlist">
+            <div class="eventname"><div class="image">
+                <img class="image-img"  src="assets/images/royalfour.jpg" alt="Bricks">
+                <div class="image-click image__overlay--primary">
+                    <button class="image-view" id="beach4"> <i class="fa-solid fa-eye"></i><p>View</p></button>
+                </div>
+            </div>
+
+            </div> 
+            <!--Pop-up opens-->
+            <div id="myModal3" class="modal">
+                
+                <div class="modal-content">
+                    <span class="close3" id="close">&times;</span>
+
+                    <div class="display-details">
+                    <div class="model-display">
+                        <img class="model-img" src="assets/images/royalfour.jpg">
+                    </div>
+                    <div class="model-display">
+                        <h2>Modern Decorations</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><span class="count">324</span>
+                        <div class="price-sell">
+                            <p class="model-price">&#8377;</p><span id="pricetag1">89,499</span></div>
+                            
+                        <div class="location1"><i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <p>Preferred location</p>
+                        </div>
+                        <div class="call1">
+                            <i class="fa-sharp fa-solid fa-phone"></i>
+                            <a href="#">6955329077</a>
+                        </div>
+                        <div class="model-email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#">morderndecors@gmail.com</a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="model-display">
+                        <h3 id="model-highlights">Highlights</h3>
+                            <ul class="high-list">
+                                <li>Stage dimension  20′ x 10′</li>
+                                <li>Made of Cotton Cloths</li>
+                                <li>Color : Preferred Color</li>
+                                <li>Natural Flowers</li>
+                                <li>Wooden Stricks</li>
+                            </ul>
+                        </h5>
+                    </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            <!--pop-up close -->
+
+            <div class="name">
+                <h6>Modern Decorations</h6>
+                <div class="name-price-sell">
+                    <p class="model-price-one">&#8377;</p><span id="name-pricetag1">89,499</span></div>
+                     <br> 
+            </div>
+            <div class="button-item">
+                <div class="button1">
+                    <a href="#" class="buttons-add">Add to cart</a>
+                </div>
+                <div class="button2">
+                    <a href="orderNow.html" class="buttons-order">Order Now</a>
+                </div>
+            </div>
+        </div>
+<!----------------------------event 5------------------------------>
+        <div class="eventlist">
+            <div class="eventname"><div class="image">
+                <img class="image-img"  src="assets/images/royalfive.jpg" alt="Bricks">
+                <div class="image-click image__overlay--primary">
+                    <button class="image-view" id="beach5"> <i class="fa-solid fa-eye"></i><p>View</p></button>
+                </div>
+            </div>
+
+            </div> 
+            <!--Pop-up opens-->
+            <div id="myModal4" class="modal">
+                
+                <div class="modal-content">
+                    <span class="close4" id="close">&times;</span>
+
+                    <div class="display-details">
+                    <div class="model-display">
+                        <img class="model-img" src="assets/images/royalfive.jpg">
+                    </div>
+                    <div class="model-display">
+                        <h2>Sana Decorations</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><span class="count">324</span>
+                        <div class="price-sell">
+                            <p id="price-per">-10%</p><p class="model-price">&#8377;</p><span id="pricetag1">1,55,499</span></div>
+                            <div class="price">
+                            <p id="currency">M.R.P.:</p>
+                            <p id="strikes">&#8377; 1,70,499</p></div>
+                    
+                        <div class="location1"><i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <p>Preferred location</p>
+                        </div>
+                        <div class="call1">
+                            <i class="fa-sharp fa-solid fa-phone"></i>
+                            <a href="#">8825677718</a>
+                        </div>
+                        <div class="model-email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#">sanadecors@gmail.com</a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="model-display">
+                        <h3 id="model-highlights">Highlights</h3>
+                            <ul class="high-list">
+                                <li>Stage dimension  20′ x 10′</li>
+                                <li>Made of Cotton Cloths</li>
+                                <li>Color : Preferred Color</li>
+                                <li>Natural Flowers</li>
+                                <li>Wooden Stricks</li>
+                            </ul>
+                        </h5>
+                    </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            <!--pop-up close -->
+
+            <div class="name">
+                <h6>Sana Decorations</h6>
+                <div class="name-price-sell">
+                    <p id="name-price-per">-10%</p><p class="model-price">&#8377;</p><span id="name-pricetag1">1,55,499</span></div>
+                    <div class="name-price">
+                    <p id="name-currency">M.R.P.:</p>
+                    <p id="name-strikes">&#8377; 1,70,499</p>
+                </div>
+            </div>
+            <div class="button-item">
+                <div class="button1">
+                    <a href="#" class="buttons-add">Add to cart</a>
+                </div>
+                <div class="button2">
+                    <a href="orderNow.html" class="buttons-order">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!----------------------------event 6--------------------------------->
+
+        <div class="eventlist">
+            <div class="eventname"><div class="image">
+                <img class="image-img"  src="assets/images/royalfifteen.jpg" alt="Bricks">
+                <div class="image-click image__overlay--primary">
+                    <button class="image-view" id="beach6"> <i class="fa-solid fa-eye"></i><p>View</p></button>
+                </div>
+            </div>
+
+            </div> 
+            <!--Pop-up opens-->
+            <div id="myModal5" class="modal">
+                
+                <div class="modal-content">
+                    <span class="close5" id="close">&times;</span>
+
+                    <div class="display-details">
+                    <div class="model-display">
+                        <img class="model-img" src="assets/images/royalfifteen.jpg">
+                    </div>
+                    <div class="model-display">
+                        <h2>Siva Decorations</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><span class="count">324</span>
+                        <div class="price-sell">
+                            <p class="model-price">&#8377;</p><span id="pricetag1">1,95,499</span></div>
+                           
+                    
+                        <div class="location1"><i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <p>Preferred location</p>
+                        </div>
+                        <div class="call1">
+                            <i class="fa-sharp fa-solid fa-phone"></i>
+                            <a href="#">7992358787</a>
+                        </div>
+                        <div class="model-email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#">sivadecors@gmail.com</a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="model-display">
+                        <h3 id="model-highlights">Highlights</h3>
+                            <ul class="high-list">
+                                <li>Stage dimension  20′ x 10′</li>
+                                <li>Made of Cotton Cloths</li>
+                                <li>Color : Preferred Color</li>
+                                <li>Natural Flowers</li>
+                                <li>Wooden Stricks</li>
+                            </ul>
+                        </h5>
+                    </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            <!--pop-up close -->
+
+            <div class="name">
+                <h6>Siva Decorations</h6>
+                <div class="name-price-sell">
+                    <p class="model-price-one">&#8377;</p><span id="name-pricetag1">1,95,499</span></div>
+                    
+                <br>
+            </div>
+            <div class="button-item">
+                <div class="button1">
+                    <a href="#" class="buttons-add">Add to cart</a>
+                </div>
+                <div class="button2">
+                    <a href="orderNow.html" class="buttons-order">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------------event 7------------------------------>
+
+        <div class="eventlist">
+            <div class="eventname"><div class="image">
+                <img class="image-img"  src="assets/images/royalnine.jpg" alt="Bricks">
+                <div class="image-click image__overlay--primary">
+                    <button class="image-view" id="beach7"> <i class="fa-solid fa-eye"></i><p>View</p></button>
+                </div>
+            </div>
+
+            </div> 
+            <!--Pop-up opens-->
+            <div id="myModal6" class="modal">
+                
+                <div class="modal-content">
+                    <span class="close6" id="close">&times;</span>
+
+                    <div class="display-details">
+                    <div class="model-display">
+                        <img class="model-img" src="assets/images/royalnine.jpg">
+                    </div>
+                    <div class="model-display">
+                        <h2>Margo Decorations</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><span class="count">324</span>
+                        <div class="price-sell">
+                            <p id="price-per">-20%</p><p class="model-price">&#8377;</p><span id="pricetag1">1,16,899</span></div>
+                            <div class="price">
+                            <p id="currency">M.R.P.:</p>
+                            <p id="strikes">&#8377; 1,46,800</p></div>
+                    
+                        <div class="location1"><i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <p>Preferred location</p>
+                        </div>
+                        <div class="call1">
+                            <i class="fa-sharp fa-solid fa-phone"></i>
+                            <a href="#">9700373737</a>
+                        </div>
+                        <div class="model-email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#">margodecors@gmail.com</a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="model-display">
+                        <h3 id="model-highlights">Highlights</h3>
+                            <ul class="high-list">
+                                <li>Stage dimension  20′ x 10′</li>
+                                <li>Made of Cotton Cloths</li>
+                                <li>Color : Preferred Color</li>
+                                <li>Natural Flowers</li>
+                                <li>Wooden Stricks</li>
+                            </ul>
+                        </h5>
+                    </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            <!--pop-up close -->
+
+            <div class="name">
+                <h6>Margo Decorations</h6>
+                <div class="name-price-sell">
+                    <p id="name-price-per">-20%</p><p class="model-price">&#8377;</p><span id="name-pricetag1">1,16,899</span></div>
+                    <div class="name-price">
+                    <p id="name-currency">M.R.P.:</p>
+                    <p id="name-strikes">&#8377; 1,46,800</p>
+                </div>
+            </div>
+            <div class="button-item">
+                <div class="button1">
+                    <a href="#" class="buttons-add">Add to cart</a>
+                </div>
+                <div class="button2">
+                    <a href="orderNow.html" class="buttons-order">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!----------------------------event 8------------------------------>
+
+        <div class="eventlist">
+            <div class="eventname"><div class="image">
+                <img class="image-img"  src="assets/images/royalfour.jpg" alt="Bricks">
+                <div class="image-click image__overlay--primary">
+                    <button class="image-view" id="beach8"> <i class="fa-solid fa-eye"></i><p>View</p></button>
+                </div>
+            </div>
+
+            </div> 
+            <!--Pop-up opens-->
+            <div id="myModal7" class="modal">
+                
+                <div class="modal-content">
+                    <span class="close7" id="close">&times;</span>
+
+                    <div class="display-details">
+                    <div class="model-display">
+                        <img class="model-img" src="assets/images/royalfour.jpg">
+                    </div>
+                    <div class="model-display">
+                        <h2>Ibhu Decorations</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><span class="count">324</span>
+                        <div class="price-sell">
+                            <p id="price-per">-11%</p><p class="model-price">&#8377;</p><span id="pricetag1">2,65,299</span></div>
+                            <div class="price">
+                            <p id="currency">M.R.P.:</p>
+                            <p id="strikes">&#8377; 3,00,799</p></div>
+                    
+                        <div class="location1"><i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <p>preferred location</p>
+                        </div>
+                        <div class="call1">
+                            <i class="fa-sharp fa-solid fa-phone"></i>
+                            <a href="#">9734679978</a>
+                        </div>
+                        <div class="model-email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#">ibhudecors@gmail.com</a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="model-display">
+                        <h3 id="model-highlights">Highlights</h3>
+                            <ul class="high-list">
+                                <li>Stage dimension  20′ x 10′</li>
+                                <li>Made of Cotton Cloths</li>
+                                <li>Color : Preferred Color</li>
+                                <li>Natural Flowers</li>
+                                <li>Wooden Stricks</li>
+                            </ul>
+                        </h5>
+                    </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            <!--pop-up close -->
+
+
+            <div class="name">
+                <h6>Ibhu Decorations</h6>
+                <div class="name-price-sell">
+                    <p id="name-price-per">-11%</p><p class="model-price">&#8377;</p><span id="name-pricetag1">2,65,299</span></div>
+                    <div class="name-price">
+                    <p id="name-currency">M.R.P.:</p>
+                    <p id="name-strikes">&#8377; 3,00,800</p>
+                </div>
+            </div>
+            <div class="button-item">
+                <div class="button1">
+                    <a href="#" class="buttons-add">Add to cart</a>
+                </div>
+                <div class="button2">
+                    <a href="orderNow.html" class="buttons-order">Order Now</a>
+                </div>
+            </div>
+        </div>
+<!----------------------------event 9------------------------------>
+
+<div class="eventlist">
+    <div class="eventname"><div class="image">
+        <img class="image-img"  src="assets/images/royaleleven.jpg" alt="Bricks">
+        <div class="image-click image__overlay--primary">
+            <button class="image-view" id="beach9"> <i class="fa-solid fa-eye"></i><p>View</p></button>
+        </div>
+    </div>
+
+    </div> 
+    <!--Pop-up opens-->
+    <div id="myModal8" class="modal">
+        
+        <div class="modal-content">
+            <span class="close8" id="close">&times;</span>
+
+            <div class="display-details">
+            <div class="model-display">
+                <img class="model-img" src="assets/images/royaleleven.jpg">
+            </div>
+            <div class="model-display">
+                <h2>Ibhu Decorations</h2>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="count">324</span>
+                <div class="price-sell">
+                    <p id="price-per">-16%</p><p class="model-price">&#8377;</p><span id="pricetag1">1,58,799</span></div>
+                    <div class="price">
+                    <p id="currency">M.R.P.:</p>
+                    <p id="strikes">&#8377; 1,89,999</p></div>
+            
+                <div class="location1"><i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <p>preferred location</p>
+                </div>
+                <div class="call1">
+                    <i class="fa-sharp fa-solid fa-phone"></i>
+                    <a href="#">9734679978</a>
+                </div>
+                <div class="model-email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="#">ibhudecors@gmail.com</a>
+                </div>
+                
+            </div>
+            
+            <div class="model-display">
+                <h3 id="model-highlights">Highlights</h3>
+                    <ul class="high-list">
+                        <li>Stage dimension  20′ x 10′</li>
+                        <li>Made of Cotton Cloths</li>
+                        <li>Color : Preferred Color</li>
+                        <li>Natural Flowers</li>
+                        <li>Wooden Stricks</li>
+                    </ul>
+                </h5>
+            </div>
+
+            </div>
+        </div>
+        
+    </div>
+    <!--pop-up close -->
+
+
+    <div class="name">
+        <h6>Ibhu Decorations</h6>
+        <div class="name-price-sell">
+            <p id="name-price-per">-16%</p><p class="model-price">&#8377;</p><span id="name-pricetag1">1,58,799</span></div>
+            <div class="name-price">
+            <p id="name-currency">M.R.P.:</p>
+            <p id="name-strikes">&#8377; 1,89,999</p>
+        </div>
+    </div>
+    <div class="button-item">
+        <div class="button1">
+            <a href="#" class="buttons-add">Add to cart</a>
+        </div>
+        <div class="button2">
+            <a href="orderNow.html" class="buttons-order">Order Now</a>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+
+    <!--Footer part-->
+    <footer>
+
+        <div class="footercontainer">
+            <div class="footcontent">
+                <h1 class="footertitle">Kettimelam </h1>
+                <p>Best wedding planner of south india where you can get a complete plan for your wedding done with your
+                    budget.
+                    This is the place to fullfil your dream wedding with heartful of emotions and mindful of
+                    satisfaction.
+                </p><br>
+
+            </div>
+            <div class="footcontent">
+                <h3>Search Us </h3>
+                <a href="#">Instagram </a><br>
+                <a href="#">You Tube</a><br>
+                <a href="#">Twitter</a><br>
+                <a href="#">Facebook</a><br>
+
+            </div>
+            <div class="footcontent">
+                <h3>More on wedding</h3>
+                <a href="#">Food </a><br>
+                <a href="#">Decoration</a><br>
+                <a href="#photography">photography</a><br>
+                <a href="#">Make over</a><br>
+                <a href="#">Reviews</a><br>
+
+
+            </div>
+            <div class="footcontent">
+                <h2>STAY CONNECTED</h2>
+                <form class="contacthere">
+                    <div class="maillogo">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input type="email" class="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="typehere">
+                        <textarea id="typehere" class="typehere" class="text" required
+                            placeholder="Type Something"></textarea>
+                    </div>
+                    <div class="mailsubmit">
+                        <button type="submit" class="mailsubmit" id="mailsubmit">Send</button>
+                    </div>
+
+
+                </form>
+
+
+            </div>
+        </div>
+        <hr>
+        <p id="copyright">Copyright &#169; 2022 - Kettimelam</p>
+    </footer>
+    <img onclick="topFunction()" id="myScroll" class="scroll"src="assets/images/scrolltop.png">
+
+</body>
+<script src="royal.js"></script>
+
+</html>
