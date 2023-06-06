@@ -1,0 +1,115 @@
+<style>
+    header{
+    position: fixed;
+    top:0; left:0; right:0;
+    height: 70px;
+    background:#181E27;
+    padding: 0px 7%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+ }
+header .logo{
+    font-weight: bolder;
+    font-size:25px;
+    color:#F5F5F5;
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float:left;
+}
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 12px 20px;
+    color: #F5F5F5;
+    display: block;
+}
+header .navbar ul li a:hover{
+    background: #f5f5f5;
+    color: #181E27;
+    border-radius: 15px;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left:0;
+    width:180px;
+    background: #181E27;
+    display: none;
+}
+header .navbar ul li ul li{
+    width:100%; 
+}
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+header .navbar ul li ul li:hover{
+      background: #181E27;
+      color: #F5F5F5;
+      border-radius: 0;
+}
+header .navbar .login{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-left: 250px;
+    background-color: #F5F5F5;
+    color: #181E27;
+    border-radius: 10px;
+}
+.icon{
+    padding-right: 5px;
+    font-size: 20px;
+}
+.cart-box{
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    padding-left: 50px;
+}
+.cart-count{
+    background-color: #39393b;
+    top: -2px;
+    right: 0;
+    padding: 3px;
+    margin-left: 15px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+}
+#cart-icon{
+    font-size: 20px;
+    cursor: pointer;
+    padding-top: -3px;
+} 
+</style>
+<header id="header">
+    <div class="logo">Laptop Shopify</div>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar"><span class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+<nav class="navbar">
+    <ul>
+        <li><a href="#"><span class="icon"><i class="fa-solid fa-house"></i></span>Home</a></li>
+        <li>
+            <a href="#"><span class="icon"><i class="fa-solid fa-bag-shopping"></i></span>Shop</a>
+            <ul>
+                <li><a href="products.html"><span class="icon"><i class="fa-solid fa-laptop"></i></span>Laptops</a></li>
+                <li><a href="table.html"><span class="icon"><i class="fa-solid fa-tag"></i></span>Product list</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html"><span class="icon"><i class="fa-solid fa-address-book"></i></span>Contacts</a></li>
+        <li><a href="#footer"><span class="icon"><i class="fa-solid fa-circle-info"></i></span>About us</a></li>
+        <li><a href="login.html" class="login"><span class="icon"><i class="fa-solid fa-user"></i></span>Login</a></li>
+        <li><div class="cart-box">
+            <div class="cart-count">0</div>
+            <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+        </div>
+    </li>
+    </ul>
+</nav>
+</header>

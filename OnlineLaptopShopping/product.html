@@ -1,0 +1,1934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <link rel="stylesheet" href="products.css">
+    <script src="https://kit.fontawesome.com/254133b75a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">    
+    <script defer src="product.js"></script>
+    <script defer src="cart_items.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+
+            <a href="index.html" class="logo">
+                <img src="assets/lap images/lap-logo.jpg">
+            </a>
+            <div class="logo-name">Shopify</div>
+            <div class="searchbox">
+                <input type="text" id="search" class="search" placeholder="Search you want... ">
+                <span class="search-icon">
+                    <i class="fa fa-search"></i>
+                </span>
+            </div>
+            <div class="cart-box">
+                <div class="cart-count">0</div>
+                <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+            </div>
+
+            <div class="cart">
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-content">
+
+                    <!-- <div class="cart-container">
+                <img src="assets/lap images/Dell inspiron 3511.jpg" class="cart-img">
+                <div class="detail-box">
+                  <div class="cart-lap-model">Dell Inspiron 3511</div>
+                  <div class="price-box">
+                    <div class="cart-price">Rs.53,000</div>
+                     <div class="cart-amt">Rs.53,000</div>
+                 </div>
+                  <input type="number" value="1" class="cart-quantity">
+                </div>
+                <i class="fa-solid fa-trash cart-remove"></i>
+              </div>
+    
+              <div class="cart-container">
+                <img src="assets/lap images/dell inspiron 15.jpg" class="cart-img">
+                <div class="detail-box">
+                  <div class="cart-lap-model">Dell inspiron 15</div>
+                  <div class="price-box">
+                    <div class="cart-price">Rs.62,000</div>
+                     <div class="cart-amt">Rs.62,000</div>
+                 </div>
+                  <input type="number" value="1" class="cart-quantity">
+                </div>
+                  <i class="fa-solid fa-trash cart-remove"></i>
+              </div> -->
+
+                </div>
+                 <div class="empty-cart">
+                    <div class="emptyCart-img">
+                        <img src="assets/lap images/empty_cart.jpeg" height="380" width="350">
+                    </div>
+                    <div class="cart-text">
+                        <h2>Your cart is empty</h2>
+                        <p>Looks like you haven't made your choice yet...</p>
+                    </div>
+                 </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price" id="total-price">₹ 0</div>
+                </div>
+
+                <button class="btn-buy"><a href="checkout.html" onclick="passvalues()">Place Order</a></button>
+
+                <i class="fa-solid fa-xmark" id="cart-close"></i>
+
+            </div>
+        </div>
+    </header>
+     <!-----------Responsive Search Bar---------->
+     <div class="new-searchbox">
+        <input type="text" id="search"
+        class="search" placeholder="Search you want... ">
+        <span class="new-search-icon">
+            <i class="fa fa-search"></i>
+        </span>
+    </div>
+
+    <div class="btn-group">
+        <button class="btn btn-clicked" data-filter="all">All</button>
+        <button class="btn" data-filter="acer">Acer</button>
+        <button class="btn" data-filter="asus">Asus</button>
+        <button class="btn" data-filter="dell">Dell</button>
+        <button class="btn" data-filter="hp">Hp</button>
+        <button class="btn" data-filter="lenovo">Lenovo</button>
+        <button class="btn" data-filter="macbook">MacBook</button>
+    </div>
+
+
+    <!---------------------Products-------------------------->
+
+    <div class="bg"></div>
+    <div class="product-container" id="product-container">
+        <div class="box" data-item="dell">
+            <div class=productid data-productid="1">
+                <div class="title">Dell</div>
+                <div class="image">
+                    <img src="assets/lap images/Dell inspiron 3511.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Dell inspiron 15 3511<br></div>
+
+                    <div class="lap-price">₹ 53,000</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+        </div>
+        <div class="product-description" id="1">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/Dell inspiron 3511.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Dell Inspiron 3511</h2>
+                    <div class="ratings">4.3 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 53,000
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,000 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p> Processor: 12th Gen Intel® i3<br>
+                        OS: Windows 11 Home<br>
+                        Display: 39.6-cm. display Full HD<br>
+                        Memory: 8GB Memory 256 GB SSD<br>
+                        Battery: 7500 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,242/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box" data-item="hp">
+            <div class=productid data-productid="2">
+                <div class="title">Hp</div>
+                <div class="image">
+                    <img src="assets/lap images/hp laptop 14s.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">HP Laptop 14s-dq500</div>
+                    <div class="lap-price">₹ 62,000</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+        </div>
+        <div class="product-description" id="2">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/hp laptop 14s.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">HP Laptop 14s-dq500</h2>
+                    <div class="ratings">4.7 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 62,000
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 1,800 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p> Processor: 12th Gen Intel i5<br>
+                        OS: Windows 11 Home<br>
+                        Display: 35.6-cm. diagonal FHD display <br>
+                        Memory: 8GB Memory 512 GB SSD<br>
+                        Battery: 8000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,242/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-item="asus">
+            <div class=productid data-productid="3">
+                <div class="title">Asus</div>
+                <div class="image">
+                    <img src="assets/lap images/asus zen1.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Asus VivoBook ultra k14<br></div>
+                    <div class="lap-price">₹ 59,000</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+        </div>
+        <div class="product-description" id="3">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/asus zen1.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Asus VivoBook ultra k14</h2>
+                    <div class="ratings">4.2 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 59,000
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 1,500 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p> Processor: 11th Gen Intel® i5<br>
+                        OS : Windows 11 Home<br>
+                        Display : 37.6-cm. Anti-glare FHD display<br>
+                        Memory: 16GB Memory 256 GB SSD<br>
+                        Battery: 7500 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,232/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-item="lenovo">
+            <div class="productid" data-productid="4">
+                <div class="title">Lenovo</div>
+                <div class="image">
+                    <img src="assets/lap images/lenovo ideapad flex.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Lenovo IdeaPad Flex 5i<br></div>
+                    <div class="lap-price">₹ 67,000</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+        </div>
+        <div class="product-description" id="4">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/lenovo ideapad flex.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Lenovo IdeaPad Flex 5i</h2>
+                    <div class="ratings">4.7 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 67,000
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,500 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p> Processor: 12th Gen Intel i5<br>
+                        OS : Windows 11 Home<br>
+                        Display : 35.6-cm. Touch display<br>
+                        Memory: 8GB Memory 256 GB SSD<br>
+                        Battery: 8000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-item="hp">
+            <div class="productid" data-productid="5">
+                <div class="title">Hp</div>
+                <div class="image">
+                    <img src="assets/lap images/hp pavilion15.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">HP Pavillion Laptop 15<br></div>
+                    <div class="lap-price">₹ 65,599</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+        </div>
+        <div class="product-description" id="5">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/hp pavilion15.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">HP Pavillion Laptop 15</h2>
+                    <div class="ratings">4.5 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 65,599
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,600 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p> Processor: 12th Gen Intel i5<br>
+                        OS : Windows 11 Home<br>
+                        Display : 35.6-cm. FHD display<br>
+                        Memory: 8GB Memory 256 GB SSD<br>
+                        Battery: 9000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-item="dell">
+            <div class="productid" data-productid="6">
+                <div class="title">Dell</div>
+                <div class="image">
+                    <img src="assets/lap images/dell inspiron 15.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Dell Inspiron 15<br></div>
+                    <div class="lap-price">₹ 63,599</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="6">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/dell inspiron 15.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Dell Inspiron 15</h2>
+                    <div class="ratings">4.4 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 63,599
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 12th Gen Intel i5<br>
+                        OS : Windows 11 Home<br>
+                        Display : 35.6-cm. FHD display<br>
+                        Memory: 8GB Memory 256 GB SSD<br>
+                        Battery: 9000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-item="acer">
+            <div class="productid" data-productid="7">
+                <div class="title">Acer</div>
+                <div class="image">
+                    <img src="assets/lap images/Acer 22.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Acer 22<br></div>
+                    <div class="lap-price">₹ 43,599</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="7">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/Acer 22.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Acer 22</h2>
+                    <div class="ratings">4.4 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 43,599
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 11th Gen Intel i5<br>
+                        OS : Windows 11 Home<br>
+                        Display : 35.6-cm. FHD display<br>
+                        Memory: 4GB Memory 256 GB SSD<br>
+                        Battery: 7000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-item="macbook">
+            <div class="productid" data-productid="8">
+                <div class="title">Macbook</div>
+                <div class="image">
+                    <img src="assets/lap images/Macbook pro 22.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Macbook pro 22<br></div>
+                    <div class="lap-price">₹ 2,45,599</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="8">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/Macbook pro 22.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Macbook pro 22</h2>
+                    <div class="ratings">4.4 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 2,45,599
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: M1 Pro<br>
+                        OS : Mac OS<br>
+                        Display : 34.6-cm. FHD display<br>
+                        Memory: 16GB Memory 1TB SSD<br>
+                        Battery: 9000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-item="lenovo">
+            <div class="productid" data-productid="9">
+                <div class="title">Lenovo</div>
+                <div class="image">
+                    <img src="assets/lap images/lenovo am2647.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Lenovo AM 2647<br></div>
+                    <div class="lap-price">₹ 1,05,250</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="9">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/lenovo am2647.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Lenovo AM 2647</h2>
+                    <div class="ratings">4.4 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 1,05,250
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 11th Gen Intel i7<br>
+                        OS : Windows 11 Home<br>
+                        Display : 36.6-cm. FHD display<br>
+                        Memory: 16GB Memory 1TB SSD<br>
+                        Battery: 9000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-item="acer">
+            <div class="productid" data-productid="10">
+                <div class="title">Acer</div>
+                <div class="image">
+                    <img src="assets/lap images/Acer pro 2647.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Acer pro 2647<br></div>
+                    <div class="lap-price">₹ 42,000</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="10">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/Acer pro 2647.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Acer Pro 2647</h2>
+                    <div class="ratings">4.4 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 42,000
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 10th Gen Intel i3<br>
+                        OS : Windows 10 Home<br>
+                        Display : 36.6-cm. FHD display<br>
+                        Memory: 4GB Memory 256 GB SSD<br>
+                        Battery: 6000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-item="asus">
+            <div class="productid" data-productid="11">
+                <div class="title">Asus</div>
+                <div class="image">
+                    <img src="assets/lap images/Asus Hero 1.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Asus Hero 1<br></div>
+                    <div class="lap-price">₹ 77,499</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="11">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/Asus Hero 1.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Asus Hero 1</h2>
+                    <div class="ratings">4.4 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 77,499
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 10th Gen Intel i7<br>
+                        OS : Windows 11 Home<br>
+                        Display : 34.4-cm. FHD display<br>
+                        Memory: 8GB Memory 512 GB SSD<br>
+                        Battery: 6500 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-item="hp">
+            <div class="productid" data-productid="12">
+                <div class="title">HP</div>
+                <div class="image">
+                    <img src="assets/lap images/HP ZenZ.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">HP ZenZ<br></div>
+                    <div class="lap-price">₹ 80,499</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="12">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/HP ZenZ.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">HP ZenZ</h2>
+                    <div class="ratings">4.4 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 80,499
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 11th Gen Intel i7<br>
+                        OS : Windows 11 Home<br>
+                        Display : 34.4-cm. FHD display<br>
+                        Memory: 8GB Memory 512 GB SSD<br>
+                        Battery: 8000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="macbook">
+            <div class="productid" data-productid="13">
+                <div class="title">MacBook</div>
+                <div class="image">
+                    <img src="assets/lap images/macbook 1Z.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Macbook 1Z<br></div>
+                    <div class="lap-price">₹ 97,250</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="13">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/macbook 1Z.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Macbook 1Z</h2>
+                    <div class="ratings">4.4 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 97,250
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: M2 Pro<br>
+                        OS : Mac OS<br>
+                        Display : 34.4-cm. FHD display<br>
+                        Memory: 8GB Memory 512 GB SSD<br>
+                        Battery: 8000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-item="dell">
+            <div class="productid" data-productid="14">
+                <div class="title">Dell</div>
+                <div class="image">
+                    <img src="assets/lap images/Dell sonic.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Dell Sonic 1<br></div>
+                    <div class="lap-price">₹ 92,499</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="14">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/Dell sonic.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Dell Sonic 1</h2>
+                    <div class="ratings">4.4 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 92,499
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 11th Gen Intel i7<br>
+                        OS : Windows 11 Home<br>
+                        Display : 36.4-cm. FHD display<br>
+                        Memory: 16GB Memory 1TB SSD<br>
+                        Battery: 7500 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-item="lenovo">
+            <div class="productid" data-productid="15">
+                <div class="title">Lenovo</div>
+                <div class="image">
+                    <img src="assets/lap images/Lenovo King1.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Lenovo King 1<br></div>
+                    <div class="lap-price">₹ 86,755</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="15">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/Lenovo King1.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Lenovo King 1</h2>
+                    <div class="ratings">4.4 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 86,755
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 11th Gen Intel i7<br>
+                        OS : Windows 11 Home<br>
+                        Display : 36.6-cm. FHD display<br>
+                        Memory: 8GB Memory 512 GB SSD<br>
+                        Battery: 7500 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="hp">
+            <div class="productid" data-productid="16">
+                <div class="title">HP</div>
+                <div class="image">
+                    <img src="assets/lap images/hp pavilion 2.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">HP Pavilion 2<br></div>
+                    <div class="lap-price">₹ 42,000</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="16">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/hp pavilion 2.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">HP Pavilion 2</h2>
+                    <div class="ratings">4.2 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 42,000
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 10th Gen Intel i3<br>
+                        OS : Windows 10 Home<br>
+                        Display : 35.6-cm. FHD display<br>
+                        Memory: 4GB Memory 512 GB SSD<br>
+                        Battery: 6000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="asus">
+            <div class="productid" data-productid="17">
+                <div class="title">Asus</div>
+                <div class="image">
+                    <img src="assets/lap images/asus phoneix.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Asus Phoneix<br></div>
+                    <div class="lap-price">₹ 88,000</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="17">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/asus phoneix.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Asus Phoneix</h2>
+                    <div class="ratings">4.1 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 88,000
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 11th Gen Intel i7<br>
+                        OS : Windows 11 Home<br>
+                        Display : 35.6-cm. FHD display<br>
+                        Memory: 8GB Memory 512 GB SSD<br>
+                        Battery: 85000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="dell">
+            <div class="productid" data-productid="18">
+                <div class="title">Dell</div>
+                <div class="image">
+                    <img src="assets/lap images/dell bee26.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Dell Bee 26<br></div>
+                    <div class="lap-price">₹ 43,599</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="18">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/dell bee26.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Dell Bee 26</h2>
+                    <div class="ratings">4.5 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 43,599
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 10th Gen Intel i3<br>
+                        OS : Windows 10 Home<br>
+                        Display : 35.6-cm. FHD display<br>
+                        Memory: 4GB Memory 256 GB SSD<br>
+                        Battery: 6000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="acer">
+            <div class="productid" data-productid="19">
+                <div class="title">Acer</div>
+                <div class="image">
+                    <img src="assets/lap images/acer max.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Acer Max<br></div>
+                    <div class="lap-price">₹ 77,000</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="19">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/acer max.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Acer Max</h2>
+                    <div class="ratings">4.3 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 77,000
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 11th Gen Intel i7<br>
+                        OS : Windows 11 Home<br>
+                        Display : 36.6-cm. FHD display<br>
+                        Memory: 8GB Memory 512 GB SSD<br>
+                        Battery: 7000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="lenovo">
+            <div class="productid" data-productid="20">
+                <div class="title">Lenovo</div>
+                <div class="image">
+                    <img src="assets/lap images/lenovo 10.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Lenovo 10<br></div>
+                    <div class="lap-price">₹ 87,000</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="20">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/lenovo 10.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Lenovo 10</h2>
+                    <div class="ratings">4.5 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 87,000
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 10th Gen Intel i7<br>
+                        OS : Windows 11 Home<br>
+                        Display : 36.6-cm. FHD display<br>
+                        Memory: 8GB Memory 512 GB SSD<br>
+                        Battery: 7500 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="asus">
+            <div class="productid" data-productid="21">
+                <div class="title">Asus</div>
+                <div class="image">
+                    <img src="assets/lap images/asus zen1.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Asus Zen 1<br></div>
+                    <div class="lap-price">₹ 92,499</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="21">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/asus zen1.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Asus Zen 1</h2>
+                    <div class="ratings">4.5 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 92,499
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 11th Gen Intel i7<br>
+                        OS : Windows 11 Home<br>
+                        Display : 34.4-cm. FHD display<br>
+                        Memory: 8GB Memory 512 GB SSD<br>
+                        Battery: 9000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="macbook">
+            <div class="productid" data-productid="22">
+                <div class="title">MacBook</div>
+                <div class="image">
+                    <img src="assets/lap images/macbook air.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">MacBook Air<br></div>
+                    <div class="lap-price">₹ 1,02,499</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="22">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/macbook air.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">MacBook Air</h2>
+                    <div class="ratings">4.5 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 1,02,499
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: M1 Max<br>
+                        OS : Mac OS<br>
+                        Display : 34.4-cm. FHD display<br>
+                        Memory: 8GB Memory 512 GB SSD<br>
+                        Battery: 7500 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="hp">
+            <div class="productid" data-productid="23">
+                <div class="title">HP</div>
+                <div class="image">
+                    <img src="assets/lap images/hp think3.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">HP Think 3<br></div>
+                    <div class="lap-price">₹ 58,000</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="23">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/hp think3.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">HP Think 3</h2>
+                    <div class="ratings">4.0 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 58,000
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 11th Gen Intel i5<br>
+                        OS : Windows 10 Home<br>
+                        Display : 35.6-cm. FHD display<br>
+                        Memory: 8GB Memory 512 GB SSD<br>
+                        Battery: 7500 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="lenovo">
+            <div class="productid" data-productid="24">
+                <div class="title">Lenovo</div>
+                <div class="image">
+                    <img src="assets/lap images/lenovo 10i.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Lenovo 10i<br></div>
+                    <div class="lap-price">₹ 1,07,000</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="24">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/lenovo 10i.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Lenovo 10i</h2>
+                    <div class="ratings">4.8 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 1,07,000
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 10th Gen Intel i7<br>
+                        OS : Windows 11 Home<br>
+                        Display : 36.6-cm. FHD display<br>
+                        Memory: 16GB Memory 1TB SSD<br>
+                        Battery: 9000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="macbook">
+            <div class="productid" data-productid="25">
+                <div class="title">MacBook</div>
+                <div class="image">
+                    <img src="assets/lap images/macbook air pro.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Macbook Air Pro<br></div>
+                    <div class="lap-price">₹ 1,28,499</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="25">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/macbook air pro.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Macbook Air Pro</h2>
+                    <div class="ratings">4.5 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 1,28,499
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: M2 Max<br>
+                        OS : Mac OS<br>
+                        Display : 35.4-cm. FHD display<br>
+                        Memory: 16GB Memory 1TB SSD<br>
+                        Battery: 9000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="dell">
+            <div class="productid" data-productid="26">
+                <div class="title">Dell</div>
+                <div class="image">
+                    <img src="assets/lap images/dell zion2.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Dell Zion 2<br></div>
+                    <div class="lap-price">₹ 56,599</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="26">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/dell zion2.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Dell Zion 2</h2>
+                    <div class="ratings">4.5 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 56,599
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 10th Gen Intel i5<br>
+                        OS : Windows 10 Home<br>
+                        Display : 35.6-cm. FHD display<br>
+                        Memory: 8GB Memory 512 GB SSD<br>
+                        Battery: 6500 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="acer">
+            <div class="productid" data-productid="27">
+                <div class="title">Acer</div>
+                <div class="image">
+                    <img src="assets/lap images/acer legion.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Acer Legion<br></div>
+                    <div class="lap-price">₹ 1,10,000</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="27">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/acer legion.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Acer Legion</h2>
+                    <div class="ratings">4.7 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 1,10,000
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 11th Gen Intel i7<br>
+                        OS : Windows 11 Home<br>
+                        Display : 36.6-cm. FHD display<br>
+                        Memory: 16GB Memory 1TB GB SSD<br>
+                        Battery: 8500 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="asus">
+            <div class="productid" data-productid="28">
+                <div class="title">Asus</div>
+                <div class="image">
+                    <img src="assets/lap images/asus g1.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Asus G1<br></div>
+                    <div class="lap-price">₹ 38,499</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="28">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/asus g1.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Asus G1</h2>
+                    <div class="ratings">4.2 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 38,499
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 10th Gen Intel i3<br>
+                        OS : Windows 10 Home<br>
+                        Display : 34.4-cm. FHD display<br>
+                        Memory: 4GB Memory 264 GB SSD<br>
+                        Battery: 5500 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-item="lenovo">
+            <div class="productid" data-productid="29">
+                <div class="title">Lenovo</div>
+                <div class="image">
+                    <img src="assets/lap images/lenovo gforce.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Lenovo GForce<br></div>
+                    <div class="lap-price">₹ 75,000</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="29">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/lenovo gforce.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Lenovo GForce</h2>
+                    <div class="ratings">4.6 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 75,000
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: 11th Gen Intel i5<br>
+                        OS : Windows 10 Home<br>
+                        Display : 36.6-cm. FHD display<br>
+                        Memory: 8GB Memory 512GB SSD<br>
+                        Battery: 7000 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box" data-item="macbook">
+            <div class="productid" data-productid="30">
+                <div class="title">Macbook</div>
+                <div class="image">
+                    <img src="assets/lap images/macbook pro 3.jpg" class="lap-img" width="330" height="200">
+                </div>
+                <div class="text">
+                    <div class="lap-model">Macbook Pro 3<br></div>
+                    <div class="lap-price">₹ 1,02,500</div>
+                </div>
+            </div>
+            <button class="cart-button">
+                <div class="add-cart">
+                    <span>Add to cart </span><i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </button>
+
+        </div>
+        <div class="product-description" id="30">
+            <div class="description-close" id="description-close">
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </div>
+            <div class="info">
+                <div class="description-image">
+                    <img src="assets/lap images/macbook pro 3.jpg" alt="product" width="280px" height="200px">
+                </div>
+                <div class="description">
+                    <h2 class="subtitle">Macbook Pro 3</h2>
+                    <div class="ratings">4.7 <span class="fa fa-star checked"></span></div>
+                    <div class="full-price">
+                        ₹ 1,02,500
+                    </div>
+                    <div class="taxes">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="save-price">You save ₹ 2,300 </div>
+                    <div class="abt-delivery">Delivery in 3-4 days</div>
+                </div>
+            </div>
+            <div class="specification">
+                <div class="more-info">
+                    <h3>Specifications</h3>
+                    <p>
+                        Processor: M2 Max<br>
+                        OS : Mac OS<br>
+                        Display : 35.4-cm. FHD display<br>
+                        Memory: 8GB Memory 1TB SSD<br>
+                        Battery: 8800 mAh battery
+                    </p>
+                </div>
+                <div class="payment-info">
+                    <h3>Easy Payment options</h3>
+                    <p>
+                        No cost EMI starting from ₹4,300/month<br>
+                        Cash on Delivery<br>
+                        Net banking & Credit/ Debit/ ATM card
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="load-more" class="load-btn">
+        <div class="load-more">
+            Load more
+        </div>
+    </div>
+
+</body>
+
+</html>
