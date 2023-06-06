@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grozzy World Product</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js" async></script>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+/* header style*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+/* header style*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  margin: 50px;
+  background: linear-gradient(
+    -40deg,
+    #ff7396 18%,
+    #f4e06d 48%,
+    #fff89c 59%,
+    #c3f8ff 100%
+  );
+  font-family: 'Poppins', sans-serif;
+}
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index:0;
+  background: #fff;
+  display: flex;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.header .logo {
+  font-size: 1.7rem;
+  color: black;
+  padding: 15px;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.header .navbar ul {
+  list-style: none;
+}
+
+.header .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.header .navbar ul li:hover ul {
+  display: block;
+}
+.header .navbar li a{
+  font-size: 20px;
+  color: #666;
+ padding: 20px;
+  display: block;
+  --b: 0.1em;
+  /* the thickness of the line */
+  --c: #1095c1;
+  /* the color */
+
+  color: #0000;
+  padding-block: var(--b);
+  background:
+      linear-gradient(var(--c) 50%, #000 0) 0% calc(100% - var(--_p, 0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p, 0%)/var(--_p, 0%) var(--b) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: .3s var(--_s, 0s) linear, background-size .3s calc(.3s - var(--_s, 0s));
+}
+
+.header .navbar li a:hover {
+  --_p: 100%;
+  --_s: .3s;
+}
+/*.header .navbar ul li a {
+  font-size: 1.7rem;
+  color: #666;
+  padding: 20px;
+  display: block;
+}
+
+.header .navbar ul li a:hover {
+  background: #eee;
+}*/
+
+.header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 20rem;
+  background: #fff;
+  display: none;
+}
+.header .navbar ul li{
+  padding-top: 20px;
+}
+.header .navbar ul li ul li {
+  width: 100%;
+}
+
+.header .icons div,
+.header .icons a {
+  font-size: 2.5rem;
+  color: #333;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.header .icons div:hover,
+.header .icons a:hover {
+  color: #e84393;
+}
+#menu-btn {
+  display: none;
+}
+
+.content-section{
+  background-color: rgb(255, 255, 255, 0.8);
+}
+
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    
+}
+.section-header {
+    text-align: center;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #7456df 0%,
+    #68c1e7 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  
+      font-size: 40px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.btn {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+   
+}
+
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+.shop-item {
+    margin: 30px;
+    height: 100%;
+  overflow: hidden;
+  
+}
+
+.shop-item img{
+  transition: transform .5s ease;
+}
+.shop-item:hover img{
+  transform: scale(0.5);
+}
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color:#CC4C4C;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: auto;
+    font-size: 1.75em;
+}
+footer {
+  background-color: rgb(255, 255, 255, 0.8);
+  padding-bottom: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+footer .box-container {
+  border: 0px solid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  column-gap: 20px;
+}
+footer .box-container .box h3 {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.715);;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+footer .box-container .box i {
+  color: #1fd81f;
+  padding-right: 10px;
+}
+footer .box-container .box .links {
+  display: block;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.715);
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+footer .box-container .box .links:hover i {
+  padding-right: 20px;
+  color: #dd5e89;
+}
+footer .box-container .box p {
+  line-height: 25px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.715);
+  padding: 5px;
+}
+footer .box-container .box .share a {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 25px;
+  border-color: black;
+  border-radius: 5px;
+  background-color: rgb(128, 128, 128, 0.5);
+}
+footer .box-container .box .share a:hover {
+  background-color: #d68af5;
+}
+footer .box-container .box .email {
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #eee;
+}
+footer .box-container .box .button {
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #eee;
+}
+.stars i{
+  font-size: 20px;
+  color: orange;
+  padding: 10px;
+  margin-bottom: 10px;
+ }
+/*footer*/
+
+
+        </style>
+    </head>
+    <body>
+        
+            <header class="header">
+    
+                <a href="main01.html" class="logo"><img src="..\images\shopping-cart (1).png" width="40px" height="40px"> Grozzy World</a>
+            
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="main01.html">Home</a></li>
+                        <li><a href="about01.html">About</a></li>
+                        <li><a href="#">Shop</a>
+                            <ul>
+                                <li><a href="categories01.html">Categories</a></li>
+                                <li><a href="product02.html">Products</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="offers01.html">Offers</a></li>
+                        <li><a href="contact01.html">Contact</a></li>
+                        <li><a href="login01.html">Sign In</a></li>
+                    </ul>
+                </nav>
+            
+                <div class="icons">
+                    <div id="menu-btn" class="fas fa-bars"></div>
+                </div>
+            
+            </header>
+        <section class="container content-section">
+            <h2 class="section-header">Vegetables</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Tomato</span>
+                    <img class="shop-item-image" src="../images/tomatoes.jpg">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs. </span>
+                        <span class="shop-item-price"> 12</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+                <div class="shop-item">
+                    <span class="shop-item-title">Cauliflower</span>
+                    <img class="shop-item-image" src="../images/image1.webp">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs. </span>
+                        <span class="shop-item-price">30</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Potato</span>
+                    <img class="shop-item-image" src="../images/slide2.jpg">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs.</span>
+                        <span class="shop-item-price">25</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Raddish</span>
+                    <img class="shop-item-image" src="../images/image2.jpg">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star-half-empty'></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs.</span>
+                        <span class="shop-item-price">19</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Onion</span>
+                    <img class="shop-item-image" src="../images/image5.jpg">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star-half-empty'></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs.</span>
+                        <span class="shop-item-price">35</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Lady's Finger</span>
+                    <img class="shop-item-image" src="../images/slide3.jpg">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs.</span>
+                        <span class="shop-item-price">27</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Carrot</span>
+                    <img class="shop-item-image" src="../images/slide5.jpg">
+                    <div class="stars">
+                    <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i></div>
+                    <div class="shop-item-details">
+                        <span>Rs.</span>
+                        <span class="shop-item-price">35</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Fruits</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Apple</span>
+                    <img class="shop-item-image" src="../images/apples-red-fresh-mellow-juicy-perfect-whole-white-desk.jpg">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs.</span>
+                        <span class="shop-item-price">49.5</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Kiwi</span>
+                    <img class="shop-item-image" src="..\images\fresh-kiwi-fruit-isolated.jpg">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs.</span>
+                        <span class="shop-item-price">80</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Strawberry</span>
+                    <img class="shop-item-image" src="..\images\strawberry-berry-levitating-white-background.jpg">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs.</span>
+                        <span class="shop-item-price">76</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Papaya</span>
+                    <img class="shop-item-image" src="../images/papaya-fruit-isolated.jpg">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star-half-empty'></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs.</span>
+                        <span class="shop-item-price">37</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Pomegranate</span>
+                    <img class="shop-item-image" src="..\images\exotic-delicious-pomegranate-white-background.jpg">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs.</span>
+                        <span class="shop-item-price">85</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Orange</span>
+                    <img class="shop-item-image" src="..\images\fresh-orange-isolated-white-back.jpg">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs.</span>
+                        <span class="shop-item-price">48</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Blueberry</span>
+                    <img class="shop-item-image" src="..\images\slide7.jpg">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs.</span>
+                        <span class="shop-item-price">89</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Dairy and Dairy Products</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Paneer</span>
+                    <img class="shop-item-image" src="../images/panner - Copy.jpg">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs.</span>
+                        <span class="shop-item-price">65</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+                <div class="shop-item">
+                    <span class="shop-item-title">Milk</span>
+                    <img class="shop-item-image" src="../images/fresh-milk-mug-jug-wooden-table.jpg">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star-half-empty'></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs.</span>
+                        <span class="shop-item-price">35</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Cheese</span>
+                    <img class="shop-item-image" src="../images/cheddar-cheese-dark-wooden-surface.jpg">
+                    <div class="stars">
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                        <i class='fa fa-star'></i>
+                    </div>
+                    <div class="shop-item-details">
+                        <span>Rs.</span>
+                        <span class="shop-item-price">70</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+        
+                
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">Rs.0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <footer>
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>Grozzy world </h3>
+                    <p>Feel Free To Follow Us On Social Media Handlers All The Links Are Given Below.</p>
+                    <div class="share">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+    
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <h3>Contact Info</h3>
+                    <a href="#" class="links"><i class="fa fa-phone"></i> +91 9350093500</a>
+                    <a href="#" class="links"><i class="fa fa-phone"></i> +91 9360093600</a>
+                    <a href="#" class="links"><i class="fa fa-envelope"></i> grozzyadmin@gmail.com</a>
+                    <a href="#" class="links"><i class="fa fa-map-marker"></i> TamilNadu, India</a>
+                </div>
+    
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="main01.html" class="links"><i class="fa fa-arrow-right"></i> Home</a>
+                <a href="about01.html" class="links"><i class="fa fa-arrow-right"></i> About us</a>
+                <a href="offers01.html" class="links"><i class="fa fa-arrow-right"></i> Offers</a>
+                <a href="contact01.html" class="links"><i class="fa fa-arrow-right"></i> Contact</a>
+                <a href="product02.html" class="links"><i class="fa fa-arrow-right"></i> Shop</a>
+                <a href="login01.html" class="links"><i class="fa fa-arrow-right"></i> Sign In</a>
+            
+                </div>
+    
+                <div class="box">
+                    <h3>Newsletter</h3>
+                    <p>Subsribe For Latest Updates</p>
+                    <input type="email" placeholder="Your Email" class="email">
+                    <input type="submit" value="Subscribe" class="button">
+                    <img src="images/payment-removebg-preview.png" width="300px">
+                </div>
+    
+            </div>
+    
+            
+        </footer>
+        <script>
+            if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready)
+} else {
+    ready()
+}
+
+function ready() {
+    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+    for (var i = 0; i < removeCartItemButtons.length; i++) {
+        var button = removeCartItemButtons[i]
+        button.addEventListener('click', removeCartItem)
+    }
+
+    var quantityInputs = document.getElementsByClassName('cart-quantity-input')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i]
+        input.addEventListener('change', quantityChanged)
+    }
+
+    var addToCartButtons = document.getElementsByClassName('shop-item-button')
+    for (var i = 0; i < addToCartButtons.length; i++) {
+        var button = addToCartButtons[i]
+        button.addEventListener('click', addToCartClicked)
+    }
+
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+}
+
+function purchaseClicked() {
+    alert('Thank you for your purchase')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    while (cartItems.hasChildNodes()) {
+        cartItems.removeChild(cartItems.firstChild)
+    }
+    updateCartTotal()
+}
+
+function removeCartItem(event) {
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.remove()
+    updateCartTotal()
+}
+
+function quantityChanged(event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
+    }
+    updateCartTotal()
+}
+
+function addToCartClicked(event) {
+    var button = event.target
+    var shopItem = button.parentElement.parentElement
+    var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
+    var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
+    var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+    addItemToCart(title, price, imageSrc)
+    updateCartTotal()
+}
+
+function addItemToCart(title, price, imageSrc) {
+    var cartRow = document.createElement('div')
+    cartRow.classList.add('cart-row')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+    for (var i = 0; i < cartItemNames.length; i++) {
+        if (cartItemNames[i].innerText == title) {
+            alert('This item is already added to the cart')
+            return
+        }
+    }
+    var cartRowContents = `
+        <div class="cart-item cart-column">
+            <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+            <span class="cart-item-title">${title}</span>
+        </div>
+        <span class="cart-price cart-column">${price}</span>
+        <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="1">
+            <button class="btn btn-danger" type="button">REMOVE</button>
+        </div>`
+    cartRow.innerHTML = cartRowContents
+    cartItems.append(cartRow)
+    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+}
+
+function updateCartTotal() {
+    var cartItemContainer = document.getElementsByClassName('cart-items')[0]
+    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+    var total = 0
+    for (var i = 0; i < cartRows.length; i++) {
+        var cartRow = cartRows[i]
+        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+        var price = parseFloat(priceElement.innerText.replace('$', ''))
+        var quantity = quantityElement.value
+        total = total + (price * quantity)
+    }
+    total = Math.round(total * 100) / 100
+    document.getElementsByClassName('cart-total-price')[0].innerText = 'Rs.' + total
+}
+        </script>
+
+    </body>
+</html>

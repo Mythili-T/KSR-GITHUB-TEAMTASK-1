@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+/* header style*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  margin: 50px;
+  background: linear-gradient(
+    -40deg,
+    #ff7396 18%,
+    #f4e06d 48%,
+    #fff89c 59%,
+    #c3f8ff 100%
+  );
+  font-family: 'Poppins', sans-serif;
+}
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index:0;
+  background: #fff;
+  display: flex;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.header .logo {
+  font-size: 1.7rem;
+  color: #666;
+  padding: 20px;
+  margin-right: auto;
+}
+
+.header .navbar ul {
+  list-style: none;
+}
+
+.header .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.header .navbar ul li:hover ul {
+  display: block;
+}
+.header .navbar li a{
+  font-size: 20px;
+  color: #666;
+ padding: 20px;
+  display: block;
+  --b: 0.1em;
+  /* the thickness of the line */
+  --c: #1095c1;
+  /* the color */
+
+  color: #0000;
+  padding-block: var(--b);
+  background:
+      linear-gradient(var(--c) 50%, #000 0) 0% calc(100% - var(--_p, 0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p, 0%)/var(--_p, 0%) var(--b) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: .3s var(--_s, 0s) linear, background-size .3s calc(.3s - var(--_s, 0s));
+}
+
+.header .navbar li a:hover {
+  --_p: 100%;
+  --_s: .3s;
+}
+/*.header .navbar ul li a {
+  font-size: 1.7rem;
+  color: #666;
+  padding: 20px;
+  display: block;
+}
+
+.header .navbar ul li a:hover {
+  background: #eee;
+}*/
+
+.header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 20rem;
+  background: #fff;
+  display: none;
+}
+.header .navbar ul li{
+  padding-top: 20px;
+}
+.header .navbar ul li ul li {
+  width: 100%;
+}
+
+.header .icons div,
+.header .icons a {
+  font-size: 2.5rem;
+  color: #333;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.header .icons div:hover,
+.header .icons a:hover {
+  color: #e84393;
+}
+#menu-btn {
+  display: none;
+}
+ section{
+  background-color: rgb(255, 255, 255, 0.8);
+  
+  
+ }
+ .reg-header{
+  text-align: center;
+  color: white;
+ }
+ .loginbox{
+    padding-top: 80px;
+ }
+.wrapper{
+    background-color: hsl(225, 85%, 8%,0.8);
+    position: relative;
+    width:30%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25);
+}
+.header {
+    position: relative;
+    text-align: center;
+    
+}
+.header h2 {
+     color: #fff;
+}
+.form {
+    margin: 0 auto;
+    max-width: 16rem;
+    overflow:hidden;
+}
+
+.form-control {
+    padding-bottom: 30px;
+    position: relative;
+}
+.form-control input {
+    border: 1px solid transparent;
+    border-bottom-color: white;
+    background-color: transparent;
+    color: white;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;    
+    }
+    .form-control input:focus {
+        outline: 0;
+        border-bottom-color: #777;    
+    }
+    .form-control.success input {
+        border-bottom-color: #2ecc71;
+    }
+    .form-control.error input {
+        border-bottom-color: #e74c3c;
+    }
+    .form-control i {
+        visibility: hidden;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+    }
+    .form-control.success i.fa-check-circle {
+        color: #2ecc71;
+        visibility: visible;
+    }
+
+    .form-control.error i.fa-times-circle {
+        color: #e74c3c;
+        visibility: visible;
+        
+    }
+
+    .form-control small {
+        color: #e74c3c;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+        font-size: 10px;
+    }
+    .form-control.error small {
+        visibility: visible;
+    }
+    .form button {
+        background: linear-gradient(270deg, #ED765E 0%, #E3BDE5 100%);
+        border-radius: 15px;
+        color: #000;
+        font-size: 1rem;
+        padding: 10px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+  .credit{
+      text-align: center;
+      color: #000;
+      padding-bottom: 90px;
+  }
+
+  .credit a{
+      text-decoration: none;
+      color:#000;
+      font-weight: bold;
+  }  
+  .form-item-triple {
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+    color: #777;
+  }
+  .form-item-triple .radio-label {
+	text-align: left;
+  padding-right: 10px;
+  }
+  .form-item-triple .form-item label, .form-item-triple .form-item input[type="radio"] {
+	margin: 0 4px;
+  }
+
+
+  footer {
+    background-color: rgb(255, 255, 255, 0.8);
+    padding-bottom: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  footer .box-container {
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    column-gap: 15px;
+  }
+  footer .box-container .box h3 {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.715);
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  footer .box-container .box i {
+    color: #1fd81f;
+    padding-right: 10px;
+  }
+  footer .box-container .box .links {
+    display: block;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.715);
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  footer .box-container .box .links:hover i {
+    padding-right: 20px;
+    color: #dd5e89;
+  }
+  footer .box-container .box p {
+    line-height: 25px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.715);
+    padding: 5px;
+  }
+  footer .box-container .box .share a {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+    border-color: black;
+    border-radius: 5px;
+    background-color: rgb(128, 128, 128, 0.5);
+  }
+  footer .box-container .box .share a:hover {
+    background-color: #d68af5;
+  }
+  footer .box-container .box .email {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #eee;
+  }
+  footer .box-container .box .button {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #eee;
+  }
+  .box img{
+    width: 300px;
+  }
