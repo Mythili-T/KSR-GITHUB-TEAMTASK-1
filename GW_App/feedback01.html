@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style01.css">
+  <title>Grozzy World Feedback</title>
+</head>
+<body>
+  <!---------------------------------------------- Header ------------------------------------------>
+  <header>
+    <header class="header">
+
+        <a href="main01.html" class="logo"> LOGO </a>
+    
+        <nav class="navbar">
+            <ul>
+                <li><a href="main01.html">Home</a></li>
+                <li><a href="about01.html">About</a></li>
+                <li><a href="#">Shop</a>
+                    <ul>
+                        <li><a href="#">Catagories</a></li>
+                        <li><a href="product02.html">Products</a></li>
+                    </ul>
+                </li>
+                <li><a href="offers01.html">Offers</a></li>
+                <li><a href="contact01.html">contact</a></li>
+                <li><a href="login01.html">Sign In</a></li>
+            </ul>
+        </nav>
+    
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    
+    </header>
+  <!---------------------------------------------- Header ------------------------------------------->
+  <!---------------------------------------------- Section ------------------------------------------>
+  <section>
+  <div class="feedback-container">
+      <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/feedback1.webp"></div>
+            <div class="swiper-slide"><img src="images/feedback2.png"></div>
+            <div class="swiper-slide"><img src="images/feedback3.png"></div>
+            <div class="swiper-slide"><img src="images/feedback5.jpg"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+     
+  </div>
+  <center>
+  <div class="buttonIn">
+    <textarea id="subject" name="subject" placeholder="Please give your valuable feedback.." ></textarea>
+    <button id="submit" onclick="status()">Submit</button>
+  </div>
+</center>
+  <div class="progress-bar">
+    <p style="font-weight:bold">Progress</p>
+    <div id="myBar"  style="width:0%">0%</div>
+  </div>
+</section>
+<!---------------------------------------------- Section ------------------------------------------>
+<!---------------------------------------------- Script ------------------------------------------>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      autoplay:{
+        delay:2000,
+        disableOnInteraction:false,
+      },
+      loop: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    });
+    function status() {
+      var elem = document.getElementById("myBar");   
+      var width = 0;
+      var id = setInterval(frame, 20);
+      function frame() {
+        if (width >= 100) {
+          clearInterval(id);
+        }
+        else {
+          width++; 
+          elem.style.width = width + '%'; 
+          elem.innerHTML = width * 1  + '%';
+            if(width == 100){
+              elem.innerHTML ='Submitted';
+            }
+        }
+      }
+    }
+  </script>
+  <!---------------------------------------------- Script ------------------------------------------>
+  <footer>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Grozzy world </h3>
+            <p>Feel Free To Follow Us On Social Media Handlers All The Links Are Given Below.</p>
+            <div class="share">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#" class="links"><i class="fa fa-phone"></i> +91 9350093500</a>
+            <a href="#" class="links"><i class="fa fa-phone"></i> +91 9360093600</a>
+            <a href="#" class="links"><i class="fa fa-envelope"></i> grozzyadmin@gmail.com</a>
+            <a href="#" class="links"><i class="fa fa-map-marker"></i> TamilNadu, India</a>
+        </div>
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="main.html" class="links"><i class="fa fa-arrow-right"></i> Home</a>
+            <a href="about11.html" class="links"><i class="fa fa-arrow-right"></i> About us</a>
+            <a href="offer11.html" class="links"><i class="fa fa-arrow-right"></i> Offers</a>
+            <a href="contact11.html" class="links"><i class="fa fa-arrow-right"></i> Contact</a>
+            <a href="feedback11.html" class="links"><i class="fa fa-arrow-right"></i> Feedback</a>
+            <a href="product.html" class="links"><i class="fa fa-arrow-right"></i> Products</a>
+            <a href="reg11.html" class="links"><i class="fa fa-arrow-right"></i> Signup</a>
+        </div>
+
+        <div class="box">
+            <h3>Newsletter</h3>
+            <p>Subsribe For Latest Updates</p>
+            <input type="email" placeholder="Your Email" class="email">
+            <input type="submit" value="Subscribe" class="button">
+            <img src="images/payment-removebg-preview.png" width="400px">
+        </div>
+
+    </div>
+
+</footer>
+</body>
+</html>

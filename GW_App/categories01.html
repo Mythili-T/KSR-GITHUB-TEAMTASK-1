@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grozzy World Home</title>
+    <link rel="stylesheet" href="style01.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    </style>
+    <style>
+        .full-cont {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        }
+
+        .cat-items {
+
+            margin: 20px;
+            padding: 40px;
+            background: rgb(165, 230, 228,0.5);
+  color: rgb(5, 4, 4);
+
+        }
+
+        .cat-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+
+        .cat-content a,
+        h2 {
+            padding-right: 50px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: black;
+        }
+        .cat-content a:hover{
+            color: rgb(234, 75, 199);
+        }
+        .filter {
+            margin: 20px;
+            padding: 50px 0;
+            background: rgba(219, 142, 181, 0.5);
+  color: rgb(5, 4, 4);
+
+        }
+
+        .filter h2 {
+            padding-left: 50px;
+        }
+
+        .popular-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .price-cont {
+            padding-left: 50px;
+        }
+        .Single-product-img{
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+        <header class="header">
+
+            <a href="main01.html" class="logo"><img src="..\images\shopping-cart (1).png" width="40px" height="40px"> Grozzy World</a>
+        
+            <nav class="navbar">
+                <ul>
+                    <li><a href="main01.html">Home</a></li>
+                    <li><a href="about01.html">About</a></li>
+                    <li><a href="#">Shop</a>
+                        <ul>
+                            <li><a href="categories01.html">Categories</a></li>
+                            <li><a href="product02.html">Products</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="offers01.html">Offers</a></li>
+                    <li><a href="contact01.html">Contact</a></li>
+                    <li><a href="login01.html">Sign In</a></li>
+                </ul>
+            </nav>
+        
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+        
+        </header>
+        <section>
+            <div class="cards">
+            </div>
+            <div class="full-cont">
+
+                <div class="category">
+                    <div class="cat-items">
+                        <h2 style="color:rgb(232, 94, 222);">Categories</h2>
+                        <div class="cat-content">
+                            <a href="">Fruits</a>
+                            <p>(10)</p>
+                        </div>
+                        <div class="cat-content">
+                            <a href="">Vegetables</a>
+                            <p>(20)</p>
+                        </div>
+                        <div class="cat-content">
+                            <a href="">Dairy Products</a>
+                            <p>(10)</p>
+                        </div>
+                        <div class="cat-content">
+                            <a href="">Bakery Products</a>
+                            <p>(10)</p>
+                        </div>
+                        <div class="cat-content">
+                            <a href="">Nuts and Seeds</a>
+                            <p>(10)</p>
+                        </div>
+                        <div class="cat-content">
+                            <a href="">Meat</a>
+                            <p>(10)</p>
+                        </div>
+                        <div class="cat-content">
+                            <a href="">Snacks</a>
+                            <p>(10)</p>
+                        </div>
+                        <div class="cat-content">
+                            <a href="">Drinks</a>
+                            <p>(10)</p>
+                        </div>
+                        <div class="cat-content">
+                            <a href="">Masalas</a>
+                            <p>(10)</p>
+                        </div>
+                    </div>
+                    <div class="filter">
+
+                        <h2>Filter</h2>
+                        <div class="filter-cont">
+                            <div class="price-cont">
+                                <input type="range" name="weight" id="range_weight" value="5" min="20" max="300"
+                                    oninput="range_weight_disp.value = range_weight.value"> <span>Rs. 20 - Rs. </span>
+                                <output id="range_weight_disp"></output>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <div class="Single-product-img">
+                    <img src="images/bunch.jpg" width="100%" height="500px" id="main-img">
+                    <div class="small-img-grp">
+                        <div class="small-imgs" onclick="changeimg(this)">
+                           <img src="images/fruit-cat.jpg" width="100%"  id="small1">
+                        </div>
+                        <div class="small-imgs" onclick="changeimg(this)">
+                            <img src="./images/milk-cat.jpg"  width="100%" id="small2" >
+                        </div>
+                        <div class="small-imgs" onclick="changeimg(this)">
+                              <img src="./images/bakery.jpg" width="100%"  id="small3">
+                        </div>
+                        <div class="small-imgs"onclick="changeimg(this)">
+                             <img src="./images/nuts.jpg" width="100%"  id="small4">
+                        </div>
+                    </div>
+                </div>
+                
+</div>
+
+</section>
+<footer>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Grozzy world </h3>
+            <p>Feel Free To Follow Us On Social Media Handlers All The Links Are Given Below.</p>
+            <div class="share">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#" class="links"><i class="fa fa-phone"></i> +91 9350093500</a>
+            <a href="#" class="links"><i class="fa fa-phone"></i> +91 9360093600</a>
+            <a href="#" class="links"><i class="fa fa-envelope"></i> grozzyadmin@gmail.com</a>
+            <a href="#" class="links"><i class="fa fa-map-marker"></i> TamilNadu, India</a>
+        </div>
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="main01.html" class="links"><i class="fa fa-arrow-right"></i> Home</a>
+                <a href="about01.html" class="links"><i class="fa fa-arrow-right"></i> About us</a>
+                <a href="offers01.html" class="links"><i class="fa fa-arrow-right"></i> Offers</a>
+                <a href="contact01.html" class="links"><i class="fa fa-arrow-right"></i> Contact</a>
+                <a href="product02.html" class="links"><i class="fa fa-arrow-right"></i> Shop</a>
+                <a href="login01.html" class="links"><i class="fa fa-arrow-right"></i> Sign In</a>
+            
+            </div>
+
+        <div class="box">
+            <h3>Newsletter</h3>
+            <p>Subsribe For Latest Updates</p>
+            <input type="email" placeholder="Your Email" class="email">
+            <input type="submit" value="Subscribe" class="button">
+            <img src="images/payment-removebg-preview.png" width="300px">
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+<script>
+    function changeimg(event) {
+    document.getElementById("main-img").src = event.children[0].src;
+    }
+</script>
+
+</body>
+
+</html>

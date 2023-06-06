@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Grozzy"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "GW_App"
+	}
+}
