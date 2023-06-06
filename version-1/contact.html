@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="a1">
+            <img src="Images/download.png" alt="">
+            <p>| BOA |</p>
+
+            <h1>
+                Education Loan Management System
+            </h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li class="home"> <a href="home.html">
+                    <p><i class="fa fa-home"></i> Home</p>
+                </a> </li>
+            <li> <a href="about.html">
+                    <p><i class="fa fa-address-book"></i> About</p>
+                </a></li>
+
+            <li><a href="service.html">
+                    <p><i class="fa fa-file-text"></i> service</p>
+                </a>
+                <div class="down">
+
+                    <a href="loanDetails.html">
+                        <p>Loan details </p>
+                    </a>
+                    <!-- <a href="#">
+                        <p>How to get..?</p>
+                    </a> -->
+                </div>
+            </li>
+
+            <li class="contact"> <a href="#">
+                    <p><i class="fa fa-phone"></i> Contact</p>
+                </a> </li>
+                <li> <a href="userlogin.html">
+                    <p><i class="fa fa-sign-in" aria-hidden="true"></i>
+                        Login</p>
+                </a>
+    
+             </li>
+            <!-- <li>
+                <a href="#">
+                    <p><i class="fa fa-user"></i> Account</p>
+                </a>
+                <div class="down">
+
+                    <a href="#">
+                        <p>Profile </p>
+                    </a>
+                    <a href="#">
+                        <p>Logout</p>
+                    </a>
+                </div>
+            </li> -->
+        </ul>
+    </nav>
+    <div class="pic" id="pic">
+        <img src="/Images/contact1.png" alt="">
+    </div>
+    <div class="s">
+        <h2>CONTACT US</h2><br><br>
+        <p>Explain why someone should contact your Bank. Describe how your Bank can help solve the visitors' problems</p>
+    </div>
+    <div class="x">
+        <div class="y1">
+           <img src="/Images/phone.png" alt="" width="30px">
+            <h2>Phone Numbers</h2>
+            <br>
+            <p>+91 8610209535</p>
+            <br>
+            <p>+91 6382523219</p>
+            <br>
+            <p> Toll free: 94899-22628</p>
+        </div>
+        <div class="y1">
+         <img src="/Images/email.png" alt="" width="40px">
+         <h2>Email</h2><br>
+         <p> <a href="#">crazysanty007@gmail.com</a> </p>
+        </div>
+        <div class="y1">
+          <img src="/Images/lo.png" alt="" width="30px">
+          <h2>Address</h2><br>
+          <p>Regus - San Tan Corporate <br>
+            Center II,
+            <br>
+            3100 West Ray Road,<br> 
+            Suite 201, Chandler,<br>
+            Arizona, 85226</p>
+        </div>
+    </div>
+    <div class="s">
+        <h2 style="font-size: 35px;">Drop A Message For Any Query</h2><br><br>
+       <p>Explain why someone should contact your Bank. Describe how your Bank can help solve the visitors' problems</p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your Name" id="name" class="hover">
+        <input type="email" placeholder="Your Email" id="email" class="hover">
+        <br>
+        <input type="text" placeholder="Your Phone" id="phone" class="hover">
+        <input type="text" placeholder="Subject" class="hover">
+        <br>
+        <textarea name="Meassge" id=" Meassge" cols="150" rows="5" placeholder="Message"></textarea>
+        <br>
+        <button>Send Message</button>
+    </div>
+    <footer>
+        <div class="copy">
+            <img src="Images/copyright.png" alt="" width="30px">
+            <p> &nbsp;&nbsp;&nbsp;copyright 2023 | Bank of Aspire</p>
+        </div>
+        <div class="copy1">
+            <p><a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;|
+                <a href="about.html">About</a>&nbsp;&nbsp;&nbsp;|
+                <a href="service.html">Service</a>&nbsp;&nbsp;&nbsp;|
+                <a href="contact.html">Contact Us</a>
+            </p>
+        </div>
+        <div class="copy2">
+            <a href="#"><img src="Images/facebook (1).png" alt="" width="35px"></a>
+            <a href="#"><img src="Images/instagram.png" alt="" width="35px"></a>
+            <a href="#"><img src="Images/email.png" alt="" width="35px"></a>
+        </div>
+        <div class="copy3">
+            <a href="contact.html">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </div>
+    </footer>
+    <script >
+ var div = document.getElementById("pic");
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+function changeColor(){
+  div.style.backgroundColor= getRandomColor();
+}
+setInterval(changeColor,2500);
+// function change() {  
+//    var doc = document.getElementById("pic");  
+//    var color =[ "black", "blue", "brown", "green"];  
+//    for(i=0; i<color.length; i++){  
+//         doc.style.backgroundColor = color[i];  
+//         // alert("my color is "+ color[i]);  
+// /*if (i>=color.length){i=0;}*/  
+//     }
+//  }  
+// setInterval(function changebackground(){change(0)},1000);
+
+
+    </script>
+</body>
+</html>

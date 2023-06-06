@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forget password</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+body{
+    background-color: beige;
+}
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            background-color: white;
+            padding: 3%;
+            border: 2px solid black;
+            margin-top: 12%;
+            margin-left: 40%;
+            margin-right: 40%;
+            border-radius: 30px;
+
+        }
+
+        input,
+        button {
+            /* display: flex; */
+            margin-top: 4%;
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            /* margin: 30%; */
+            padding: 5%;
+        }
+
+        button {
+            margin-top: 15%;
+            margin-left: 28%;
+            padding: 5% 13% 5% 13%;
+            border-radius: 30px;
+            background-color: rgb(137, 245, 214);
+            border: none;
+        }
+    </style>
+
+    <form action="#">
+        <h2>Forgot password</h2>
+        <input type="email" id="forgetEmail" placeholder="EmailID">
+        <input type="password" id="forgetPass" placeholder="New password">
+        <input type="password" id="forgetConpass" placeholder="Confirm password">
+        <button id="forgetSummit">Reset</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loan application form</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_Img">
+            <img src="Images/download.png" alt="">
+            <p>| BOA |</p>
+            <h1>
+                Loan Application form
+            </h1>
+        </div>
+    </header>
+    <div class="navBar">
+        <button onclick="personInfo()" id="backColor1">Personal Details</button>
+
+        <button onclick="studyInfo()" id="backColor2">Study Details</button>
+    
+        <button onclick="accInfo()" id="backColor3">Account Details</button>
+    
+        <button onclick="loanInfo()" id="backColor4">Loan Details</button>
+    
+    </div>
+    
+    <div id="personForm">
+      
+      <form action="">
+        <h2>
+            Personal Details
+        </h2>
+        <h2>___________________________________</h2>
+        <div class="person">
+            <label for="">First name <span>*</span></label>
+            <input type="text" >
+            <label for="">Last name<span></span></label>
+            <input type="text" >
+        </div>
+        <div class="person">
+            <label for="">DOB<span>*</span></label>
+            <input type="date" name="dob" id="dob">
+            <label for="">Age<span>*</span></label>
+            <input type="number" name="" id="age" >
+            <!-- <label for="">Sex<span>*</span></label>
+
+            <input type="checkbox" name="Male"  id="">
+            <label for="Male">Male</label>
+            <input type="checkbox" name="Female" id="">
+            <label for="Female"> Female</label>
+            <input type="checkbox" name="others" id="">
+            <label for="others">others</label> -->
+            
+        </div>
+        <div class="person">
+           <label for="">Father / Guardian name<span>*</span></label>
+           <input type="text">
+           <label for="">Father / Guardian occupation<span>*</span></label>
+           <input type="text">
+        </div>
+        <div class="person">
+            <label for="">Mother name<span></span></label>
+            <input type="text">
+            <label for="">Mother occupation<span></span></label>
+            <input type="text">
+        </div>
+        <div class="person1">
+            <label for="">Address<span>*</span></label>
+            <textarea name="aadress" id="address" cols="31" rows="4"></textarea>
+            <label for="">Sex<span>*</span></label>
+            <select name="" id="select">
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">Others</option>
+            </select>  
+        </div>
+        <div class="person">
+            <label for="">Annual CTC<span>*</span></label>
+            <input type="text">
+            <label for="">Blood group<span>*</span></label>
+            <input type="text">
+        </div>
+        <div class="person">
+            <label for="">Phone NO<span>*</span></label>
+            <input type="tel">
+            <label for="">Email ID<span>*</span></label>
+            <input type="email">
+        </div>
+        <div class="person2">
+            <label for="">Aadhar card<span>*</span></label>
+            <input type="text" id="file">
+            <input type="file" class="file">
+        </div>
+        <div class="person2">
+            <label for="">Ration card<span>*</span></label>
+            <input type="text" id="file">
+            <input type="file" class="file">
+        </div>
+        <!-- <button id="button">Next &#8250;&#8250;</button> -->
+        <input type="button" value="Next  &#8250;&#8250" id="button">
+      </form>
+    </div>
+
+    <div id="studyForm">
+        <form action="">
+            <h2>
+                Study Details
+            </h2>
+            <h2>___________________________________</h2>
+            <h2>SSLC</h2>
+            <div class="person">
+               <label for="">Reg No<span>*</span></label>
+               <input type="text">
+               <label for="">Marksheet No<span>*</span></label>
+               <input type="text">
+           </div>
+           <div class="person">
+               <label for="">School Name<span>*</span></label>
+               <input type="text">
+               <label for="">School District<span>*</span></label>
+               <input type="text">
+           </div>
+           <div class="person">
+               <label for="">Obtained mark<span>*</span></label>
+               <input type="text">
+               <label for="">Passing percentage<span>*</span></label>
+               <input type="text">
+           </div>
+           <div class="person">
+               <label for="">Year of passing<span>*</span></label>
+               <input type="number" minlength="4" maxlength="4">
+               <label for="">Upload your Marksheet<span>*</span></label>
+               <input type="file" id="marksheet">
+           </div>
+           <br>
+           <br>
+           <h2>__________________________________</h2>
+           <h2>HSC</h2>
+            <div class="person">
+               <label for="">Reg No<span>*</span></label>
+               <input type="text">
+               <label for="">Marksheet No<span>*</span></label>
+               <input type="text">
+           </div>
+           <div class="person">
+               <label for="">School Name<span>*</span></label>
+               <input type="text">
+               <label for="">School District<span>*</span></label>
+               <input type="text">
+           </div>
+           <div class="person">
+               <label for="">Obtained mark<span>*</span></label>
+               <input type="text">
+               <label for="">Cut off<span>*</span></label>
+               <input type="text">
+           </div>
+           <div class="person">
+               <label for="">Year of passing<span>*</span></label>
+               <input type="text">
+               <label for="">Upload your Marksheet<span>*</span></label>
+               <input type="file" id="marksheet">
+           </div>
+           <br>
+           <br>
+           <h2>__________________________________</h2>
+           <h2>COLLEGE</h2>
+           <div class="person">
+               <label for="">Reg No<span>*</span></label>
+               <input type="text">
+               <label for="">Upload your College Id<span>*</span></label>
+               <input type="file" id="marksheet">
+           </div>
+           <div class="person">
+               <label for="">College Name<span>*</span></label>
+               <input type="text">
+               <label for="">College Address<span>*</span></label>
+               <textarea name="aadress" id="address" cols="31" rows="4"></textarea>
+           </div>
+           <div class="person">
+               <label for="">Department Name<span>*</span></label>
+               <input type="text">
+               <label for=""> Current Year<span>*</span></label>
+               <input type="text">
+           </div>
+           <div class="person">
+               <label for="">Current Semester<span>*</span></label>
+               <input type="text">
+               <label for="">backLogs<span>*</span></label>
+               <select name="" id="select">
+                   <option value="male">NA</option>
+                   <option value="Female">NHA</option>
+                   <option value="other">SA</option>
+               </select>  
+            </div>
+            <div class="person1">
+                <label for="">Bonafide<span>*</span></label>
+                <input type="file" id="marksheet">
+                <label for="">Fees Structure<span>*</span></label>
+        
+                <input type="file" id="marksheet">
+            </div>
+            <!-- <button id="button">Next &#8250;&#8250;</button> -->
+            <div class="butt">
+                <input type="button" value="&laquo;previous" id="button1">
+                <input type="button" value="Next  &#8250;&#8250" id="button2">
+            </div> 
+        </form>
+    </div>
+
+    <div id="accForm">
+
+       <form action="">
+        <h2>
+            Account Details
+        </h2>
+        <h2>___________________________________</h2>
+        <div class="person">
+            <label for="">Bank name<span>*</span></label>
+            <input type="text">
+            <label for="">breach/Area<span>*</span></label>
+            <input type="text">
+        </div>
+        <div class="person">
+            <label for="">IFSC code<span>*</span></label>
+            <input type="text">
+            <label for="">MICR code<span>*</span></label>
+            <input type="text">
+        </div>
+        <div class="person2">
+            <label for="">Account No<span>*</span></label>
+            <input type="text" id="file">
+            <input type="file" class="file">
+        </div>
+        <div class="person2"><div class="person2">
+            <label for="">PAN card No<span>*</span></label>
+            <input type="text" id="file">
+            <input type="file" class="file">
+        </div>
+        <div class="person2">
+            <label for="">clearances No<span>*</span></label>
+            <input type="text" id="file">
+            <input type="file" class="file">
+        </div>
+        <div class="person1">
+            <label for="">Phone No<span>*</span></label>
+            <input type="text" id="file">
+            <label for="">Photo copy<span>*</span></label>
+            <input type="file" class="file">
+        </div>
+        <div class="person3">
+            <p>Do you have an account on BOA ..?<a href="#">Register Now</a></p>
+        </div>
+        <div class="butt">
+            <input type="button" value="&laquo;previous" id="button1">
+            <input type="button" value="Next  &#8250;&#8250" id="button2">
+        </div>  
+       </form>
+
+    </div>
+
+    <div id="loanForm">
+
+        <form action="">
+            <h2>
+                Account Details
+            </h2>
+            <h2>___________________________________</h2>
+            <div class="person">
+                <label for="">Bank name<span>*</span></label>
+                <input type="text">
+                <label for="">breach/Area<span>*</span></label>
+                <input type="text">
+            </div>
+            <div class="person">
+                <label for="">IFSC code<span>*</span></label>
+                <input type="text">
+                <label for="">MICR code<span>*</span></label>
+                <input type="text">
+            </div>
+            <div class="person2">
+                <label for="">Account No<span>*</span></label>
+                <input type="text" id="file">
+                <input type="file" class="file">
+            </div>
+            <div class="person2"><div class="person2">
+                <label for="">PAN card No<span>*</span></label>
+                <input type="text" id="file">
+                <input type="file" class="file">
+            </div>
+            <div class="person2">
+                <label for="">clearances No<span>*</span></label>
+                <input type="text" id="file">
+                <input type="file" class="file">
+            </div>
+            <div class="person1">
+                <label for="">Phone No<span>*</span></label>
+                <input type="text" id="file">
+                <label for="">Photo copy<span>*</span></label>
+                <input type="file" class="file">
+            </div>
+            <div class="person3">
+                <p>Do you have an account on BOA ..?<a href="#">Register Now</a></p>
+            </div>
+            <div class="butt">
+                <input type="button" value="&laquo;previous" id="button1">
+                <input type="button" value="Next  &#8250;&#8250" id="button2">
+            </div>  
+           </form>
+ 
+     </div>
+
+     <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="userlogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>login</title>
+</head>
+
+<body>
+    <div class="u">
+        <img src="Images/userlogo.png" alt="" width="80px">
+        <p>login / <a href="/home.html">Home page</a> </p>
+    </div>
+    <div class="u1">
+        <img src="Images/userlogo2.png" alt="" width="15%">
+    </div>
+    <form action="#">
+        <div class="u2">
+            <i class="fa fa-user" aria-hidden="true"></i> <input type="text" onkeyup="validateUser()"
+                placeholder="Username" id="username">
+            <p id="user" style="position:absolute; color:red; padding-left:1.5%; margin-top: 0.2%;"></p>
+        </div>
+        <div class="u3">
+            <i class="fa fa-key" aria-hidden="true"></i> <input type="password" onkeyup="validatePassword()"
+                placeholder="Password" id="password">
+            <p id="pass" style="position:absolute; color:red; padding-left:1.5%; margin-top: 0.2%;"></p>
+            <br>
+            <br>
+            <p onclick="openForm()"> Forgot
+                    Password?</p>
+        </div>
+        
+        <div class="bu">
+            <button class="u4" type="submit" onclick="validate()"> Login</button>
+            <div class="u5">
+                <p>OR</p>
+            </div>
+            <button class="u6"><a href="userRegister.html">Register</a> </button>
+        </div>
+
+    </form>
+    <div class="loginPopup">
+    <div class="formPopup" id="popupForm">
+        <div class="formContainer">
+          <h2>Forgot Password?</h2>
+          <br>
+          <!-- <label for="email">
+            <strong>E-mail</strong>
+          </label> -->
+          <input type="text" id="email" placeholder="Your Email" name="email" required>
+          
+          <input type="password" id="psw" placeholder="new Password" name="psw" required>
+
+          <input type="password" id="psw" placeholder=" Re-enter Password" name="psw" required>
+
+          <button type="submit" class="btn">Log in</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+        <img src="Images/back2.png" alt="" width="50px" onclick="back()">
+    </div>
+    <script>
+        function validateUser() {
+            var regex = /^[A-Za-z]+$/;
+            var errorName = document.getElementById("user");
+            var name = document.getElementById("username").value;
+            if (!name.match(regex)) {
+                // alert('Please enter your name correctly')
+                errorName.innerHTML = "Enter the name only alphabets..";
+                return false;
+            }
+            errorName.innerHTML = "";
+            return true;
+        }
+        function validatePassword() {
+            var pass = document.getElementById("password").value;
+            var errorPassword = document.getElementById("pass");
+            var passRegex = "^(.{0,6}|[^0-9]*|[^A-Z]*|[^a-z]*|[a-zA-Z0-9]*)$";
+            if (pass.match(passRegex)) 
+            {
+                errorPassword.innerHTML = "Enter your correct password";
+                return false;
+            }
+            errorPassword.innerHTML = "";
+            return true;
+        }
+        function validate() {
+            if (validateUser() && validatePassword()) {
+                var name = document.getElementById("username").value;
+                var pass = document.getElementById("password").value;
+                if (name == "Santhosh" && pass == "Santy@2023") {
+                   window.open("admindash.html");
+                }   
+                else {
+                    alert('login successfull');
+                }
+            }
+        }
+        function back() {
+            location.replace("home.html");
+
+        }
+        function openForm() {
+        document.getElementById("popupForm").style.display = "block";
+      }
+      function closeForm() {
+        document.getElementById("popupForm").style.display = "none";
+      }
+    </script>
+</body>
+
+</html>

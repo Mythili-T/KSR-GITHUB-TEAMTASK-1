@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="service.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <title>Service</title>
+</head>
+
+<body>
+  <header>
+    <div class="header_Img">
+      <img src="Images/download.png" alt="">
+      <p>| BOA |</p>
+      <h1>
+        Education Loan Management System
+      </h1>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li class="home"> <a href="home.html">
+          <p><i class="fa fa-home"></i> Home</p>
+        </a> </li>
+      <li> <a href="about.html">
+          <p><i class="fa fa-address-book"></i> About</p>
+        </a></li>
+      <li class="service"><a href="service.html">
+          <p><i class="fa fa-file-text"></i> Service</p>
+        </a>
+        <div class="down">
+          <a href="loanDetails.html">
+            <p>loan details</p>
+          </a>
+          <!-- <a href="#">
+                        <p>how to get..?</p>
+                    </a> -->
+
+        </div>
+      </li>
+
+      <li> <a href="contact.html">
+          <p><i class="fa fa-phone"></i> Contact</p>
+        </a>
+      </li>
+      <li> <a href="userlogin.html">
+          <p><i class="fa fa-sign-in" aria-hidden="true"></i>
+            Login</p>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="serviceDetails">
+    <h1>This loan services provide...!!!  </h1>
+    <div class="easyAccess">
+      <img src="Images/easy get (1).png" alt="" width="240px">
+      <p>This  education loan is very easy to get in simple way...In this application provide easy user access </p> 
+    </div>
+    <div class="queue">
+      <img src="Images/queue.png" alt="" width="150px">
+      <p> Must not need to stand in queue</p>
+    </div>
+    <div class="saveTime">
+      <img src="Images/save time.png" alt="" width="150px">
+      <p> person can avoid travel expensions.., and saves time.. </p> <br>
+    </div>
+  </div>
+  <div class="getLoan">
+    <h1>Who are all get loan..?</h1>
+    <p>Banking is necessary, banks are not.  .  .</p>
+  </div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <p id="xo">Engineering </p> <img src="Images/Slider1.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <p id="xo">Arts & Science</p> <img src="Images/Slider.2.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <p id="xo">Agriculture</p> <img src="Images/Slider.3.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <p id="xo">Medical</p> <img src="Images/Slider4.jpg" alt="">
+      </div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="details">
+    <div class="engDetails">
+      <h2>Engineering</h2>
+      <p>For engineering studies in India, most banks offer loans up to Rs. 4 lakh at a nominal interest rate. If the
+        individual has obtained admission to an engineering college under management quota, certain banks may consider
+        offering a loan based on the merit status of the student.</p>
+        <button>Apply now</button>
+    </div>
+    <div class="engDetails">
+      <h2>Arts&Science</h2>
+      <p>
+        A liberal arts and sciences education emphasizes a well-rounded course of study in the humanities and natural,
+        mathematical and social sciences that aims to impart a broad general knowledge and develop intellectual capacities
+        adaptable for numerous work...</p>
+        <button>Apply now</button>
+    </div>
+    <div class="engDetails">
+      <h2>Medical course</h2>
+      <p>“Study hard until you can say “I am a doctor” everything is gonna be alright.” “Behind every fine doctor, there
+        is always a nurse.” “Study to save lives.” “Only the healing art enables one to make a name for himself and at the
+        same time give benefit to others.”</p>
+        <button>Apply now</button>
+    </div>
+    <div class="engDetails">
+      <h2>Agriculture</h2>
+      <p>"Agriculture is our wisest pursuit, because it will in the end contribute most to real wealth, good morals &
+        happiness." "The farmer has to be an optimist or he wouldn't still be a farmer." "A good farmer is nothing more
+        nor less than a handy man with a sense of humus."</p>
+        <button>Apply now</button>
+    </div>
+  </div>
+  <footer>
+    <div class="copy">
+        <img src="Images/copyright.png" alt="" width="30px">
+        <p>&nbsp;&nbsp;&nbsp;copyright 2023 | Bank of Aspire</p>
+    </div>
+    <div class="copy1">
+        <p><a href="#">Home</a>&nbsp;&nbsp;&nbsp;|
+            <a href="#">About</a>&nbsp;&nbsp;&nbsp;|
+            <a href="#">services</a>&nbsp;&nbsp;&nbsp;|
+            <a href="#">Contact Us</a>
+        </p>
+    </div>
+    <div class="copy2">
+        <a href="#"><img src="Images/facebook (1).png" alt="" width="35px"></a>
+        <a href="#"><img src="Images/instagram.png" alt="" width="35px"></a>
+        <a href="#"><img src="Images/email.png" alt="" width="35px"></a>
+    </div>
+    <div class="copy3">
+        <a href="#">
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </div>
+</footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 2000
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+</body>
+
+</html>
