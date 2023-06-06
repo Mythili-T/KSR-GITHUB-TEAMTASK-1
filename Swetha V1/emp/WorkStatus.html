@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Daily Work Status
+        </title>
+        <style>
+            .body{
+                display: grid;
+                grid-template: auto auto;
+            }
+            .a{
+                margin-top: 2%;
+                margin-left: 5%;
+            }
+            .proName{
+                text-align: center;
+                color: burlywood;
+                font-size: larger;
+            }
+            .moduleName{
+                text-align: center;
+                color: cornflowerblue;
+                font-size: larger;
+                font-family: sans-serif;
+            }
+            table,
+        th,
+        td,
+        tr {
+            border: 20px solid transparent;
+            border-radius: 5px;
+            text-align: center;
+            padding: 0px;
+            margin-left: 50px;
+            
+        }
+        td,
+        th {
+            border: 1px solid #DFD3C3;
+            border-collapse: separate;
+            padding: 10px;
+        }
+        .top{
+            background-color:rgba(248, 215, 173, 0.5) ;
+        }
+
+
+        .bottom {
+            background-color: rgba(243, 240, 240, 0.5);
+        }
+         .txt{
+            width: 50%;
+         }
+        
+        </style>
+    </head>
+    <body>
+        <a href="employeePage.html">Back</a>
+        <div class="proName">
+            <h2>Project Name: Employee Management Portal</h2>
+        </div>
+        <div class="moduleName">
+            <h4>Module 01: Login Page</h4>
+        </div>
+        <table>
+            <tr class="top">
+                <td>Task ID</td>
+                <td>Task Name</td>
+                <td>Owner</td>
+                <td>Status</td>
+                <td style="width: 10%;">Estimated Hours</td>
+                <td style="width: 14%;">Today Spent Hours</td>
+                <td style="width: 10%;">Total Spent Hours</td>
+                <td>Module Status</td>
+                <td>Update Status</td>
+             
+            </tr>
+            <tr class="bottom">
+                <td>EMS M1-001</td>
+                <td>UI Implementation</td>
+                <td>Swetha</td>
+                <td>
+                    <select class="box">
+                        <option value="Not Started">Not Started</option>
+                        <option value="In-Progress">In-Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </td>
+                <td> 5 hr </td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="text-align: center;" required>
+                </td>
+                <td></td>
+                <td>
+                    <textarea></textarea>
+                </td>
+                <td>
+                    <input type="button" type="submit" value="Submit" onclick="return updateStatus()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M1-002</td>
+                <td>Backend Implementation</td>
+                <td>Swetha</td>
+                <td>
+                    <select class="box">
+                        <option value="Not Started">Not Started</option>
+                        <option value="In-Progress">In-Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </td>
+                <td>12 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="text-align: center;">
+                </td>
+                <td></td>
+                <td><textarea></textarea></td>
+                <td>
+                    <input  type="button" type="submit" value="Submit" onclick="return updateStatus()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M1-003</td>
+                <td>API Wiring</td>
+                <td>Swetha</td>
+                <td>
+                    <select class="box">
+                        <option value="Not Started">Not Started</option>
+                        <option value="In-Progress">In-Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </td>
+                <td>10 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="text-align: center;">
+                </td>
+                <td></td>
+                <td><textarea></textarea></td>
+                <td>
+                    <input type="button" type="submit" value="Submit" onclick="return updateStatus()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M1-004</td>
+                <td>Table Creation for DB</td>
+                <td>Swetha</td>
+                <td>
+                    <select class="box">
+                        <option value="Not Started">Not Started</option>
+                        <option value="In-Progress">In-Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </td>
+                <td>15 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="text-align: center;">
+                </td>
+                <td></td>
+                <td><textarea></textarea></td>
+                <td>
+                    <input type="button" type="submit" value="Submit" onclick="return updateStatus()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M1-005</td>
+                <td>Analysis</td>
+                <td>Swetha</td>
+                <td>
+                    <select class="box">
+                        <option value="Not Started">Not Started</option>
+                        <option value="In-Progress">In-Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </td>
+                <td>20 hr </td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="text-align: center;">
+                </td>
+                <td></td>
+                <td><textarea></textarea></td>
+                <td>
+                    <input type="button" type="submit" value="Submit" onclick="return updateStatus()">
+                </td>
+            </tr>
+            
+            
+        </table>
+
+        <div class="moduleName">
+            <h4>Module 02: Employee Page</h4>
+            <h5 style="text-align: left;">SubTask 02.1: Attendance Module</h6>
+        </div>
+        <table>
+            <tr class="top">
+                <td>Task ID</td>
+                <td>Task Name</td>
+                <td>Owner</td>
+                <td>Status</td>
+                <td style="width: 10%;">Estimated Hours</td>
+                <td style="width: 14%;">Today Spent Hours</td>
+                <td style="width: 10%;">Total Spent Hours</td>
+                <td>Module Status</td>
+                <td>Update Status</td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M2-2.1-001</td>
+                <td>UI Implementation</td>
+                <td>Swetha</td>
+                <td>
+                    <select class="box">
+                        <option value="Not Started">Not Started</option>
+                        <option value="In-Progress">In-Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </td>
+                <td>10 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="text-align: center;">
+                </td>
+                <td></td>
+                <td><textarea></textarea></td>
+                <td>
+                    <input type="button" type="submit" value="Submit" onclick="return updateStatus()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M2-2.1-002</td>
+                <td>Backend Implementation</td>
+                <td>Swetha</td>
+                <td>
+                    <select class="box">
+                        <option value="Not Started">Not Started</option>
+                        <option value="In-Progress">In-Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </td>
+                <td> 18 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="text-align: center;">
+                </td>
+                <td></td>
+                <td><textarea></textarea></td>
+                <td>
+                    <input type="button" type="submit" value="Submit" onclick="return updateStatus()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M2-2.1-003</td>
+                <td>API Wiring</td>
+                <td>Swetha</td>
+                <td>
+                    <select class="box">
+                        <option value="Not Started">Not Started</option>
+                        <option value="In-Progress">In-Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </td>
+                <td> 20 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="text-align: center;">
+                </td>
+                <td></td>
+                <td><textarea></textarea></td>
+                <td>
+                    <input type="button" type="submit" value="Submit" onclick="return updateStatus()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M2-2.1-004</td>
+                <td>Table Creation for DB</td>
+                <td>Swetha</td>
+                <td>
+                    <select class="box">
+                        <option value="Not Started">Not Started</option>
+                        <option value="In-Progress">In-Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </td>
+                <td>20 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="text-align: center;">
+                </td>
+                <td></td>
+                <td><textarea></textarea></td>
+                <td>
+                    <input type="button" type="submit" value="Submit" onclick="return updateStatus()">
+                </td>
+            </tr>
+            <tr class="bottom">
+                <td>EMS M2-2.1-005</td>
+                <td>Analysis</td>
+                <td>Swetha</td>
+                <td>
+                    <select class="box">
+                        <option value="Not Started">Not Started</option>
+                        <option value="In-Progress">In-Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </td>
+                <td>32 hr</td>
+                <td>
+                    <input class="txt" type="text" placeholder="Eg: 1h 30m" style="text-align: center;">
+                </td>
+                <td></td>
+                <td><textarea></textarea></td>
+                <td>
+                    <input type="button" type="submit" value="Submit" onclick="return updateStatus()">
+                </td>
+            </tr>
+            
+            
+        </table>
+        <script>
+            function updateStatus(){
+                alert("Status Updated");
+            }
+        </script>
+
+    </body>
+</html>

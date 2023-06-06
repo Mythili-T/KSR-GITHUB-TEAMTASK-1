@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Bank Account</title>
+    <style>
+        .form-control label {
+			display: inline-block;
+			width: 100px;
+			font-size: 20px;
+			margin-left: 0;
+
+		}
+        .form-control input {
+			border: 1px solid black;
+			background-color: aliceblue;
+			border-radius: 5px;
+			padding: 10px;
+			width: 20%;
+			
+
+		}
+         .form button {
+			color: gray;
+			border: 1px solid black;
+		} 
+        .Error{
+            margin-left: 150px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form class="form" id="form" action="#">
+        <h2>Form</h2>
+        <div class="form-control">
+            <label>Username:</label>
+            <input type="text" name="FirstName" placeholder="Full Name..." id="username" onkeyup="userValid()"><br>
+            <small class="Error" id="user"></small>
+        </div>
+        <div class="form-control">
+            <br>
+            <label> Mobile No: </label>
+            <input type="text" name="mobileno" placeholder="10 digit..." id="mobile" onkeyup="mobileValid()"><br>
+            <small class="Error" id="mobileerror"></small>
+        </div>
+         <button onclick="checkInput()">Submit </button> 
+    </form>
+    <script>
+        function userValid(){
+            var userName=document.getElementById("username").value;
+            if (userName == "" || userName == null) {
+				document.getElementById("user").innerHTML = "Must enter username";
+				document.getElementById("username").style.border = " 2px solid red";
+				return false;
+			}
+            
+            document.getElementById("user").innerHTML = "";
+			document.getElementById("username").style.border = " 2px solid green";
+            return true;
+        }
+        function mobileValid(){
+            var mobile=document.getElementById("mobile").value;
+            if (mobile == "" || mobile == null) {
+				document.getElementById("mobileerror").innerHTML = "Must enter mobile number";
+				document.getElementById("mobile").style.border = " 2px solid red";
+				return false;
+			}
+            
+			
+			if (!mobile.match(/^[6789][0-9]*$/)) {
+				document.getElementById("mobileerror").innerHTML = "number should be start with 6,7,8,9";
+				document.getElementById("mobile").style.border = " 2px solid red";
+				return false;
+			}
+			if (mobile.length<10 || mobile.length>10) {
+				document.getElementById("mobileerror").innerHTML = "Must enter 10 digits";
+				document.getElementById("mobile").style.border = " 2px solid red";
+				return false;
+			}
+            document.getElementById("mobileerror").innerHTML = "";
+			document.getElementById("mobile").style.border = " 2px solid green";
+            return true;
+        }
+    </script>
+</body>

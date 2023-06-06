@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="Home.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+             #home {
+            background-color: whitesmoke;
+            border-radius: 10px;
+            
+        }
+        </style>
+    </head>
+    <body>
+        <div class="slider">
+            <img src="../images/hp5.webp" id="img1">
+        </div>
+        
+        <div class="full-page">
+            <div class="heading">
+                <h1>Employee Management System</h1>
+            </div>
+            <br>
+            <div class="navbar">
+               <nav>
+                <ul class="DropDown">
+                    <li><a href="homePage.html" id="home">Home</a></li>
+                    <li><a href="AboutUs.html" id="about">About Us</a></li>
+                    <li><a href="Culture.html" id="culture">Our Culture</a></li>
+                    <li><a href="Openings.html">Openings for</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'"style="width:auto;">Login</li>
+                </ul>
+               </nav> 
+              
+            </div>
+            <div id="login-form" class="login-page">
+                <div class="form">
+                    <div class="button">
+                        <div id="btn"></div> 
+                            <button type="button" onclick="login()" class="nav-btn">Login</button>
+                            <button type="button" onclick="register()" class="nav-btn">Register</button>
+                    </div>                     
+                        <form id="login" class="input-details-login">
+                            <input type="text" class="input-field" placeholder="Enter User Name">
+                            <input type="text" class="input-field" placeholder="Enter Password">
+                            <a href="/login/forgotPassword.html"><span>Forgot Password?</span></a>
+                            <button type="submit" class="submit-btn">Login</button>
+                        
+                        </form>
+                        <form id="register" class="input-details-register">
+                            <input type="text" class="input-field" placeholder="Enter Your Full Name">
+                            <input type="text" class="input-field" placeholder="Enter Vaild Email Id">
+                            <input type="text" class="input-field" placeholder="Enter Mobile No">
+                            <label>Upload Resume:</label>
+                            <input type="file" name="filename" id="resume" required><br>
+                            <button type="submit" class="submit-btn">Register</button>
+                        </form>
+
+                </div>
+            </div>   
+        </div>
+        <footer>
+            <p>Connect with us by</p>
+            <div class="wrapper">
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <span>Facebook</span>
+                </div>
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <span>Twitter</span>
+                </div>
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <span>Instagram</span>
+                </div>
+                
+            </div>
+            
+        </footer>
+        <script>
+            var loginPage=document.getElementById('login');
+            var regPage=document.getElementById('register');
+            var buttonClick=document.getElementById('btn');
+            function register(){
+                loginPage.style.left='-400px';
+                regPage.style.left='50px';
+                buttonClick.style.left='110px';
+            }
+            function login(){
+                loginPage.style.left='50px';
+                regPage.style.left='450px';
+                buttonClick.style.left='0px';
+
+            }
+
+        </script>
+        
+    </body>
+</html>

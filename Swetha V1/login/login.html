@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login Page</title>
+        <link rel="stylesheet" href="/home/homePage.css">
+        <link rel="stylesheet" href="/home/footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <style>
+            #login{
+                background-color: whitesmoke;
+                border-radius: 15px;
+            }
+            .box{
+            width: 550px;
+            height: 350px;
+            margin-left: 30%;
+            margin-top: 4%;
+            
+            border-radius: 10px 10px 10px 10px;
+            background: rgba(0, 0, 0, 0.5);
+            }
+            h2{
+                color: aliceblue;  
+            }
+            
+             .login
+            {
+               
+                width: 300px;
+                padding: 30px;
+                position: absolute;
+                top: 25%;
+                left: 35%;
+
+                text-align: center;
+                /* transform: translate(-50%,-50%); */
+                /* background-image: linear-gradient(to right,#FFF38C,#B1D7B4); */
+                 background: transparent;
+            } 
+            
+            .login input[type="text"],input[type="password"]
+            {
+             
+                background: none;
+                display: block;
+                margin: 20px;
+                text-align: center;
+                border: 2px solid black;
+                padding: 15px 10px;
+                width: 220px;
+                background-color: white;
+                color:black ;
+                border-radius: 20px;
+            }
+            .login input[type="submit"] 
+            {
+                border-radius: 10px;
+                width: 80px;
+                height: 30px;
+            }
+            .button:hover
+            {
+                background-color: #AEBDCA;
+            }
+            input.user:hover
+            {
+                background-color: #AEBDCA;
+            }
+            .Error
+            {
+                margin-left: 20px;
+                color: red;
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <div class="slider">
+                <img src="../images/hp5.webp" id="img1">
+            </div>
+            <div class="dark">
+                <div class="heading">
+                    <h1>Employee Management System</h1>
+                </div>
+                <div class="top">
+                    <ul class="DropDown">
+                        <li><a href="/home/homePage.html" id="home">Home</a></li>
+                        <li><a href="/home/AboutUs.html" id="about">About Us</a></li>
+                        <li><a href="/home/Culture.html" id="culture">Our Culture</a></li>
+                        <li><a href="/home/Openings.html" id="open">Openings for</a></li>
+                        <li><a href="/home/services.html" id="service">Services</a></li>
+                        <li><a href="/login/login.html" id="login">Login</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <p>Content</p>
+                </div>
+            </div>
+            <div class="box">
+            <form class="login"  action="#" id="form">
+                <h2>Login</h2>
+                <input  type="text"  placeholder="User Name" id="Name" onkeyup="nameValidation()">
+                <small class="Error" id="userName"></small>
+                <input  type="password"  placeholder="Password" id="Password" onkeyup="passwordValidation()">
+                <small class="Error" id="userPassword"></small>
+               <center>
+                <button onclick="return validate()"> Login </button>
+                <br>
+                <br>
+                <a href="forgotPassword.html">Forgot Password?</a>
+                </center>
+            
+            </form>
+            </div> 
+            
+           
+        </div>
+        <footer>
+            <div class="wrapper">
+                <div class="button">
+                   <div class="icon">
+                      <i class="fab fa-facebook-f"></i>
+                   </div>
+                   <span>Facebook</span>
+                </div>
+                <div class="button">
+                   <div class="icon">
+                      <i class="fab fa-twitter"></i>
+                   </div>
+                   <span>Twitter</span>
+                </div>
+                <div class="button">
+                   <div class="icon">
+                      <i class="fab fa-instagram"></i>
+                   </div>
+                   <span>Instagram</span>
+                </div>
+               
+                <div class="button">
+                   <div class="icon">
+                      <i class="fab fa-youtube"></i>
+                   </div>
+                   <span>YouTube</span>
+                </div>
+             </div>
+          
+        </footer>   
+    
+       
+        <script>
+            function nameValidation()
+            {
+                var username=document.getElementById("Name").value;
+                if(username==null || username=='')
+                {
+                document.getElementById("userName").innerHTML = "Must enter username";
+				document.getElementById("Name").style.border = " 2px solid red";
+				return false;
+                }
+                if(!username.match(/^[A-Z][a-z]*[\s{1}]*[A-Za-z]$/))
+                {
+                document.getElementById("userName").innerHTML = "first letter should be capital letter";
+				document.getElementById("Name").style.border = " 2px solid red";
+				return false;
+                }
+                document.getElementById("userName").innerHTML = "";
+			    document.getElementById("Name").style.border = " 2px solid green";
+                return true;
+           }
+           function passwordValidation()
+           {
+            var password=document.getElementById("Password").value;
+            if(password=="Null" || password=='')
+                {
+                    document.getElementById("userPassword").innerHTML = "Must enter password";
+                    document.getElementById("Password").style.border = " 2px solid red";
+                    return false;
+                }
+            if(password.length<6)
+                {
+                    document.getElementById("userPassword").innerHTML=("Password must contain atleast 6 digits");
+                    document.getElementById("Password").style.border = " 2px solid red";
+                    return false;
+                }
+                document.getElementById("userPassword").innerHTML="";
+                document.getElementById("Password").style.border = " 2px solid green";
+                 return true;
+            }
+            function validate()
+            {
+                var username=document.getElementById("Name").value;
+                var password=document.getElementById("Password").value;
+                if(username=="Swethaemp" && password=="Swetha@123")
+                    {
+                        window.open("../emp/employeePage.html");
+                        return true;
+                    }
+                else if(username=="Swethaadmin" && password=="123@Swetha")
+                    {
+                        window.open("/admin/adminPage.html");
+                        return true;
+                    }
+                else
+                    {
+                        alert("Invalid username and password");
+                        return false;
+                    }
+
+            } 
+            
+            
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Leave Form</title>
+    <link rel="stylesheet" href="leaveForm.css">
+</head>
+
+<body>
+    <a href="employeePage.html">Back</a>
+    <h2>Apply For Leave</h2>
+    <form class="form" id="form" action="#" onsubmit="return checkEntry()">
+        <label>Employee Name</label>
+        <input type="text" placeholder="enter full name" id="username" style="text-align: center;" onkeyup="userValid()">
+        <small class="Error" id="user"></small>
+        <br>
+        <label>Team Leader Name</label>
+        <input type="text" placeholder="enter your TL name" id="leadname" style="text-align: center;" onkeyup="tlValid()">
+        <small class="Error" id="tlname"></small> 
+        <br>
+        <label>Department</label>
+        <input type="text" placeholder="enter dept" id="deptname" style="text-align: center;" onkeyup="deptValid()">
+        <small class="Error" id="dept"></small>
+        <br>
+        <label>Contact Number</label>
+        <input type="text" placeholder="enter mobile number" id="usernum" style="text-align: center;" onkeyup="mobileValid()">
+        <small class="Error" id="mobileerror"></small>
+        <br>
+        <label>Leave Date</label>
+        <input type="date" id="startDate" style="text-align: center;" required>
+        <br>
+        <label>Return Date</label>
+        <input type="date" id="endDate" style="text-align: center;" required>
+        <br>
+        <label>Reason for Leave</label><br>
+        <div class="reasons" >
+        <div class="left">
+            <input type="radio" name="rea" id="reason">
+            <label>Vacation</label><br>
+            <input type="radio" name="rea" id="reason">
+            <label>Sick</label><br>
+            <input type="radio" name="rea" id="reason1" onclick="description()">
+            <label>Others</label>
+            <input type="text" placeholder="reason for leave" id="content" style="display:none;" >
+        </div>
+        <div class="right">
+            <input type="radio" name="rea" id="reason">
+            <label>Doctor Appointment</label><br>
+            <input type="radio" name="rea" id="reason">
+            <label>Function</label><br>
+        </div>
+
+        </div>
+
+    
+    <div class="btn">
+    <button onclick="checkEntry()">Submit</button>
+    </div>
+
+       
+    </form>
+    <script>
+        function description() {
+            var checkBox = document.getElementById("reason1");
+            var textContent = document.getElementById("content");
+            if (checkBox.checked == true) {
+                textContent.style.display = "block";
+            }
+            else {
+                textContent.style.display = "none";
+            }
+        }
+        //User name Validation
+        function userValid(){
+            var userName=document.getElementById("username").value;
+            if (userName == "" || userName == null) {
+				document.getElementById("user").innerHTML = "Must enter username";
+				document.getElementById("username").style.border = "2px solid red";
+				return false;
+			}
+            if(!userName.match(/^[A-Z][a-z]*$/)){
+                document.getElementById("user").innerHTML = "first letter should be capital letter";
+				document.getElementById("username").style.border = " 2px solid red";
+				return false;
+            }
+            document.getElementById("user").innerHTML = "";
+			document.getElementById("username").style.border = " 2px solid green";
+            return true;
+        }
+        //Team Leader Name Validation
+        function tlValid(){
+            var leadName=document.getElementById("leadname").value;
+            if (leadName == "" || leadName == null) {
+				document.getElementById("tlname").innerHTML = "Must enter Team Leader Name";
+				document.getElementById("leadname").style.border = "2px solid red";
+				return false;
+			}
+            if(!leadName.match(/^[A-Z][a-z]*$/)){
+                document.getElementById("tlname").innerHTML = "first letter should be capital letter";
+				document.getElementById("leadname").style.border = " 2px solid red";
+				return false;
+            }
+            document.getElementById("tlname").innerHTML = "";
+			document.getElementById("leadname").style.border = " 2px solid green";
+            return true;
+        }
+        //Department Validation
+        function deptValid(){
+            var deptName=document.getElementById("deptname").value;
+            if (deptName == "" || deptName == null) {
+				document.getElementById("dept").innerHTML = "Must enter Department";
+				document.getElementById("deptname").style.border = "2px solid red";
+				return false;
+			}
+            if(!deptName.match(/^[A-Z][a-z]*$/)){
+                document.getElementById("dept").innerHTML = "first letter should be capital letter";
+				document.getElementById("deptname").style.border = " 2px solid red";
+				return false;
+            }
+            document.getElementById("dept").innerHTML = "";
+			document.getElementById("deptname").style.border = " 2px solid green";
+            return true;
+        }
+
+        //Mobile Number
+        function mobileValid(){
+            var mobile=document.getElementById("usernum").value;
+            if (mobile == "" || mobile == null) {
+				document.getElementById("mobileerror").innerHTML = "Must enter mobile number";
+				document.getElementById("usernum").style.border = " 2px solid red";
+				return false;
+			}
+            
+			
+			if (!mobile.match(/^[6789][0-9]*$/)) {
+				document.getElementById("mobileerror").innerHTML = "number should be start with 6,7,8,9";
+				document.getElementById("usernum").style.border = " 2px solid red";
+				return false;
+			}
+			if (mobile.length<10 || mobile.length>10) {
+				document.getElementById("mobileerror").innerHTML = "Must enter 10 digits";
+				document.getElementById("usernum").style.border = " 2px solid red";
+				return false;
+			}
+            document.getElementById("mobileerror").innerHTML = "";
+			document.getElementById("usernum").style.border = " 2px solid green";
+            return true;
+        }
+        //OverAll Field 
+        function checkEntry(){
+            if(!userValid() || !tlValid() ||  !deptValid() || !mobileValid() ){
+                alert("Fill all the fields");
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+        
+
+    </script>
+</body>
+
+</html>
