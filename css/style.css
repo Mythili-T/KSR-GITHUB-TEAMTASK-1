@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: white; */
+  /* text-decoration: none; */
+  font-family:'Crimson Text', serif;;
+} 
+
+.nav{
+    background: black;
+}
+.nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.nav .logo{
+    float: left;
+    color:#0de7c9;
+    font-size: 27px;
+    font-weight: 600;
+    line-height:70px;
+    padding-left: 40px;
+    /* display: none; */
+    margin-top: 5px;
+    font-family:'Crimson Text', serif;;
+}
+.nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+.nav ul li{
+    /* float: left; */
+    display: inline-block;
+    background:black ;
+    margin:10px;
+ }
+ .nav ul li a{
+  color: white;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 18px;
+  padding: 10px 8px;
+  /* padding-left: 15px; */
+ }
+ .nav ul li a:hover{
+    color: cyan;
+    border-radius: 4px;
+    /* padding-left: 5px; */
+     box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff; 
+ }
+ .nav ul .action a{
+    color:cyan;
+      border-radius: 4px;
+      box-shadow: 0 0 5px #33ffff,
+                  0 0 5px #66ffff; }
+ .nav ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+    border-radius: 4px;
+    padding-right: 30px;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff;
+    z-index: 10000;
+ }
+ .nav ul ul{
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    border-top: 3px solid cyan;
+    visibility: hidden;
+    transition:top .3s;
+    z-index:100000;
+ }
+ .nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+ }
+.nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 170px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3) ;
+}
+.nav ul ul li a{
+    line-height: 50px;
+    
+
+}
+.show,.icon,input{
+    display: none;
+}
+/* body{
+    background-color: black ;
+} */
+
+ .img{ 
+    background-image:url(../image/studentpage/11\ \(8\).png);
+     background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:700px;
+    position: relative;
+}
+.img .content{
+ /* padding-left: 700px; */
+ font-family: 'Crimson Text', serif;;
+ font-weight: 700;
+ /* font-size: x-large; */
+ font-style: oblique; 
+ /* padding-top: 100px; */
+ cursor: pointer;
+ /*padding-block: 100px; */
+text-decoration:double;
+/* line-height: 2rem; */
+position: absolute;
+margin-top: 200px;
+margin-left:700px ; 
+
+}
+.img .content:hover{
+    color:black;
+    font-size: large;
+}
+.container{
+    max-width: 120%;
+    background-color:  black;
+
+}
+.Row{
+display: flex;
+
+}
+.footer-col ul {
+    list-style: none;
+}
+
+
+.footer-col{
+width: 25%;
+padding: 15px;
+}
+.footer-col h4{
+    font-size: 20px;
+    color:#00ffc4;
+   
+    font-style: oblique;
+    margin-bottom: 30px ;
+    font-weight: auto;
+    position: relative;
+}
+.footer-col ul li a,
+.footer-col ul li a abbr{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 0;
+    font-style:none;
+    color:  aliceblue ;
+    display: block;
+    padding: 5px;
+}
+.footer-col address p{
+    color: aliceblue;
+}
+@media all and (max-width :755px){
+    .nav ul{
+        margin-right: 0px;
+        float: left;
+    }
+    .nav .logo{
+        padding-left: 30px;
+        width: 100%;
+    }
+    .nav ul li,.nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+    .nav ul ul{
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav ul ul a{
+        padding-left: 40px;
+    }
+    .nav ul ul li{
+        border-bottom: 0px;
+
+    }
+    .show{
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    .show:hover{
+        color: cyan;
+    }
+    .icon{
+        display:block;
+        color: white;
+        position: absolute;
+        right: 10px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav ul li a:hover{
+        box-shadow: none;
+
+    }
+     .show + .nav a,.nav ul{
+        display: none;
+    } 
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+}
+
+/* ................................................slider.................................... */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* .........................................popup........................................ */
+  .popup{
+    background-color: aliceblue;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    /* transform : translate(-200px,-50px);
+    left: 50%;
+    right: 50%;
+    border-radius: 8px; */
+    font-family:"Poopins",sans-serif;
+    left: 35%;
+    bottom: 50%;
+}
+.popup button{
+    display: block;
+    /* margin: 0 0 20px auto; */
+    background-color: transparent;
+    font-size: 30px;
+    color: black;
+    border: none;
+    /* outline: none; */
+    cursor: pointer;
+    margin-left: 370px;
+    margin-top: -20px;
+}
+.popup p{
+    font-size: 28px;
+    /* text-align: justify; */
+    margin: 20px 0;
+    text-align: -webkit-center;
+    transform: translateY(-20px);
+}
+.popup h1{
+    /* margin-bottom: 60px;
+    margin-left: 10px; */
+    text-align: center;
+    transform: translateY(-35px);
+}
+ .popup a{ 
+    width: 150px;
+    position: relative;
+    margin: 100px;
+    text-align: center;
+    background-color: #00ffc4;;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 50px;
+}
+ .popup #close:hover{
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    padding-bottom: 37px; 
+}
+/* ------------------------------------------------centertag------------------------------------------- */
+.center-tag{
+    text-align: center;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background-color: black; */
+     border:3px solid darkcyan ;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+display:flex;
+background-color: darkcyan;
+margin: 0%;
+
+
+}
+/* .center-tag li a{
+    color: aliceblue;
+}
+.center-tag li a:hover{
+    color: orangered;
+   
+} */
+.center-tag{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    border-bottom:5px solid black ;
+    border-top: 2px solid brown;
+}
+.center-tag p{
+    /* font-size:medium; */
+    font-size: 20px;
+    font-size: 20px;
+    font-style: oblique;
+    color: aliceblue;
+} .center-tag i{
+    cursor: pointer;
+    color:rgb(117, 196, 248);
+}
+.center-tag :hover{
+    transform: scale(0.9);
+}
+.icon_tag{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    /* color: #00ffc4; */
+} 

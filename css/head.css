@@ -1,0 +1,91 @@
+.contact .icons-container {
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.contact .icons-container .icons {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--light-light-blue);
+    cursor: pointer;
+}
+
+.contact .icons-container .icons i {
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+    color: var(--white);
+    background: var(--blue);
+    overflow: hidden;
+}
+
+.contact .icons-container .icons h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--black);
+    padding: .5rem 0;
+}
+
+.contact .icons-container .icons p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--light-color);
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact .row .image {
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+    width: 100%;
+}
+
+.contact .row form {
+    flex: 1 1 40rem;
+    border: 0.1rem solid var(--blue);
+    padding: 2rem;
+}
+
+.contact .row form h3 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: var(--black);
+    padding-bottom: 1rem;
+}
+
+.contact .row form .box {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border: 0.1rem solid var(--blue);
+    font-size: 1.6rem;
+    margin: .7rem 0;
+}
+
+.contact .row form .box:focus {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.contact .row form .box:focus::placeholder {
+    color: var(--white);
+}
+
+.contact .row form textarea {
+    height: 15rem;
+    resize: none;
+}

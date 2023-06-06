@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson Text', serif;;
+    list-style: none;
+    text-decoration: none; 
+}
+.nav{
+    background-color: rgb(17, 16, 16);
+    width: 100%;
+    height: 70px;
+}
+ .nav span{
+    color: aqua;
+    font-size: 24px;
+     padding-left: 20px;
+     line-height: 70px;
+     text-transform: uppercase;
+     font-weight:bolder
+    
+}
+.nav ul{
+  float: right;
+ 
+}
+.nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 70px;
+    /* font-weight: 900px; */
+}
+.nav ul li a{
+    color: aliceblue;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-weight:bolder
+}
+.nav ul li a .fa{
+    padding-right: 10px;
+}
+.nav ul li a:hover{
+    color:cyan;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff; 
+}
+@media (max-width:1091px){
+    .nav ul{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: transparent;
+        text-align: center;
+        padding: 10px;
+        top:50px;
+        left:-100%;
+        transition: 2s;
+        z-index: 10; 
+    }
+    nav ul.slide{
+        left: 0;
+        transition: 2s;
+        /* z-index: 10; */
+     }
+    .nav ul li{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .nav ul li a {
+       border:none;
+       color: black;
+}
+     .nav ul li:hover{
+        background-color: black;
+     }
+     
+     .nav ul li:hover a{
+        color: aliceblue;
+     } 
+     
+     .hamburger{
+        float: right;
+        padding-right: 20px;
+        padding-top: 12px;
+        /* background-color: green; */
+     }
+     .hamburger .line{
+        width: 15px;
+        height: 4px;
+        background-color:aliceblue;
+        margin-bottom: 5px;
+        display: block;
+     }
+}
+     .nav ul .action a{
+        color:cyan;
+        border-radius: 4px;
+        box-shadow: 0 0 5px #33ffff,
+                  0 0 5px #66ffff; }
+/* ------------------------------------------------------form------------------------------------------- */
+body{
+    background-color: #33ffff;
+}
+form #message{
+    height: 150px;
+ padding-bottom: 100px;
+}
+.login {
+    width: 500px;
+    padding: 40px 30px 70px 30px;
+    background:azure;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.login header {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.login form {
+    margin: 40px 0;
+}
+
+
+form .field1 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form .field.shake {
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%,
+   100%  {
+        margin-left: 0px;
+     } 
+    20%,
+    80% {
+        margin-left: -12px;
+    } 
+     40%,
+    60% {
+        margin-left: 12px;
+    } 
+}
+
+form .field .input-area {
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+ form  .field1 .input1-area .types { 
+  text-align: start;
+  position: relative;
+  display:inline-flex;
+  text-align: right;
+ }
+ /* form .field1 .input1-area .head{
+    margin-right: 100px;
+    padding-right: 340px;
+} */
+form .field1 .input1-area span{
+    margin-left: -2px; 
+    padding-right: 370px;
+     color:#bfbfbf;
+     font-size: 18px;
+     font-weight: 300;
+     font-size: 24px;
+
+       }
+form .field1 .input1-area .head2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color:#bfbfbf;
+}
+form  .field1 .input1-area .types label{
+    padding-right: 60px;
+    transform: translate(10px, -5px);
+}
+
+form input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    background: none;
+    caret-color: #5372F0;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+}
+
+form .field input:focus,
+form .field.valid input {
+    border-color: #5372F0;
+}
+
+form .field.shake input,
+form .field.error input {
+    border-color: #dc3545;
+}
+form .field.shake input,
+form .field.error1 input {
+    border-color: #dc3545;
+}
+.field .input-area i {
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+.input-area .icon {
+    left: 15px;
+    color: #bfbfbf;
+    transition: color 0.2s ease;
+}
+
+.input-area .error-icon {
+    right: 15px;
+    color: #dc3545;
+}
+
+form input:focus~.icon,
+form .field.valid .icon {
+    color: #5372F0;
+}
+form input:focus~.icon,
+form .field.valid1 .icon {
+    color: #5372F0;
+}
+
+form .field.shake input:focus~.icon,
+form .field.error input:focus~.icon {
+    color: #bfbfbf;
+}
+/* form .field.shake input:focus~.icon,
+form .field.error1 input:focus~.icon {
+    color: #bfbfbf;
+} */
+
+form input::placeholder {
+    color: #bfbfbf;
+    font-size: 17px;
+}
+
+form .field .error-txt {
+    color: #dc3545;
+    text-align: left;
+    margin-top: 5px;
+}
+form .field .error1-txt {
+    color: #dc3545;
+    text-align: left;
+    transform: translateY(105px);
+}
+form .field .error {
+    display: none;
+}
+form .field .error1 {
+    display: none;
+}
+form .field.shake .error,
+form .field.error .error {
+    display: block;
+}
+
+form .pass-txt {
+    text-align: left;
+    margin-top: -10px;
+}
+
+form input[type="submit"] {
+    height: 50px;
+    margin-top: 30px;
+    color: #fff;
+    padding: 0;
+    border: none;
+    background: #5372F0;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    transform: translateY(70px);
+}
+
+form input[type="submit"]:hover {
+    background: #2c52ed;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LOGIN</title>
+    <link rel="stylesheet" href="../css/Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    
+   <div class="image"></div>
+    <div class="login">
+        <div class="exit">
+        <a  href="../html/index.html">Logout <i class="fa-solid fa-share-from-square"></i></a> 
+    </div>
+        <header>LOGIN</header>
+        
+        <form action="#" onsubmit="return button()">
+            <div class="field email">
+                <div class="input-area">
+                    <input type="email" placeholder="Email Address" id="user" onkeyup="email()">
+                    <p id="us" class="errorsty"></p>
+                    <i id="icon"class="icon fas fa-envelope"></i>
+                </div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Password" id="passwor" onkeyup="password()">
+                    <p id="pas" class="errorsty"></p>
+                    <i id="icon1" class="icon fas fa-lock"></i>
+                </div>
+            </div>
+            <div class="pass-txt"><a href="#">Forgot password?</a></div>
+            <input type="submit" value="Login" on>
+            <p id="register">Do not have an account?<a href="../html/registration.html">Register</a> </p>
+        </form>
+
+    <script src="../js/Login.js"></script>
+</body>
+
+</html>

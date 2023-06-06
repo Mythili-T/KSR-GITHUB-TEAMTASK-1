@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ADD Staff</title>
+    <link rel="stylesheet" href="../css/Staff register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="image">
+    </div> 
+    <div class="login">
+        <header> ADD STAFF</header>
+        <form action="#">
+            <div class="field firstname">
+                <div class="input-area">
+                    <input type="text" placeholder="First Name">
+                    <i class="icon fas fa-user"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">FirstName can't be blank</div>
+            </div><br>
+            <div class="field lastname">
+                <div class="input-area">
+                    <input type="text" placeholder="Last Name">
+                    <i class="icon fas fa-user"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">LastName can't be blank</div>
+            </div><br>
+            <div class="field email">
+                <div class="input-area">
+                    <input type="text" placeholder="Email Address">
+                    <i class="icon fas fa-envelope"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Email can't be blank</div>
+            </div><br>
+            <div>
+                <div class="field1 dob">
+                    <div class="input1-area">
+                        <span class="head">DateofBirth</span><br>
+                        <input type="date" name="DOB" required >
+                         
+                    </div>
+                </div>
+            <div class="field1 gender">
+                <div class="input1-area">
+                        <span class="head1">Gender
+                        </span><br>
+                        <div class="types">
+                        <input type="radio" id="male" name="gender" value="Male" required  >
+                         <label for="male">Male</label> 
+                        <input type="radio" id="female" name="gender" value="Female">
+                         <label for="female">Female</label> 
+                        <input type="radio" id="others" name="gender" value="others">
+                        <label for="others">Others</label>
+                        </div>
+                </div> 
+            </div>
+             <div class="field1 department">
+                <div class="input1-area">
+                        <span class="head">Department
+                        </span><br>
+                        <div class="types" >
+                        <input type="radio" id="IT" name="Department" value="IT" required>
+                        <label for="IT">IT</label>
+                        <input type="radio" id="CSE" name="Department" value="CSE">
+                        <label for="CSE">CSE</label>
+                        <input type="radio" id="ECE" name="Department" value="ECE">
+                        <label for="ECE">ECE</label>
+                        <input type="radio" id="EEE" name="Department" value="EEE">
+                        <label for="EEE">EEE</label>
+                        <input type="radio" id="MECH" name="Department" value="MECH">
+                        <label for="MECH">MECH</label>
+                </div> 
+            </div> 
+            <div class="field1 profile photo">
+                <div class="input1-area">
+                    <span class="head">ProfilePhoto
+                    </span><br>
+                    <input type="file" name="file" required>
+                </div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Password">
+                    <i class="icon fas fa-lock"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Password can't be blank</div>
+            </div><br>
+            <div class="field comformpassword">
+                <div class="input-area">
+                    <input type="password" placeholder="conform password">
+                    <i class="icon fas fa-lock"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">conform password can't be blank</div>
+                <div class="error1 error-txt">password does't match</div><br>
+            </div>
+            <div class="pass-txt"><a href="#"><b>Edit</b></a></div>
+            <input type="submit" value="Login">
+        </form> 
+    </div>
+
+    <script src="../js/Staff register.js"></script>
+
+</body>
+
+</html>
