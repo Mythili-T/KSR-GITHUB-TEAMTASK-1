@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+    font-family:'Crimson Text', serif;;
+    list-style: none;
+    text-decoration: none; 
+}
+.nav{
+    background-color: rgb(17, 16, 16);
+    width: 100%;
+    height: 70px;
+}
+span{
+    color: aqua;
+    font-size: 24px;
+     padding-left: 20px;
+     line-height: 70px;
+     text-transform: uppercase;
+     font-weight:bolder
+}
+.nav ul{
+  float: right;
+ 
+}
+.nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 70px; 
+    /* font-weight: 900px; */
+}
+.nav ul li a{
+    color: aliceblue;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-weight:bolder
+}
+.nav ul li a .fa{
+    padding-right: 10px;
+}
+.nav ul li a:hover{
+    color:cyan;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff; 
+}
+.nav ul .action a{
+  color:cyan;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff; 
+}
+@media (max-width:1091px){
+    .nav ul{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: transparent;
+        text-align: center;
+        padding: 10px;
+        top:50px;
+        left:-100%;
+        transition: 2s;
+        z-index: 10; 
+    }
+    nav ul.slide{
+        left: 0;
+        transition: 2s;
+        /* z-index: 10; */
+      }
+    .nav ul li{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .nav ul li a {
+       border:none;
+       color: black;
+}
+     .nav ul li:hover{
+        background-color: black;
+     }
+     .nav ul li:hover a{
+        color: aliceblue;
+     } 
+     
+     .hamburger{
+        float: right;
+        padding-right: 20px;
+        padding-top: 12px;
+        /* background-color: green;  */
+     }
+     .hamburger .line{
+        width: 15px;
+        height: 4px;
+        background-color:aliceblue;
+        margin-bottom: 5px;
+        display: block;
+     }
+} 
+/* -----------------------------------------------table----------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body{
+  background:black;
+  height: 100vh;
+}
+/*Attendance List serction  */
+.attendance{
+  /* margin-top: 5px; */
+  text-transform: capitalize;
+  font-family:'Crimson Text', serif;;
+}
+.attendance .attendance-list h1{
+    text-align: center;
+    border-radius: 10px;
+    background-color: darkcyan;
+    font-family:'Crimson Text', serif;;
+    text-transform: uppercase;
+}
+.attendance-list{
+  width: 100%;
+  /* padding: 10px; */
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+table thead tr{
+  color: #fff;
+  background:darkcyan;
+  text-align: center;
+  font-weight: bold;
+
+}
+.table th,
+.table td{
+  padding: 15px 20px;
+  text-align: center;
+}
+.table tbody tr{
+  border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd){
+  background: #f3f3f3;
+}
+.table tbody tr.active:hover{
+  font-weight: bold;
+  color:darkcyan;
+}
+.table tbody tr:last-of-type{
+  border-bottom: 3px solid darkcyan;
+}
+.table button{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid darkcyan;
+}
+.table button:hover{
+  background: darkcyan;
+  color: #fff;
+  transition: 0.5rem;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Register</title>
+    <link rel="stylesheet" href="../css/reg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    
+   <div class="image"></div>
+    <div class="login">
+        <div class="exit">
+        <a  href="../html/Login.html">Exit <i class="fa-solid fa-share-from-square"></i></a> 
+    </div>
+        <header>REGISTER</header>
+        
+        <form action="#" onsubmit="return button()">
+            <div class="field firstname">
+                <div class="input-area">
+                    <input type="text" placeholder="FirstName" id="name" onkeyup="firstname()">
+                    <p id="name1" class="errorsty"></p>
+                    <i id="icon"class="icon fas fa-envelope"></i>
+                </div>
+            </div>
+            <div class="field lastname">
+                <div class="input-area">
+                    <input type="text" placeholder="Last Name" id="name2" onkeyup="lastname()">
+                    <p id="name3" class="errorsty"></p>
+                    <i class="icon fas fa-user"></i>
+                </div>
+            </div>
+            <div class="field email">
+                <div class="input-area">
+                    <input type="email" placeholder="Email Address" id="user" onkeyup="email()">
+                    <p id="user1" class="errorsty"></p>
+                    <i id="icon"class="icon fas fa-envelope"></i>
+                </div>
+            </div>
+            <div class="field1 dob">
+                <div class="input1-area">
+                    <span class="head">DateofBirth</span><br>
+                    <input type="date" name="DOB" required>
+                    <p id="dob" class="errorsty"></p>
+                </div>
+            </div>
+            <div class="field1 gender">
+                <div class="input1-area">
+                    <span class="head1">Gender</span><br>
+                    <div class="types">
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label><br><br>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="others" name="gender" value="others">
+                        <label for="others">Others</label>
+                    </div>
+                </div>
+            </div>
+            <div class="field1 department">
+                <div class="input1-area">
+                    <span class="head">Department</span><br>
+                    <div class="types">
+                        <input type="radio" id="IT" name="Department" value="IT" required>
+                        <label for="IT">IT</label>
+                        <input type="radio" id="CSE" name="Department" value="CSE">
+                        <label for="CSE">CSE</label>
+                        <input type="radio" id="ECE" name="Department" value="ECE">
+                        <label for="ECE">ECE</label>
+                        <input type="radio" id="EEE" name="Department" value="EEE">
+                        <label for="EEE">EEE</label>
+                        <input type="radio" id="MECH" name="Department" value="MECH">
+                        <label for="MECH">MECH</label>
+                    </div>
+                </div>
+            </div>
+                <div class="field1 profile photo">
+                    <div class="input1-area">
+                        <span class="head">ProfilePhoto</span><br>
+                        <input type="file" name="file" id="file" onchange="fileValidation()">
+                    </div>
+                </div><br>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Password" id="password1" onkeyup="password()">
+                    <p id="password2" class="errorsty"></p>
+                    <i id="icon1" class="icon fas fa-lock"></i>
+                </div>
+            </div>
+            <div class="field comformpassword">
+                <div class="input-area">
+                    <input type="password" placeholder="conform password" id="conformpassword1" onkeyup="conformpassword()">
+                    <p id="con_password" class="errorsty"></p>
+                    <i class="icon fas fa-lock"></i>
+
+                </div>
+            <input type="submit" value="Login" on>
+        </form>
+
+    <script src="../js/reg.js"></script>
+</body>
+
+</html>

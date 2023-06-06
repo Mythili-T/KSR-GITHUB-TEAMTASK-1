@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+    /* text-decoration: none; */
+    font-family: 'Crimson Text', serif;
+    ;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+nav {
+    background: black;
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo {
+    float: left;
+    color: cyan;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 40px;
+    /* display: none; */
+    margin-top: 5px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li {
+
+    display: inline-block;
+    /* float: left; */
+    background: black;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 10px 8px;
+    /* padding-left: 15px; */
+}
+
+nav ul li a:hover {
+    color: cyan;
+    border-radius: 4px;
+    /* padding-left: 5px; */
+    box-shadow: 0 0 5px #33ffff,
+        0 0 5px #66ffff;
+}
+
+.nav ul .action .color a {
+    color: cyan;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+}
+
+.nav ul .action ul .action1 a {
+    color: cyan;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+    padding-right: 50px;
+    padding-left: 10px;
+}
+.nav ul .action ul a:hover{
+    color:cyan;
+     border-radius: 4px;
+     box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+     padding-right: 50px;
+     padding-left: 10px;
+}            
+
+nav ul ul li a:hover {
+    color: cyan;
+    box-shadow: none;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    border-top: 3px solid cyan;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+nav ul li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 170px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul ul li a {
+    line-height: 50px;
+
+
+}
+
+.show,
+.icon,
+input {
+    display: none;
+}
+
+@media all and (max-width :755px) {
+    nav ul {
+        margin-right: 0px;
+        float: left;
+    }
+
+    nav .logo {
+        padding-left: 30px;
+        width: 100%;
+    }
+
+    nav ul li,
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul {
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav ul ul a {
+        padding-left: 40px;
+    }
+
+    nav ul ul li {
+        border-bottom: 0px;
+
+    }
+
+    .show {
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+
+    .show:hover {
+        color: cyan;
+    }
+
+    .icon {
+        display: block;
+        color: white;
+        position: absolute;
+        right: 10px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    nav ul li a:hover {
+        box-shadow: none;
+
+    }
+
+    .show+a,
+    ul {
+        display: none;
+    }
+
+    [id^=btn]:checked+ul {
+        display: block;
+    }
+}
+body {
+
+    background:white;
+
+}
+
+
+h3,
+p:hover {
+    color: darkcyan;
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+.heading-bg {
+    background-color: darkcyan;
+    background-size: cover;
+    background-position: center;
+}
+
+.heading-link {
+    text-align: center;
+    overflow: hidden;
+}
+
+.heading-link h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: inherit;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.heading-link p {
+    font-size: 2rem;
+    line-height: 2;
+    color: var(--light-color);
+}
+
+.heading-link p a {
+    color: var(--blue);
+}
+
+.heading-link p a:hover {
+    text-decoration: underline;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    color: var(--dark-blue);
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+
+.grid-container {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.grid {
+    display: flex;
+    padding-bottom: 20px;
+
+}
+#book-name{
+    padding-bottom: 10px;
+}
+
+#fantasyimg {
+    width: 200px;
+    height: 300px;
+    margin-top: 15px;
+    margin-left: -11px;
+    margin-right: -2px;
+}
+
+
+.grid-item-1 {
+    padding-left: 30px;
+    padding-right: 20px;
+    transition: all 0.4s linear;
+
+}
+
+.grid-item-1:hover{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.32);
+
+}
+.star i{   
+    position:static;
+    
+}
+.star i :hover{
+    color: none;
+    cursor:none;
+}
+/* .grid-item-1 img:hover{
+    transform: scale(0.9);
+
+} */
+.grid-item-1 h4{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+.buttons {
+    display: flex;
+    width: 50px;
+   margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#slidebuttonleft1,
+#slidebuttonright1{
+    width: 20px;
+    height: 20px;
+    margin-left: 20%;
+
+}
+#slidebuttonleft2,
+#slidebuttonright2 {
+    width: 20px;
+    height: 20px;
+    margin-left: 20%;
+
+}
+#slidebuttonleft,
+#slidebuttonright {
+    width: 20px;
+    height: 20px;
+    margin-left: 20%;
+
+}
+.buttons img {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buttons :hover {
+    transform: scale(1.6);
+}
+
+#buy-now {
+    background-color: darkcyan;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+#fantasyimg{
+    border-radius: 5px;
+
+}
+/* -----------------------------------------------------footer------------------------------------------------------------------- */
+.container{
+    max-width: 120%;
+    background-color:  black;
+
+}
+.Row{
+display: flex;
+
+}
+.footer-col ul {
+    list-style: none;
+}
+
+
+.footer-col{
+width: 25%;
+padding: 15px;
+}
+.footer-col h4{
+    font-size: 20px;
+    color:cyan;;
+   
+    font-style: oblique;
+    margin-bottom: 30px ;
+    font-weight: auto;
+    position: relative;
+}
+.footer-col ul li a,
+.footer-col ul li a abbr{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 0;
+    font-style:none;
+    color:  aliceblue ;
+    display: block;
+    padding: 5px;
+}
+.footer-col address p{
+    color: aliceblue;
+}
