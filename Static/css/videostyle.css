@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* <!-- menu-bar starts --> */
+.menu-bar {
+    background-color: rgba(117, 107, 107, 0.953);
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.current-page,
+.menu-bar ul li:hover {
+    background: #605b5b;
+    border-radius: 3px;
+}
+
+.menu-bar .fa-solid {
+    margin-right: 6px;
+}
+
+.dropdown-menu1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu1 {
+    display: block;
+    position: absolute;
+    background-color: rgba(117, 107, 107, 0.953);
+    margin-top: 16px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .dropdown-menu1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu1 ul li {
+    width: 130px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .dropdown-menu1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu1 ul li a:hover {
+    color: #b2ff00;
+}
+
+.fa-angle-right {
+    float: right;
+    font-size: 12.5px;
+    padding-top: 5px;
+}
+
+.dropdown-menu1 {
+    display: none;
+}
+
+.admin-menu:hover .dropdown-menu1 {
+    position: absolute;
+    display: block;
+    margin-top: 20px;
+    margin-left: 80px;
+    background-color: rgb(0, 100, 0);
+    cursor: pointer;
+}
+
+/* <!-- menu-bar ends --> */
+
+/* .course-image {
+    width: 25%;
+    background-color: rgb(151, 208, 169);
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 2px 2px 10px black;
+} */
+
+.images img {
+    width: 45%;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 150px;
+}
+
+
+.current-year {
+    text-align: center;
+}
+.department h1{
+    color: #2bab0d;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    margin-top: 25px;
+    margin-left: 500px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.sub-grid2 .subject-title {
+    color: rgb(0, 100, 0);
+    font-size: 30px;
+}
+ .link a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #2bab0d;
+}
+.link a:hover{
+    color: rgb(0, 100, 0);
+}
+
+/* footer section */
+.footer-content {
+    display: inline-flex;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.foot-division {
+    justify-content: space-between;
+    background: rgb(193, 219, 199);
+    border-radius: 40px 40px 0 0;
+    padding-bottom: 20px;
+    margin-top: 50px;
+
+}
+
+.division1 h1 {
+    font-size: 35px;
+    color: #055615;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.division1 p {
+    font-size: 25px;
+    color: #2bab0d;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.division2 h3 {
+    font-size: 25px;
+    color: #055615;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.division2 ul li {
+    list-style: none;
+    color: #055615;
+}
+
+.ul-division li {
+    padding: 5px;
+}
+
+.ul-division li a:hover {
+    color: #052c0de6;
+    margin-left: 8px;
+    text-decoration: underline;
+    transition: .2s ease;
+}
+
+.division2 ul li a {
+    text-decoration: none;
+    color: #2bab0d;
+    padding-left: 20px;
+}
+
+.division3 h3 {
+    font-size: 25px;
+    color: #055615;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.division3 {
+    color: #2bab0d;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icon {
+    padding-right: 10px;
+}
+
+.footer-content .division3 .icon i {
+    padding: 10px;
+
+}
+
+.footer-content .division3 .icon:hover {
+    color: #055615;
+    margin-left: 8px;
+    transition: .2s ease;
+}
+
+.about-footer {
+    background-color: rgba(70, 68, 68, 0.886);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.copyrights {
+    padding-left: 7%;
+    color: #2bab0d;
+}
+
+/* footer section */

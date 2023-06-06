@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Login Page</title>
+  <link rel="stylesheet" href="../Static/css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- menu-bar starts -->
+  <header>
+    <nav class="menu-bar" >
+      <ul>
+        
+        <li class="current-page" ><a href="#"><i class="fa-solid fa-right-to-bracket"></i>Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- menu-bar ends -->
+
+  <!-- body of the page starts -->
+
+  <body>
+    <!-- logo image starts -->
+
+    <div class="logoimage">
+      <div>
+        <h1 style="margin-bottom: 10px; cursor:pointer; color:green;margin-left: 60px;margin-top: 20px;" onclick="gotoback()">Back</h1>
+    </div>
+    </div>
+    <!-- logo image ends -->
+
+    <!-- image and form container starts -->
+
+    <div class="login-container">
+      <!-- image starts-->
+
+      <div class="image">
+        <img src="../Static/images/Degree Scholar pic.jpg" alt="image">
+      </div>
+      <!-- image ends-->
+
+      <!-- login form starts -->
+
+      <div class="login-form">
+        <form>
+          <h3>
+            Login to Your <br> Account
+          </h3>
+          <br>
+          <label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-user"></i>
+            &nbsp;Username<span class="red">*</span>
+          </label>
+          <input type="text" id="username" onkeyup="validateName()" required autocomplete="off">
+          <p id="nameError"></p>
+          <label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-lock"></i>
+            &nbsp;Password<span class="red">*</span>
+          </label>
+          <input type="password" id="password" onkeyup="validatePassword()" required autocomplete="off">
+          <p id="passError"></p>
+          <a href="./ForgetPassword.html" class="forgetpassword">Forgot Password ? </a>
+          <button onclick="studentlogin()"> LOGIN </button>
+
+          <p id="Register-page">New User? <a href="../View/register.html" class="Register">Register</a></p>
+        </form>
+        <!-- login form starts -->
+      </div>
+    </div>
+
+    <!-- image a
+      nd form container ends -->
+
+    <!-- footer starts -->
+    <footer class="login-footer">
+      <div class="copyrights">
+        <p>Copyright<i class="fa-solid fa-copyright"></i> Mythili | All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- footer ends -->
+
+
+
+    <!-- script ends -->
+  </body>
+
+</html>
+    <!-- scripts starts -->
+    <script>
+      function validateName() {
+        var namevalid = "^[a-zA-Z ]{2,30}$";
+        var name = document.getElementById("username").value;
+        var nameError = document.getElementById("nameError");
+        if (!name.match(namevalid)) {
+          nameError.innerHTML = "Please Enter Your Name Correctly ";
+          return false;
+        }
+        nameError.innerHTML = "";
+        return true;
+      }
+      function validatePassword() {
+            var pass = document.getElementById("password").value;
+            var errorPassword = document.getElementById("passError");
+            var passRegex = "^(.{0,4}|[^0-9]|[^A-Z]|[^a-z]|[a-zA-Z0-9]*)$";
+            if (pass.match(passRegex)) 
+            {
+                errorPassword.innerHTML = "Enter Your password correctly";
+                return false;
+            }
+            errorPassword.innerHTML = "";
+            return true;
+        }
+      var regex = /^[a-zA-Z ]{2,30}$/;
+      function studentlogin() {
+        var regex = /^[a-zA-Z ]{2,30}$/;
+        let studentname = document.getElementById("username").value;
+        if (studentname.match(regex)) {
+        }
+        else {
+          alert("Please Enter Your Name Correctly");
+          return false;
+        }
+        var password = document.getElementById("password").value;
+        if (password.length >= 5 || password.length <= 10) {
+        }
+        else {
+          alert("Enter a valid password");
+          return false;
+        }
+        if (studentname == "Mythili T" && password == "Mythili@12" || studentname == "Mani" && password == "mani@123") {
+          alert("Login Successful redirecting to home page");
+          window.open("../view/home.html");
+          
+        }
+
+        else {
+          alert("Check your Login credentials");
+          return false;
+        }
+      }
+
+    function gotoback() {
+            window.location.href ="../index.html";
+            return false;
+    }
+    
+    </script>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Second Year Ece subjects
+    </title>
+    <link rel="stylesheet" href="../Static/css/firstyrcse.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- menu-bar starts -->
+    <header>
+        <nav class="menu-bar">
+            <ul>
+                <li><a href="../View/home.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="../View/aboutpage.html"><i class="fa-solid fa-users"></i>About</a></li>
+                <li class="current-page"><a href="#"><i class="fa-solid fa-book"></i>Notes</a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-file-lines"></i>Modules</a>
+                    <div class="dropdown-menu1">
+                        <ul>
+                            <li><a href="../View/time.html"><i class="fa-solid fa-table"></i>Timetable</a></li>
+                            <li><a href="lab.html"><i class="fa-solid fa-book-open-reader"></i>Lab</a></li>
+                                    <!-- <li><a href="../View/Report.html"><i class="fa-solid fa-registered"></i>Reports</a></li> -->
+                        </ul>
+                    </li>
+                    <li><a href="../View/contact.html"><i class="fa-solid fa-phone"></i>Contact</a></li>
+                    <li><a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+                        </div>
+                        </div>
+                </ul>
+            </nav>
+        </header>
+        <!-- menu-bar ends -->
+        <div>
+            <h1 style="margin-bottom: 10px; cursor:pointer;color:rgb(161, 103, 108);margin-left: 60px;margin-top: 2px;" onclick="gotoback()">Back</h1>
+        </div>
+         <!-- CSE Courses starts-->
+    <div class="department">
+        <h1 class="heading"> Electronics and Communication Engineering</h1>
+        <h2>second Year Subjects</h2>
+    </div>
+
+    <div class="images-flex">
+        <div class="course-image">
+           <div class="images">
+              <img src="../Static/images/VLSI.jpg" onclick="opentab1()" alt="image">
+           </div>
+           <div class="subject-title">
+              18ECE012
+              VLSI
+           </div>
+           <div class="current-year">
+              Second Year
+           </div>
+        </div>
+        <div class="course-image">
+           <div class="images">
+              <img src="../Static/images/analog.jpg"onclick="opentab1()" alt="image">
+           </div>
+           <div class="subject-title">
+              18ECE065
+              Analog and Digital Electronics
+           </div>
+           <div class="current-year">
+              Second Year
+           </div>
+        </div>
+     </div>
+     <div id="display" class="notes"><br><br>
+        <div class="videos">
+            <h2><a href="video.html">Videos</a></h2>
+        </div>
+        <div class="videos">
+            <h2><a href="../View/notes.html">Notes</a></h2>
+        </div>
+        <div class="videos">
+            <h2><a href="oldquestion.html">Old Question papers</a></h2>
+        </div>
+        <div class="videos">
+            <h2><a href="syllabus.html">Syllabus</a></h2>
+        </div>
+    </div>
+  
+
+     <!-- footer section starts-->
+
+     <div class="foot-division">
+        <div class="footer-content">
+            <div class="division1">
+                <h1>SMMS</h1><br>
+                <p><b>"One teacher, One pen, one <br>book can change the World <i class="fa-solid fa-globe"></i> !!..."
+                </p></b>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="division2">
+                <h3>Quick links</h3>
+                <ul class="ul-division">
+                    <li><a href="../View/home.html"><i class="fa-solid fa-house-user"></i>&numsp;Home</a></li>
+                    <li><a href="../View/aboutpage.html"><i class="fa-solid fa-users"></i>&numsp;About</a></li>
+                    <li><a href="../View/courses.html"><i class="fa-solid fa-image"></i>&numsp;Notes</a></li>
+                    <li><a href="../View/video.html"><i class="fa-solid fa-video"></i>&numsp;Videos</a></li>
+                    <li><a href="lab.html"><i class="fa-solid fa-book"></i>&numsp;Labs</a></li>
+                    <li><a href="../View/time.html"><i class="fa-solid fa-table"></i>&numsp;Timetable</a></li>
+                    <li><a href="../View/contact.html"><i class="fa-solid fa-phone"></i>&numsp;Contact</a></li>
+                    <li><a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i>&numsp;Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="division3">
+                <h3>Contact info</h3>
+                <div class="contact">
+                    <span class="icon"><i class="fa-solid fa-phone"></i> 9842066139<br></span>
+                    <span class="icon"><i class="fa-solid fa-envelope"></i>mythilithambi1210@gmail.com<br></span>
+                    <span class="icon"><i class="fa-solid fa-location-pin"></i> Salem,Tanilnadu,637102</span>
+                </div>
+            </div>
+        </div>
+  </div>
+    <footer class="about-footer">
+        <div class="copyrights">
+            <p>Copyright<i class="fa-solid fa-copyright"></i> Mythili | All Rights Reserved</p>
+        </div>
+    </footer>
+    </body>
+    </html>
+    
+</html>
+<style>
+    .videos {
+        background: rgba(255, 255, 255, 0);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        cursor: pointer;
+        margin-bottom: 40px;
+        margin-left: 350px;
+        margin-right: 350px;
+        text-align: center;
+        padding: 20px;
+        color: #81434f;
+
+    }
+    #display {
+        display: none;
+    }
+    .videos  a{
+        text-decoration: none;
+        color: #81434f;
+    }
+   
+</style>
+<script>
+    function opentab1() {
+        var hello = document.getElementById('display');
+        hello.style.display = 'block';
+    }
+    function gotoback() {
+            window.location.href ="courses.html";
+            return false;
+    }
+</script>

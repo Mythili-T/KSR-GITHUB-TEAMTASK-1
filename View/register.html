@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Register
+    </title>
+    <link rel="stylesheet" href="../Static/css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- script register starts -->
+    <script>
+
+        function validateRegisternumber() {
+            var regno = document.getElementById("register-number").value;
+            var regError = document.getElementById("registerError");
+            if (regno.length != 7 || isNaN(regno)) {
+                regError.innerHTML = "Please Enter Valid RegNo ";
+                regError.style.color = "red";
+                return false;
+            }
+            regError.innerHTML = "";
+            return true;
+        }
+
+        function validateName() {
+
+            var namevalid = "^[a-zA-Z ]{2,30}$";
+            var name = document.getElementById("name").value;
+            var nameError = document.getElementById("nameError");
+            if (!name.match(namevalid)) {
+                nameError.innerHTML = "Please Enter Your Name Correctly ";
+                nameError.style.color = "red";
+                return false;
+            }
+            nameError.innerHTML = "";
+            return true;
+        }
+
+        function validatePhoneno() {
+            var phonevalid = "^[6-9]{1}[0-9]{9}$";
+            var phonenumber = document.getElementById("phonenumber").value;
+            var phoneError = document.getElementById("phoneError");
+            if (!phonenumber.match(phonevalid)) {
+                phoneError.innerHTML = "Please Enter Valid PhoneNo ";
+                phoneError.style.color = "red";
+                return false;
+            }
+            phoneError.innerHTML = "";
+            return true;
+        }
+
+        function validatePassword() {
+            var pass = document.getElementById("password").value;
+            var errorPassword = document.getElementById("passError");
+            var passRegex = "^(.{0,4}|[^0-9]|[^A-Z]|[^a-z]|[a-zA-Z0-9]*)$";
+            if (pass.match(passRegex)) {
+                errorPassword.innerHTML = "Your password must contain atleast 4 characters and one special character and one digit";
+                return false;
+            }
+            errorPassword.innerHTML = "";
+            return true;
+        }
+
+        function validateConfirmpassword() {
+            var password1 = document.getElementById("password").value;
+            var confirmpassword1 = document.getElementById("confrimpassword").value;
+            var conpassError = document.getElementById("conpassError");
+            if (password1 != confirmpassword1) {
+                conpassError.innerHTML = "Password is not matched";
+                conpassError.style.color = "red";
+                return false;
+            }
+            conpassError.innerHTML = "";
+            return true;
+        }
+        function validateEmail() {
+            var studentmail = document.getElementById("Student-email");
+            studentmail.value = studentmail.value.toLowerCase();
+            var emailID = document.getElementById("Student-email").value;
+            var errorEmail = document.getElementById("emailError");
+            var validateCorrect = document.getElementById("correctEmail");
+            var regexEmail = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (!emailID.match(regexEmail)) {
+                errorEmail.innerHTML = "Enter email in this format dinesh@gmail.com...";
+                validateCorrect.style.color = "red";
+                return false;
+            }
+            errorEmail.innerHTML = "";
+            validateCorrect.style.color = "green";
+            return true;
+
+        }
+
+        function validatedepartment() {
+            var studentdepartment = document.getElementById("depart");
+            var departmenterror = document.getElementById("departerror");
+            if (studentdepartment.length >= 3) {
+                departmenterror.innerHTML = "Please Enter your Department";
+                departmenterror.style.color = "red";
+                // departmenterror.style.margin-top=arguments()"10px !important";
+                return false;
+            }
+            departmenterror.innerHTML = "";
+            return true;
+        }
+
+        function validateRegisterform() {
+            var regno = document.getElementById("register-number").value;
+            var namevalid = "^[a-zA-Z ]{2,30}$";
+            var name = document.getElementById("name").value;
+            var phonevalid = "^[6-9]{1}[0-9]{9}$";
+            var phonenumber = document.getElementById("phonenumber").value;
+            var password2 = document.getElementById("password").value;
+            var password1 = document.getElementById("password").value;
+            var confirmpassword1 = document.getElementById("confrimpassword").value;
+
+            if ((regno.length != 7 || isNaN(regno) || regno == "")) {
+                alert("Invalid credentials!!");
+                return false;
+            }
+            else if (!name.match(namevalid) || name == "") {
+                alert("Invalid credentials!!");
+                return false;
+            }
+            else if (!phonenumber.match(phonevalid) || phonenumber == "") {
+                alert("Invalid credentials!!");
+                return false;
+            }
+            else if (password2.length < 5 || password2.length > 15 || password2 == "") {
+                alert("Password should contain, Uppercase ,lowercase , Numbers , Special characters ,length should be greater than 5");
+                return false;
+            }
+            else if (password1 != confirmpassword1 || password1 == "") {
+                alert("Invalid credentials!!");
+                return false;
+            }
+
+            else {
+                alert("login successfull!!");
+                window.open("login.html");
+                // return false;
+            }
+
+        }
+
+        function gotoback() {
+            window.location.href ="login.html";
+            return false;
+    }
+    </script>
+    <!-- script register ends -->
+</head>
+
+<body>
+    <!-- menu-bar starts -->
+    <header>
+        <nav class="menu-bar">
+            <ul>
+                <li class="current-page"><a href="../View/register.html"><i
+                            class="fa-solid fa-registered"></i>Register</a></li>
+                <!-- <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i>Login</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <!-- menu-bar ends -->
+
+    <!-- register form starts -->
+    <div class="register-form">
+        <div>
+            <h1 style="margin-bottom: 10px; cursor:pointer;color:green;margin-left: 60px;margin-top: 2px;" onclick="gotoback()">Back</h1>
+        </div>
+        <br><br>
+        <div class="Register-container">
+            <!-- heading starts -->
+            <div class="heading"> Registration
+            </div>
+            <!-- heading ends -->
+
+            <!-- form contanier starts -->
+            <form>
+                <div class="register">
+
+                    <div class="teacherBox">
+                        <span class="teacherdetails"> Register Number <span class="red">*</span> </span>
+                        <input onkeyup="validateRegisternumber() " type="text" placeholder="Enter Your RollName"
+                            id="register-number" required autocomplete="off">
+                        <p id="registerError"></p>
+                    </div>
+
+
+
+                    <div class="teacherBox">
+                        <span class="teacherdetails"> Name <span class="red">*</span> </span>
+                        <input onkeyup="validateName()" type="text" required placeholder="Enter Your Name" id="name"
+                            autocomplete="off">
+                        <p id="nameError"></p>
+                    </div>
+
+
+                    <div class="teacherBox">
+                        <span class="teacherdetails"> Department <span class="red">*</span></span>
+                        <p id="departerror" style="margin-top: 40px;"></p>
+                        <select id="Depart" onclick="validatedepartment()">
+                            <option value="CSE">CSE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="EEE">EEE</option>
+                            <option value="IT">IT</option>
+                            <option value="select" selected>Select Department</option>
+                        </select>
+                    </div>
+                    <div class="teacherBox">
+                        <span class="teacherdetails"> Current Year <span class="red">*</span></span>
+                        <p id="yearerror" style="margin-top: 40px;"></p>
+                        <select id="Depart" onclick="validateyear()">
+                            <option value="1">First</option>
+                            <option value="2">Second</option>
+                            <option value="3">Third</option>
+                            <option value="4">Final </option>
+                            <option value="select" selected>Select Year</option>
+                        </select>
+                    </div>
+
+                    <div class="teacherBox">
+                        <span class="teacherdetails"> Email <span class="red">*</span></span>
+                        <input onkeyup="validateEmail()" id="Student-email" type="email" placeholder="Enter Your Email "
+                            required autocomplete="off">
+                        <p id="emailError"></p>
+                    </div>
+
+
+
+                    <div class="teacherBox">
+                        <span class="teacherdetails"> Phone Number <span class="red">*</span></span>
+                        <input onkeyup="validatePhoneno()" type="text" required placeholder="Enter Your phone number"
+                            id="phonenumber" autocomplete="off">
+                        <p id="phoneError"></p>
+                    </div>
+
+
+                    <div class="teacherBox">
+                        <span class="teacherdetails">Password <span class="red">*</span> </span>
+                        <input onkeyup="validatePassword()" type="password" required placeholder="Enter Your password "
+                            id="password" autocomplete="off">
+                        <p id="passError"></p>
+                    </div>
+
+
+
+                    <div class="teacherBox">
+                        <span class="teacherdetails"> Confirm Password <span class="red">*</span></span>
+                        <input onkeyup="validateConfirmpassword()" type="password" required
+                            placeholder="Enter Your confrim password" id="confrimpassword" autocomplete="off">
+                        <p id="conpassError"></p>
+                    </div>
+
+                    <!-- register-form ends -->
+                    <div class="teacherBox">
+                        <span class="teacherdetails"> Section <span class="red">*</span></span>
+                        <input type="text" required placeholder="Enter Your Section" id="section" autocomplete="off">
+                    </div>
+                    <!--  radio button starts -->
+
+                    <div class="radio-button">
+                        <span class="teach-year">Designation <span class="red">*</span></span>
+                        <div class="category">
+                            <input type="radio" name="tea-year" id="Student">&nbsp;Student &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="tea-year" id="Teacher">&nbsp;Teacher &nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                </div>
+
+                <!--  radio button ends -->
+                <div class="button">
+                    <button type="submit" onclick="validateRegisterform()">Register</button>
+                </div>
+
+        </div>
+        </form>
+        <!-- form contanier ends -->
+    </div>
+    <!-- register form starts -->
+
+    <!-- register footer starts-->
+    <footer class="register-footer">
+        <div class="copyrights">
+            <p>Copyright<i class="fa-solid fa-copyright"></i> Mythili | All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- register footer ends-->
+
+
+</body>
+
+</html>
+
+<style>
+
+    .Register-container {
+        margin-top: -3rem;
+    }
+
+</style>

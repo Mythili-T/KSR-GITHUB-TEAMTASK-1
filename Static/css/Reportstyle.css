@@ -1,0 +1,363 @@
+/* <!-- menu-bar starts --> */
+body {
+    font-family: sans-serif;
+}
+
+.menu-bar {
+    background-color: rgb(0, 100, 0);
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.current-page,
+.menu-bar ul li:hover {
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+.menu-bar .fa-solid {
+    margin-right: 6px;
+}
+
+
+.dropdown-menu1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu1 {
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 16px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .dropdown-menu1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu1 ul li {
+    width: 130px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .dropdown-menu1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu1 ul li a:hover {
+    color: #b2ff00;
+}
+
+.fa-angle-right {
+    float: right;
+    font-size: 12.5px;
+    padding-top: 5px;
+}
+
+/* <!-- menu-bar ends --> */
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-weight: normal;
+
+}
+
+.heading {
+    font-size: 3.2rem;
+    text-align:center;
+    padding: 1rem;
+    color: rgb(11, 100, 48);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.progress {
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem 0.5rem 1rem;  
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    background: rgba(183, 161, 128, 0.2);
+    border-radius: 1rem;
+    text-align: start;
+    margin-left: 3rem;
+    margin-right: 0rem;
+}
+
+.progress h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: rgb(24, 147, 69);
+}
+
+.progress .bar {
+    position: relative;
+    width: 100%;
+    height: 0.3rem;
+    margin: 1rem 0;
+    background: rgb(220, 185, 185);
+}
+
+.progress .bar span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(15, 101, 35);
+}
+
+
+.Skills {
+    min-height: 100%;
+}
+
+.Reportimg {
+    margin-top: 10%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.Reportimg img {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.Reportimg img:hover {
+    transition: .2s;
+    transform: scale(1.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.break {
+    width: 100%;
+    background-image: linear-gradient(#055615c5, #c9e0ce00);
+    height: 10px;
+}
+
+
+.teachers {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    color: rgba(11, 100, 48, 0.823);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-evenly;
+    border: #055615;
+
+}
+
+.icons {
+    box-shadow: 1px 1px 3px 3px rgb(40, 115, 58);
+    border-radius: 15px;
+    padding: 30px 60px 30px 60px;
+    text-align: center;
+    cursor: pointer;
+    /* background-color: rgba(193, 219, 199, 0.115); */
+}
+
+.icons:hover {
+    background-color: rgb(193, 219, 199);
+    transform: scale(0.9);
+}
+
+.icons i {
+    font-size: 45px;
+    color: #055615;
+    cursor: pointer;
+}
+
+.icons span {
+    padding-top: 20px;
+    font-size: 35px;
+    color: #4ebc64;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.icons p {
+    padding-top: 10px;
+    font-size: 25px;
+    color: #4ebc64;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+
+.details-container1 {
+    display: flex;
+    justify-content: space-evenly;
+    border: #055615;
+
+}
+
+.icons1 {
+    box-shadow: 1px 1px 3px 3px rgb(40, 115, 58);
+    border-radius: 15px;
+    padding: 30px 60px 30px 60px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(193, 219, 199)
+}
+
+.icons1:hover {
+    background-color:white;
+    transform: scale(0.9);
+}
+
+.icons1 i {
+    font-size: 45px;
+    color: #055615;
+    cursor: pointer;
+}
+
+.icons1 span {
+    padding-top: 20px;
+    font-size: 35px;
+    color: #305738;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.icons1 p {
+    padding-top: 10px;
+    font-size: 25px;
+    color: #305738;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+/* footer section */
+.footer-content {
+    display: inline-flex;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.foot-division {
+    justify-content: space-between;
+    background: rgb(193, 219, 199);
+    border-radius: 40px 40px 0 0;
+    padding-bottom: 20px;
+
+}
+
+.division1 h1 {
+    font-size: 35px;
+    color: #055615;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.division1 p {
+    font-size: 25px;
+    color: #2bab0d;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.division2 h3 {
+    font-size: 25px;
+    color: #055615;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.division2 ul li {
+    list-style: none;
+    color: #055615;
+}
+
+.ul-division li {
+    padding: 5px;
+}
+
+.ul-division li a:hover {
+    color: #052c0de6;
+    margin-left: 8px;
+    text-decoration: underline;
+    transition: .2s ease;
+}
+
+.division2 ul li a {
+    text-decoration: none;
+    color: #2bab0d;
+    padding-left: 20px;
+}
+
+.division3 h3 {
+    font-size: 25px;
+    color: #055615;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.division3 {
+    color: #2bab0d;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icon {
+    padding-right: 10px;
+}
+
+.footer-content .division3 .icon i {
+    padding: 10px;
+
+}
+
+.footer-content .division3 .icon:hover {
+    color: #055615;
+    margin-left: 8px;
+    transition: .2s ease;
+}
+
+.about-footer {
+    background-color: rgba(70, 68, 68, 0.886);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+
+.copyrights {
+    padding-left: 7%;
+    color: #2bab0d;
+}
+
+/* footer section */

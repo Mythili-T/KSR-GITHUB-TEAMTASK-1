@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* logo image starts */
+
+.logoimage img  {
+    width: 80px;
+    height: 80px;
+    border-radius: 20%;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+/* logo image ends  */
+
+/*  menu-bar starts */
+nav {
+    font-family: sans-serif;
+}
+
+.menu-bar {
+    background-color: rgb(0, 100, 0);
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.current-page,
+.menu-bar ul li:hover {
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+.menu-bar .fa-solid {
+    margin-right: 6px;
+}
+
+/* <!-- menu-bar ends --> */
+
+/* <!-- image starts--> */
+
+.image img {
+    transform: translateY(-3rem);
+    margin-left: 100px;
+    width: 400px;
+    height: 550px;
+    border-radius: 50%;
+}
+/* <!-- image ends--> */
+
+/* <!-- login form starts --> */
+form {
+    margin-left: 250px;
+    width: 400px;
+    height:510px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 0 0 rgb(32, 186, 89);
+    border-radius: 38px;
+    border: 2px solid rgba(27, 162, 76, 0.3);
+
+}
+
+form:before {
+    content: '';
+    position: absolute;
+    bottom: 5%;
+    right: 22%;
+    width: 100px;
+    height: 100px;
+    background: #60c94e;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .8;
+}
+
+form:after {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 43.5%;
+    width: 150px;
+    height: 150px;
+    background: rgb(0, 100, 0);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .8;
+
+}
+
+h3 {
+    margin-top: 3%;
+    font-size: 40px;
+    font-family: Bodoni MT;
+    text-align: center;
+    color: rgb(0, 100, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+    opacity: .7;
+}
+
+label {
+    font-size: 25px;
+    color: rgb(3, 40, 12);
+    opacity: .8;
+    font-family: Bodoni MT;
+    text-shadow: 2px 2px 4px rgba(7, 64, 39, 0.2);
+}
+
+input {
+    width: 90%;
+    margin-bottom: 8%;
+    margin-left: 4%;
+    margin-top: 2%;
+    padding: 2% 3% 3% 3%;
+    border: 1px solid green;
+    /* margin-left: 5%; */
+    outline: none;
+    border-radius: 15px;
+    color: rgb(3, 40, 12);
+    opacity: .8;
+    font-size: 18px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button {
+    width: 50%;
+    font-family: Bodoni MT;
+    margin: 3% auto;
+    color: #113405;
+    font-weight: 500;
+    font-size: 25px;
+    opacity: .7;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgb(0, 100, 0), #CFFF8D);
+    box-shadow: 3px 3px 5px rgba(56, 2, 49, 0.37);
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+}
+
+button:hover {
+    background: #d8e1d6;
+}
+
+/* <!-- login form starts --> */
+
+.login-container{
+    display: flex;
+}
+
+
+
+.login-footer {
+    background-color: rgba(70, 68, 68, 0.886);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 2.9%;
+}
+
+.copyrights
+ {
+    padding-left: 7%;
+    font-family: sans-serif;
+    color: #2bab0d;
+}
+/* <!-- footer starts --> */
+.forgetpassword {
+    color: #2bab0d;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 130px;
+    font-size: 20px;
+}
+
+.forgetpassword:hover {
+    color: #0b6421;
+}
+.Register{
+ font-size: 20px;
+ color: black;
+ /* padding-left: 130px; */
+ padding-bottom: 10px;
+ text-decoration: none;
+}
+/* <!-- footer ends --> */
+.Register span{
+    color: #2bab0d;
+}
+form p{
+    margin-left: 5.7rem;
+}
+.Register{
+    color: #2bab0d;
+}
+#nameError
+{
+    color:red;
+    transform: translateY(-1.8rem);
+}
+#passError
+{
+    color:red;
+    /* transform: translateY(rem); */
+    /* padding-right: 20px; */
+    transform: translateY(-1.8rem);
+    /* padding-right: 20px; */
+    /* position: relative; */
+}
+#Register-page{
+    transform: translateX(2.4rem);
+}
+
+.red {
+    color: red;
+}

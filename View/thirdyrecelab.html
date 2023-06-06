@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       First Year Cse subjects
+    </title>
+    <link rel="stylesheet" href="../Static/css/firstyearlab.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- menu-bar starts -->
+    <header>
+        <nav class="menu-bar">
+            <ul>
+                <li><a href="../View/home.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="../View/aboutpage.html"><i class="fa-solid fa-users"></i>About</a></li>
+                <li ><a href="#"><i class="fa-solid fa-book"></i>Notes</a>
+                    <!-- <div class="dropdown-menu1">
+                  <ul>
+                     <li><a href="../View/imagespage.html"><i class="fa-sharp fa-solid fa-images"></i>Images</a></li>
+                     <li><a href="../View/video.html"><i class="fa-solid fa-video"></i>Video</a></li>
+                  </ul>
+               </div> -->
+                </li>
+                <li class="current-page"><a href="#"><i class="fa-solid fa-file-lines"></i>Modules</a>
+                    <div class="dropdown-menu1">
+                        <ul>
+                            <!-- <li><a href="#"><i class="fa-solid fa-book"></i>syllabus</a></li> -->
+                            <li><a href="../View/time.html"><i class="fa-solid fa-table"></i>Timetable</a></li>
+                            <li><a href="#"><i class="fa-solid fa-book-open-reader"></i>Lab</a></li>
+                            <!-- <li><a href="../View/Report.html"><i class="fa-solid fa-registered"></i>Reports</a></li> -->
+                        </ul>
+                </li>
+                <li><a href="../View/contact.html"><i class="fa-solid fa-phone"></i>Contact</a></li>
+                <li><a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+                    </div>
+                    </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- menu-bar ends --><br>
+    <div>
+        <h1 style="margin-bottom: 10px; cursor:pointer;color:rgb(165, 86, 86);margin-left: 60px;margin-top: 2px;" onclick="gotoback()">Back</h1>
+    </div>
+
+    <!-- CSE Courses starts-->
+    <div class="department">
+        <h1 class="heading">Electronics and Communication Engineering</h1>
+        <h2>Third Year Lab</h2>
+    </div>
+    <div class="images-flex">
+        <div class="course-image">
+           <div class="images">
+              <img  src="../Static/images/power system.jpeg" onclick="opentab()"alt="image">
+           </div>
+           <div class="subject-title">
+              18ECE59
+           Power System Lab
+           </div>
+           <div class="current-year">
+              Third Year
+           </div>
+        </div>
+
+        <script>
+            function opentab() {
+                var hello = document.getElementById('display');
+                hello.style.display = 'block';
+            }
+            function gotoback() {
+                    window.location.href ="lab.html";
+                    return false;
+            }
+        </script>
