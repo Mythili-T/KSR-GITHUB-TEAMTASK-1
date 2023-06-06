@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" />
+    <title>Document</title>
+    <style>
+
+               /* --------------------------------------------------------navbar------------------------------------------------ */
+                #header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px;
+                background: rgb(20,33,61);
+                position: sticky;
+                }
+
+                .logo {
+                width: 50px;
+                padding-left: 30px;
+                }
+
+                #header h2 {
+                padding-right: 350px;
+                color:rgb(229,229,229);
+                font-weight: 800;
+                }
+
+                #navbar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }
+
+                #navbar #searchbox {
+                height: 35px;
+                margin-top: 10px;
+                width: 170px;
+                border-radius: 12px;
+                border-color: rgb(38, 181, 242);
+                }
+                #navbar li {
+                list-style: none;
+                padding: 0 30px;
+                position: relative;
+                }
+
+                #navbar li a {
+                text-decoration: none;
+                color: rgb(36, 130, 159);
+                font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+                font-weight: 800;
+                font-size: 21px;
+                transition: 0.3s ease;
+                }
+
+                /* #navbar li a:hover {
+                    color:rgb(92, 230, 103);
+                } */
+
+                #navbar li a:hover,
+                #navbar li a.active {
+                color: rgb(229,229,229);
+                }
+
+                #navbar li a.active::after,
+                #navbar li a:hover::after {
+                content: "";
+                width: 30%;
+                height: 2px;
+                background: rgb(229,229,229);
+                position: absolute;
+                bottom: -4px;
+                left: 30px;
+                }
+
+                #mobile {
+                display: none;
+                align-items: center;
+                }
+
+                #close {
+                display: none;
+                }
+
+        #cart-container table {
+            border-collapse: collapse;
+            width: 100%;
+            table-layout: fixed; 
+            margin-top: 10px;
+        }
+        #cart-container thead {
+            font-weight: 700; 
+        }
+        #cart-container table thead  td {
+            background: #fd8c66;
+            color: #fff;
+            border: none;
+            padding: 6px 0 
+        }
+
+        #cart-container table  td {
+            border: 1px solid #b6b3b3;
+            text-align: center;
+        }
+        #cart-container table  td:nth-child(1) {
+            width: 100px;
+        }
+        #cart-container table  td:nth-child(2)
+        #cart-container table  td:nth-child(3) {
+            width: 200px;
+        }
+        #cart-container table  td:nth-child(4)
+        #cart-container table  td:nth-child(5)
+        #cart-container table  td:nth-child(6) {
+            width: 170px;
+        }
+         .img {
+            width: 100px;
+            height: 80px;
+            object-fit: cover;
+         }
+
+         /* .total-container{
+            display: flex;  
+         } */
+
+         .row{
+            display: flex;
+         }
+         .cont-1{
+            margin:10px;
+            padding:10px;
+            /* padding-left: 850px; */
+         }
+         .cont-1 h5 {
+            background-color: #fd8c66;
+            color: #fff; 
+        }
+        .cont-1 button{
+            background-color: black;
+            color:#fff;
+        }
+        .cont-1 button:hover{
+            border-color: rgb(238, 65, 65);
+            background-color: rgb(235, 69, 69);
+            transition: ease-in 0.25s;
+            cursor: pointer;
+        }
+        .total-container button{
+            background-color: black;
+            color:#fff;
+        }
+         .total-container{
+           /* background-color: rgb(219, 233, 228); */
+           padding: 15px;
+           padding-left: 950px;
+
+    
+        }
+        .total-container h5{
+           background-color:#fd8c66;
+           color: #fff;
+           padding-left: 10px;
+
+        }
+        .total-container .flex h3{
+            padding-left: 33px;
+        }
+        .total-container button{
+            margin-left:40px;
+        }
+        .total-container button:hover{
+            border-color: rgb(238, 72, 72);
+            background-color: rgb(236, 61, 61);
+            transition: ease-in 0.25s;
+            cursor: pointer;
+        }
+         .flex{
+            display: flex;
+         }
+         .flex h4{
+            padding-left: 10px;
+         }
+
+         /* .............................................................................................footer........................................................................... */
+   footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(206,201,197);
+   padding-top: 50px; 
+}
+
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+
+footer #pay-logo {
+  width: 300px;
+}
+
+footer h4,
+h3 {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgba(25, 21, 21, 0.911);
+  margin-bottom: 10px;
+}
+
+footer .follow {
+  margin-top: 20px;
+}
+
+footer .follow i {
+  color: rgba(25, 21, 21, 0.911);
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .follow i:hover,
+footer a:hover {
+  color: rgb(201,74,38);
+}
+
+footer .copy {
+  width: 100%;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+      <!-- .............................................................................navigation bar.......................................................................................... -->
+      <nav id="header">
+        <!-- <a href="#"><img src="./images/logo.png" class="logo" alt=""></a> -->
+        <h2><i class="fa-sharp fa-solid fa-heart-pulse"></i>Medcare+</h2>
+        <div>
+            <ul id="navbar">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a  href="product.html">Products</a></li>
+                <li><input type="search" placeholder="Search here" id="searchbox"></li>
+                <li><a href="pro.html">Profile</a></li>
+                <li><a class="active" href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="homepage.html">Log <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </nav>
+
+    <!-- .................................................................................................................... -->
+    <section id="cart-container" class="cantainer">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td> <a href="#"><i class="fas far fa-trash-alt"></i></a></td>
+                    <td><img  class="img"src="./images/product5.jpg" alt=""></td>
+                    <td>
+                         <h5>
+                            horlicks 1kg
+                         </h5>
+                    </td>
+                    <td>
+                        <h5>Rs: 180</h5>
+                    </td>
+                    <td><input class="in" value="1"type="number"></td>
+                    <td>
+                        <h5>Rs: 180</h5>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <a href="#"><i class="fas far fa-trash-alt"></i></a></td>
+                    <td><img  class="img"src="./images/dettol-b.jpg" alt=""></td>
+                    <td>
+                         <h5>
+                            horlicks 1kg
+                         </h5>
+                    </td>
+                    <td>
+                        <h5>Rs: 180</h5>
+                    </td>
+                    <td><input class="in" value="1"type="number"></td>
+                    
+                    <td>
+                        <h5>Rs: 180</h5>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <a href="#"><i class="fas far fa-trash-alt"></i></a></td>
+                    <td><img  class="img" src="./images/Prod3.jpg" alt=""></td>
+                    <td>
+                         <h5>
+                            horlicks 1kg
+                         </h5>
+                    </td>
+                    <td>
+                        <h5>Rs: 180</h5>
+                    </td>
+                    <td><input class="in" value="1"type="number"></td>
+                    
+                    <td>
+                        <h5>Rs: 180</h5>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-bottom" class="container">
+        <div class="row">
+            <div class="coupon">
+                <div class="cont-1">
+                    <h5>COUPON</h5>
+                    <p>Ener your coupon here</p>
+                    <input type="text" placeholder="couon code">
+                    <button> APPLY COUPON</button>
+                </div>
+            </div>
+
+            <div class="total">
+                <div class="total-container">
+                    <h5>CART TOTAL</h5>
+                    <div class="flex">
+                        <h4>Subtotal</h6>
+                        <h4>Rs: 215.00</h4>
+                    </div>
+                    <div class="flex">
+                        <h4>Shipping</h6>
+                        <h4>Rs: 15.00</h4>
+                    </div>
+                    <div class="flex">
+                        <h4>Total</h4>
+                        <h3>Rs: 400.00
+                        </h3>
+                    </div>
+                    <div><button >Proceed</button>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------------footer------------------------------------------------------------------ -->
+    <footer class="sec-1">
+        <div class="col">
+            <h3> medcare</h3>
+            <h4>Contact</h4>
+            <P><strong>Address:</strong>45 Park Road, Erode </P>
+            <p> <strong>Phone: </strong>9865451374 9080555646</p>
+            <P><strong>Hours:</strong> 9:00 am - 7:00 pm, Mon to Sat</P>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h3> About</h3>
+            <a href="#">About us</a>
+            <a href="#"> Delivery Partner</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms and conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="col">
+            <h3> My Account</h3>
+            <a href="#">Sign In</a>
+            <a href="#"> View cart</a>
+            <a href="#">Orders</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col-payment">
+            <h3>Payment</h3>
+            <p>Secured payment gateways</p>
+            <img src="./images/pay1.jpeg" id="pay-logo" />
+        </div>
+
+        <div class="copy">
+            <p> &copy; 2022 | All rights received</p>
+        </div>
+    </footer>
+
+</body>
+</html>

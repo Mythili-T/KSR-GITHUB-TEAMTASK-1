@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>prodetails</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" />
+  <link rel="stylesheet" type="text/css" href="./CSS/medStyle.css">
+</head>
+
+<body>
+ <!-- .......................................................................................nav bar........................................................................................................................ -->
+  <nav id="header">
+    <!-- <a href="#"><img src="logo.png" class="logo" alt=""></a> -->
+    <a  class="nav-logo" href="product.html"><h2><i class="fa-sharp fa-solid fa-heart-pulse"></i>Medcare</h2></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="product.html">Home</a></li>
+        <li><a class="active" href="#">Products</a></li>
+        <li><input type="search" placeholder="Search here" id="searchbox"></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+        <li><a href="homepage.html">Logout</a></li>
+        <a href="#" id="close"><i class="far fa-times"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </nav>
+   <div class="fil-detail">
+  <!-- -----------------------------------------------------------filter--------------------------------------- -->
+   <div class="filter-bar">
+      <div >
+        <div id="sub-catg">
+        <h2> Catagory</h2>
+        <ul >
+           <li ><a href="#">>skincare</a><span>(12)</span></li>
+           <li><a href="#">>Baby</a><span>(12)</span></li>
+           <li><a href="#">>covid</a><span>(12)</span></li>
+           <li><a href="#">>Essential</a><span>(12)</span></li>
+        </ul>
+      </div>
+        <div id="sub-catg">
+          <h2>Brand</h2>
+          <div class="input-label"><input type="checkbox"><label>Himalayan</label></div>
+            <div class="input-label"><input type="checkbox"><label>Dabur</label></div>
+            <div class="input-label"><input type="checkbox"><label>HAPDCO</label></div>
+            <div class="input-label"><input type="checkbox"><label>Cipla</label></div>
+      </div>
+        <div id="sub-catg">
+          <h2>Price</h2>
+          <div class="input-label">
+          <input type="checkbox"><label >Below 500</label></div>
+          <div class="input-label"><input type="checkbox"><label >500-1000</label></div>
+          <div class="input-label"><input type="checkbox"><label >1000-2000</label></div>
+           <div class="input-label"><input type="checkbox"><label >Above 2000</label></div>
+        </div>
+        
+       <button>Apply</button>
+      </div>
+    </div>
+<!-- .........................................................................................product Details....................................................................................................................... -->
+  <div id="prodetails" class="section-p1">
+    <div class="Single-pro-img">
+      <img src="./images/pro3.jpeg" width="100%" id="main-img" alt="">
+      <div class="s-img-grp">
+        <div class="small-imgs" onclick="changeimg(this)">
+          <img src="./images/pro3.jpeg" width="100%" id="small1" alt="">
+        </div>
+        <div class="small-imgs" onclick="changeimg(this)">
+          <img src="./images/deettol.webp" width="100%" id="small2" alt="" />
+        </div>
+        <div class="small-imgs" onclick="changeimg(this)">
+          <img src="./images/dettol-b.jpg" width="100%" id="small3" alt="" />
+        </div>
+        <div class="small-imgs" onclick="changeimg(this)">
+          <img src="./images/dettolback.jpeg" width="100%" id="small4" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="details-pro">
+      <h5> Home / products</h5>
+      <h3> dettol 1 lit bottle</h3>
+      <h2> $147</h2>
+      <h3>Unit</h3>
+      <input type="number" value="1">
+      <button>Add to cart</button>
+      <h4>Product details</h4>
+      <span>Dettol Liquid Hand Wash Soft on Skin, Hard on Germs. The care and protection from germs that your family
+        deserves to help keep your hands healthy. Our antibacterial formula effectively washes away germs and is also
+        soft on skin. Suitable for everyday use. Ensuring the cap is tight, turn the pump clockwise to open. Pump twice
+        into
+        your hands. Rub hands together for at least 30 seconds ensuring total coverage with lather, not forgetting nails
+        and
+        thumbs. Rinse well with water. Refill your bottle with our value refill packs.</span>
+    </div>
+  </div>
+</div>
+  <!-- ........................................................................................slider .................................................................................................................................-->
+  <section>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div>
+          <img src="./images/big-family.webp">
+          <h1>3 Million +</h1>
+          <p> Registered users as of Mar 31, 2022</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div>
+          <img src="./images/characters-people.webp">
+          <h1>10 Million + </h1>
+          <p> Orders on Pharmeasy till date and still counting</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-box">
+          <img src="./images/call-doctor-289.webp">
+          <h1>19500+</h1>
+          <p> Pin codes serviced last 3 months</p>
+        </div>
+      </div>
+  
+      <div class="swiper-slide">
+        <div>
+          <img src="./images/courier home-delivery.webp">
+          <h1> 99000+</h1>
+          <p>Unique items sold in the last 6 months </p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  </section>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./JS/medScript.js"></script>
+
+
+</body>
+
+</html>
