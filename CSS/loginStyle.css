@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: 'Poppins', sans-serif;
+
+}
+.loginpage{
+    height: 100%;
+    width: 100%;
+    background-color: #d1e7d563;
+    /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../Image/log.jpg ); */
+    /* background-color: aqua; */
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.Title{
+    text-align: center;
+    margin-top: 80px;
+    color: #312202;
+    font-weight: bold;
+}
+
+
+.form-box{
+    width: 380px;
+    height: 500px;
+    position: relative;
+    margin: 6% auto ;
+    background-color: #d1e7d5;
+    /* background-color: #927354; */
+    /* background-color: #cae9d0; */
+
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.inp-grp{
+    top:150px;
+    position: absolute;
+    width: 280px;
+}
+.inp-box{
+    width: 100%;
+    padding: 10px 0;
+    margin: 2px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.sub-box{
+    width: 50%;
+    padding: 10px 30px;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #e5eaec,#90c79a);
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #0e0a01;
+}
+.sub-box:hover{
+    background: linear-gradient(to right, #ffffff,#b7ddf1);
+
+}
+.check-box{
+    margin: 13px 10px 30px 0;
+}
+span{
+    color: #777;
+    font-size: 12px;
+    position: relative;
+}
+#Login{
+    left: 50px;
+}
+#Register{
+    left: 400px;
+}
+.Goto{
+    margin-top: 50px;
+}
+.Goto ul li{
+    list-style: none;
+    text-align: center;
+}
+.Goto ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #7c3c11;
+}
+.Goto ul li a:hover{
+    color: black;
+}
+.forgot{
+    font-size: 12px;
+    color: #7c3c11;
+    text-decoration: none;
+}
+
+.forgot:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.errorMessage{
+    font-size: small;
+    color:red;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>View Slot</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/viewSlotStyle.css" />
+    <script src="./JavaScript/viewSlotJs.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <h2>Hospital Management System</h2>
+            <img src="./Image/logo.png" />
+            <ul>
+                <li><a href="doctorPage.html">Home</a></li>
+                <li><a href="viewSlot.html" id="view">View Slot</a></li>
+                <li><a href="prescription.html">Prescription</a></li>
+                <li><a href="./index.html">Doctor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="View-Slot">
+        <br>
+        <center>
+            <table border="1" class="tb">
+                <tr>
+                    <th>S.No</th>
+                    <th>Patient Name</th>
+                    <th>Patient id</th>
+                    <th>Date</th>
+                    <th>TIming</th>
+                    <th>Patient Report</th>
+                    <th>Confrom/Cancel</th>
+
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Manikandan S</td>
+                    <td>PI00253</td>
+                    <td>15/10/2022</td>
+                    <td>9:30AM-10:30AM</td>
+                    <td><a href="#" style="color: white;"> Patient Report</td>
+                    <td style="text-align: center;">
+                        <button type="submit" name="submit" class="substy"
+                            onclick="submitFunction1(this)">Confirm</button>
+                        <p id="mess1"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Makesh S</td>
+                    <td>PI00263</td>
+                    <td>15/10/2022</td>
+                    <td>9:30AM-10:30AM</td>
+                    <td><a href="#" style="color: white;"> Patient Report</td>
+                    <td style="text-align: center;">
+                        <button type="submit" name="submit" class="substy"
+                            onclick="submitFunction2(this)">Confirm</button>
+                        <p id="mess2"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Mouli S</td>
+                    <td>PI00152</td>
+                    <td>15/10/2022</td>
+                    <td>9:30AM-10:30AM</td>
+                    <td><a href="#" style="color: white;"> Patient Report</td>
+                    <td style="text-align: center;">
+                        <button type="submit" name="submit" class="substy"
+                            onclick="submitFunction3(this)">Confirm</button>
+                        <p id="mess3"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Tamilselvi M</td>
+                    <td>PI00180</td>
+                    <td>15/10/2022</td>
+                    <td>9:30AM-10:30AM</td>
+                    <td><a href="#" style="color: white;"> Patient Report</td>
+                    <td style="text-align: center;">
+                        <button type="submit" name="submit" class="substy"
+                            onclick="submitFunction4(this)">Confirm</button>
+                        <p id="mess4"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Sathish kumar S</td>
+                    <td>PI00123</td>
+                    <td>15/10/2022</td>
+                    <td>10:30AM-11:00AM</td>
+                    <td><a href="#" style="color: white;"> Patient Report</td>
+                        <td style="text-align: center;">
+                        <button type="submit" name="submit" class="substy"
+                            onclick="submitFunction5(this)">Confirm</button>
+                        <p id="mess5"></p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    <br>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="doctorPage.html">Home</a></li>
+                <li><a href="medicalSpecialist.html">Medical Specialists</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

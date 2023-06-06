@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/addPatientstyle.css" />
+    <script src="./JavaScript/addPatientjs.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <h2>Hospital Management System</h2>
+            <img src="./Image/logo.png" />
+            <ul>
+                <li><a href="adminPage.html">Home</a></li>
+                <li><a href="viewPatientRequest.html">View Patient Request</a></li>
+                <li><a href="bills.html">Bills</a></li>
+                <li><a href="addPatient.html" id="addpatient">Add Patient</a></li>
+                <li><a href="./index.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="addpatientpage">
+        <div class="box1">
+            <div id="new">
+                <h1>Patient Admission Form</h1>
+            </div>
+            <div class="box2">
+                <form class="form" action="./addPatientThanksPage.html" onsubmit="return validatation()">
+                    <table>
+                        <tr>
+                            <th>
+                                Patient Name:
+                            </th>
+                            <td>
+                                <input type="text" placeholder="Patient Name eg, Manikandan" class="inp-box"
+                                    id="patientName" onkeyup="patientNameValidation()" />
+                                <p class="Exp" id="patient-Error"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Father Name:
+                            </th>
+                            <td>
+                                <input type="text" placeholder="Father Name eg, Sidhuraj" class="inp-box"
+                                    id="fatherName" onkeyup="fatherNameValidation()" />
+                                <p class="Exp" id="father-Error"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Mobile <br> Number:
+                            </th>
+                            <td>
+                                <input type="phone" placeholder="Mobile Name start with 6,7,9 digits only"
+                                    class="inp-box" id="mobileNumber" onkeyup="mobileNumberValidation()" />
+                                <p class="Exp" id="mobile-Error"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Gender:
+                            </th>
+                            <td>
+                                <input type="radio" class="che-box" name="Gender" />Male
+                                <input type="radio" class="che-box" name="Gender" />Female
+                                <input type="radio" class="che-box" name="Gender" />Others
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Age:
+                            </th>
+                            <td>
+                                <input type="number" class="inp-box" placeholder="Age eg, 09 or 81 " id="age"
+                                    onkeyup="ageValidation()" />
+                                <p class="Exp" id="age-Error"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Blood Group:
+                            </th>
+                            <td>
+                                <select class="sel-box">
+                                    <option>Select Group</option>
+                                    <option>O</option>
+                                    <option>A</option>
+                                    <option>A1</option>
+                                    <option>B</option>
+                                    <option>B1</option>
+                                    <option>AB</option>
+                                </select>
+                                <select class="sel-box">
+                                    <option>Select</option>
+                                    <option>Positive</option>
+                                    <option>Negative</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Address:
+                            </th>
+                            <td>
+                                <input type="text" placeholder="Door NO & Street name" class="inp-box" id="door"
+                                    onkeyup="doorValidation()" />
+                                <p class="Exp" id="dError"></p>
+                                <input type="text" placeholder="City" class="inp-box" id="city" />
+                                <p class="Exp" id="cError"></p>
+                                <h6>* Enter City</h6><br>
+                                <input type="text" placeholder="State" class="inp-box" id="state" />
+                                <h6> * Enter State</h6><br>
+                                <input type="pincode" placeholder="Pincode" class="inp-box" id="pincode"
+                                    onkeyup="pincodeValidation()" />
+                                <p class="Exp" id="pError"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Patient profile:
+                            </th>
+                            <td>
+                                <input type="file" id="file" onchange="fileValidation()" />
+                                <br>
+                                <br>
+                                <h6>* Upload png, jpg, jpeg files only</h6><br>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <br>
+                    <div class="sub-box"><button type="submit" name="submit"><b>SUBMIT</b></button></div><br>
+                    <a href="./addPatDoc.html" class="back">Go back to Add Page</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="adminPage.html">Home</a></li>
+                <li><a href="medicalSpecialist.html">Medical Specialists</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

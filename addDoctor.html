@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>Doctor Registration</title>
+        <link rel="stylesheet" type="text/css" href="./CSS/addDoctor.css" />
+        <script src="./JavaScript/addDoctorJs.js"></script>
+     </head>
+     <body>
+      <header class="header">
+         <nav>
+            <h2>Hospital Management System</h2>
+            <img src="./Image/logo.png" />
+            <ul>
+               <li><a href="adminPage.html">Home</a></li>
+               <li><a href="viewPatientRequest.html">View Patient Request</a></li>
+               <li><a href="bills.html">Bills</a></li>
+               <li><a href="addDoctor.html" id="adddoctor">Add Doctor</a></li>
+               <li><a href="./index.html">Admin</a></li>
+            </ul>
+         </nav>
+      </header>
+      <div class="adddoc">
+        <h4 >Doctor Registration</h4>
+        <div class="split1">
+            <h5 class="title">Personal Details</h5>
+            <label>Doctor Name:</label><br>
+            <input type="text" placeholder="Doctor Name " class="inp-box" id="doctorName" onkeyup="doctorNameValidation()" />
+            <p class="Exp" id="patient-Error"></p><br>
+            <label>Gender:</label><br>
+            <select class="sel-box" required>
+                <option>Choose Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Trans-gender</option>
+            </select>
+             <br><br>
+            <label>Date of Birth</label><br>
+            <input type="text" class="hide" placeholder="Date eg, dd-mm-yyyy" id="date" onkeyup="dateValidate()" />
+            <p class="ErrorSty" id="dateError"></p><br>
+            <label>Age</label><br>
+            <input type="number" class="inp-box" placeholder="Age eg, 09 or 81 " id="age" onkeyup="ageValidation()"/>
+            <p class="Exp" id="age-Error"></p><br>   
+            <label>Contact Number</label><br>
+            <input type="number" class="inp-box" name="phno" placeholder="Phone number" id="phoneNumber" onkeyup="phoneNumberValidate()" />
+             <p class="ErrorSty" id="phoneError"></p><br>
+             <!-- <h5>Educational Details</h5> -->
+            <select class="sel-box" >
+            <option>Education Qualification</option>
+            <option>MBBS</option>
+            <option>MD</option>
+            <option>MS</option>
+        </select>
+        </div>
+        <div class="split2">
+        <select class="sel-box" >
+            <option>Specialist</option>
+            <option>Cardiologist</option>
+            <option >Cosmetic surgery</option>
+            <option>Anesthesiologist</option>
+            <option>Pediatrician</option>
+            <option>General internists</option>
+            <option>Dentist</option>
+            <option>Gynecologist</option>
+            <option>Psychiatrist</option>box
+            <option>Neurologist</option>
+            <option>Ophthalmologist </option>
+         </select><br><br>
+        <label>License Id</label><br>
+            <input type="text" class="inp-box" placeholder=" for eg, LI025698" id="license" onkeyup="licenseIdValidation()"/>
+            <p class="Exp" id="licenceid-Error"></p><br>   
+        <label>Upload Degree certificate</label><br><br>
+        <input type="file" id="file" onchange="fileValidation()" /><br><br>
+        <label>Doctor ID</label><br>
+            <input type="text" placeholder="Doctor Name " class="inp-box" id="doctorid" onkeyup="doctorIDValidation()" />
+            <p class="Exp" id="docid-Error"></p><br>
+            <label>Password</label><br>
+            <input type="text" placeholder="Doctor Name " class="inp-box" id="doctorpassword" onkeyup="doctorpasswordValidation()" />
+            <p class="Exp" id="docpass-Error"></p><br>
+            <label>Confirm Password</label><br>
+            <input type="text" placeholder="Doctor Name " class="inp-box" id="doctorconfirmpassword" onkeyup="confirmpasswordValidation()" />
+            <p class="Exp" id="docconpas-Error"></p><br>
+    </div>
+    <button type="submit" class="submit" onclick=" validatation()">Submit</button>
+   </div>
+         <footer class="footer">
+         <nav>
+            <ul>
+               <li><a href="adminPage.html">Home</a></li>
+               <li><a href="medicalSpecialist.html">Medical Specialists</a></li>
+               <li><a href="contactUs.html">Contact Us</a></li>
+               <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+         </nav>
+      </footer>
+     </body>
+</html>

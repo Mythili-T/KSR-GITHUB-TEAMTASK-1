@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.header{
+    position: relative;
+    box-shadow: 2px 4px #eaf3fa;
+}
+.header nav h2{
+    color: #233863;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 20px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px;
+    color: #f7a955;
+}
+nav ul li a:hover{
+    color: cadetblue;
+}
+.pay-bills{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer nav{
+    justify-content: center;
+}
+
+td{
+    padding:10px;
+}
+
+.tb{
+    border-collapse: collapse;
+    width: 500px;
+    border-color: #f7a955;
+
+}
+
