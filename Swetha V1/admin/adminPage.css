@@ -1,0 +1,49 @@
+body
+{
+    background-image: linear-gradient(to right,#D8D9CF,#9F8772,#665A48);
+    
+}
+.pageName{
+    text-align: center;
+    color: burlywood;
+    font-size: larger;
+}
+.container
+{
+    width: 100%;
+    height: 100%;
+}
+.content
+{
+    width: 100%;
+    display: flex;
+    /* margin-top: 2%; */
+}
+.content ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    font-size:110%;
+    font-family: sans-serif;
+}
+.content ul li a{
+    text-decoration: none;
+    color: white;
+}
+.content ul li::after
+{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: lightcoral;
+    position: absolute;
+    left: 0px;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.content ul li:hover::after
+{
+    width: 100%;
+}

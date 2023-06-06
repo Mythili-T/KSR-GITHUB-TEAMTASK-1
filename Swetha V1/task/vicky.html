@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <link rel="stylesheet" href="Vicky.css">
+        </head>
+        <div class="decorate">     
+            <div class="img">
+               <img src="https://wallpaperaccess.com/full/2857990.jpg"/> 
+            </div>
+           <nav class="nav">
+               <ul class="menutab">
+                   <li><a (click)="custdash()">Dashboard</a></li>
+                   <li><a (click)="FinSheet()">Financial Sheet</a></li>
+                   <li><a href="#">Sign out</a></li>
+               </ul>
+           </nav>
+       <div class="content">
+             <h3>Customer Profile</h3><br>
+             <p class="aligncenter">
+               <img id="img1" width="80" src="https://www.symposium.co.uk/wp-content/uploads/Kaar-Technologies-logo-590x600.png"/>
+           </p>
+           <h6>Kaar Technologies : Transform your business digitally</h6>
+           
+           </div>
+           
+       <div class="team">
+           <div class="team_members">
+               
+               <p class="role">Customer Name : {{custpro.NAME1}}</p><br>
+               <p class="role">Customer No : {{custpro.KUNNR}} </p><br>
+               <address class="role">
+                 <h4>Address:</h4><br>
+                         
+               </address>
+           </div>
+       </div>
+       </div>   
+       
+    </body>
+</html>

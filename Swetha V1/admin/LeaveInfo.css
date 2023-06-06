@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+table,
+        td,
+        tr {
+            border: 20px solid transparent;
+            border-radius: 5px;
+            text-align: center;
+            padding: 5px;
+            margin-left:50px;
+            margin-top: 10%;
+        }
+        
+        tr:nth-child(even) {
+            background-color: rgba(243, 240, 240, 0.5);
+
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgba(248, 215, 173, 0.5);
+        }

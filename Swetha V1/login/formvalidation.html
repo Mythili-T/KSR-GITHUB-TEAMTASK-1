@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Create Account</title>
+	<style>
+		body {
+			background-image: linear-gradient(to right, #B1D7B4, #FFF38C);
+			align-items: center;
+		}
+
+		.container {
+			width: 520px;
+			height: 750px;
+			padding: 30px;
+			position: absolute;
+			top: 55%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-image: linear-gradient(to right, #FFF38C, #B1D7B4);
+
+		}
+		.form {
+			padding: 40px;
+
+		}
+        h2{
+            text-align: center;
+        }
+
+		.form-control label {
+			display: inline-block;
+			width: 100px;
+			font-size: 20px;
+			margin-left: 0;
+
+		}
+
+		.form-control input {
+			border: 1px solid black;
+			background-color: aliceblue;
+			border-radius: 5px;
+			padding: 10px;
+			width: 60%;
+			margin-left: 10%;
+
+		}
+
+		.form button {
+			color: gray;
+			border: 1px solid black;
+		}
+
+		.form button:hover {
+			background-color: lightblue;
+		}
+
+		.form-control input:hover {
+			background-color: lightblue;
+		}
+		/* .form-control input[type="radio"]{
+			display: flex;
+		} */
+        .Error{
+            margin-left: 150px;
+            color: red;
+        }
+        
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form class="form" id="form" action="#" onsubmit="return checkInput()">
+			<h2>Registeration Form</h2>
+			<div class="form-control">
+				<label>Username:</label>
+				<input type="text" name="FirstName" placeholder="First Name ..." id="username" onkeyup="userValid()"><br>
+				<small class="Error" id="user"></small>
+			</div>
+			<div class="form-control">
+				<br>
+				<label>Email:</label>
+				<input type="text" name="email" placeholder="mail id..." id="mail" onkeyup="emailValid()"><br>
+				<br>
+				<small class="Error" id="email"></small>
+			</div>
+			<div class="form-control">
+				<br>
+				<label> Mobile No: </label>
+				<input type="text" name="mobileno" placeholder="10 digit..." id="mobile" onkeyup="mobileValid()"><br>
+				<small class="Error" id="mobileerror"></small>
+			</div>
+			<div class="form-control">
+				<br>
+				<label>Address:</label>
+				<input type="text" name="address" placeholder="Permanent Address..." style="height: 50px;"id="address" onkeyup="addressValid()"><br>
+				<br>
+				<small class="Error" id="addresserror"></small>
+			</div>
+			<div class="form-control">
+				<br>
+				<label>DOB:</label>
+				<input class="box" type="Date" name="Date" id="bd" required><br>
+			</div>
+			<div class="form-control">
+				<br>
+				<label>Upload Resume:</label>
+				<input type="file" name="filename" id="resume" required><br>
+			   <small class="Error" id="upload"></small>
+			</div> 
+			
+			<br>
+            <center>
+			<button onclick="checkInput()">Submit </button>
+            <p>Existing User
+            <a href="login.html"> Sign-in</a>
+            </p>
+            </center>
+		</form>
+	</div>
+
+<script>
+        function userValid(){
+            var userName=document.getElementById("username").value;
+            if (userName == "" || userName == null) {
+				document.getElementById("user").innerHTML = "Must enter username";
+				document.getElementById("username").style.border = " 2px solid red";
+				return false;
+			}
+            if(!userName.match(/^[A-Z][a-z]*$/)){
+                document.getElementById("user").innerHTML = "first letter should be capital letter";
+				document.getElementById("username").style.border = " 2px solid red";
+				return false;
+            }
+            document.getElementById("user").innerHTML = "";
+			document.getElementById("username").style.border = " 2px solid green";
+            return true;
+        }
+        function emailValid(){
+            var email=document.getElementById("mail").value;
+            if (email == "" || email == null) {
+				document.getElementById("email").innerHTML = "Must enter Email";
+				document.getElementById("mail").style.border = " 2px solid red";
+				return false;
+			}
+            if(!email.match(/^[a-z0-9_!@#$%&\-\.]+[@][a-z]+[\.]+[a-z]{2,3}$/)){
+                document.getElementById("email").innerHTML = "Enter valid email";
+				document.getElementById("mail").style.border = " 2px solid red";
+				return false;
+            }
+            document.getElementById("email").innerHTML = "";
+			document.getElementById("mail").style.border = " 2px solid green";
+            return true;
+        }
+        function mobileValid(){
+            var mobile=document.getElementById("mobile").value;
+            if (mobile == "" || mobile == null) {
+				document.getElementById("mobileerror").innerHTML = "Must enter mobile number";
+				document.getElementById("mobile").style.border = " 2px solid red";
+				return false;
+			}
+            
+			
+			if (!mobile.match(/^[6789][0-9]*$/)) {
+				document.getElementById("mobileerror").innerHTML = "number should be start with 6,7,8,9";
+				document.getElementById("mobile").style.border = " 2px solid red";
+				return false;
+			}
+			if (mobile.length<10 || mobile.length>10) {
+				document.getElementById("mobileerror").innerHTML = "Must enter 10 digits";
+				document.getElementById("mobile").style.border = " 2px solid red";
+				return false;
+			}
+            document.getElementById("mobileerror").innerHTML = "";
+			document.getElementById("mobile").style.border = " 2px solid green";
+            return true;
+        }
+        function addressValid(){
+            var address=document.getElementById("address").value;
+            if (address == "" || address == null) {
+				document.getElementById("addresserror").innerHTML = "Must enter Address";
+				document.getElementById("address").style.border = " 2px solid red";
+				return false;
+			}
+            document.getElementById("addresserror").innerHTML = "";
+			document.getElementById("address").style.border = " 2px solid green";
+            return true;
+        }
+
+        function checkInput(){
+            if(!userValid() || !emailValid() || !mobileValid() || !addressValid()){
+                alert("Fill all the fields");
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+	</script>
+
+</body>
+
+</html>

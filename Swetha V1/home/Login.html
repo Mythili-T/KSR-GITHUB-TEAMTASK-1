@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login </title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="homePage.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      #login{
+        background-color:dimgrey;
+      }
+    </style>
+</head>
+<body>
+
+  <div class="content">
+    <div class="slider">
+      <img src="../images/hp5.webp" id="img1">
+  </div>
+  <div class="dark">
+      <div class="heading">
+          <h1>Employee Management System</h1>
+      </div>
+      <div class="top">
+          <ul class="DropDown">
+              <li><a href="/home/homePage.html" id="home">Home</a></li>
+              <li><a href="/home/AboutUs.html" id="about">About Us</a></li>
+              <li><a href="/home/Culture.html" id="culture">Our Culture</a></li>
+              <li><a href="/home/Openings.html" id="open">Openings for</a></li>
+              <li><a href="/home/services.html" id="service">Services</a></li>
+              <li><a href="Login.html" id="login">Login</a></li>
+          </ul>
+      </div>
+      <div id="card">
+        <div id="card-content">
+          <div id="card-title">
+            <h2>LOGIN HERE!!</h2>
+            <div class="underline-title"></div>
+          </div>
+
+          <form  class="form" >
+            <label style="padding-top:13px">User Name </label>
+            <input type="text" style="text-align: center;" class="form-content" id="Name" onkeyup="nameValidation()">
+            <div class="form-border"></div>
+            <small class="Error" id="userName"></small>
+            <label style="padding-top:22px">Password </label>
+            <input type="password"  class="form-content" id="Password" onkeyup="passwordValidation()">
+            <div class="form-border"></div>
+            <small class="Error" id="userPassword"></small>
+            <button type="submit" class="btn" id="submit-btn" onclick="return validate()">Login</button>
+            <br>
+             <a href="forgotPass.html">Forgot Password?</a>
+
+          </form>
+        </div>
+
+      </div>
+
+    
+  </div>
+  <footer>
+    <div class="wrapper">
+        <div class="button">
+           <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+           </div>
+           <span>Facebook</span>
+        </div>
+        <div class="button">
+           <div class="icon">
+              <i class="fab fa-twitter"></i>
+           </div>
+           <span>Twitter</span>
+        </div>
+        <div class="button">
+           <div class="icon">
+              <i class="fab fa-instagram"></i>
+           </div>
+           <span>Instagram</span>
+        </div>
+       
+        <div class="button">
+           <div class="icon">
+              <i class="fab fa-youtube"></i>
+           </div>
+           <span>YouTube</span>
+        </div>
+     </div>
+  
+</footer>
+
+  <script>
+    function nameValidation()
+    {
+        var username=document.getElementById("Name").value;
+        if(username==null || username=='')
+        {
+        document.getElementById("userName").innerHTML = "Must enter username";
+        document.getElementById("Name").style.border = " 1px solid red";
+        return false;
+        }
+        if(!username.match(/^[A-Z][a-z]*[\s{1}]*[A-Za-z]$/))
+        {
+        document.getElementById("userName").innerHTML = "first letter should be capital letter";
+        document.getElementById("Name").style.border = " 1px solid red";
+        return false;
+        }
+        document.getElementById("userName").innerHTML = "";
+        document.getElementById("Name").style.border = " 1px solid green";
+        return true;
+   }
+   function passwordValidation()
+   {
+    var password=document.getElementById("Password").value;
+    if(password=="Null" || password=='')
+        {
+            document.getElementById("userPassword").innerHTML = "Must enter password";
+            document.getElementById("Password").style.border = " 1px solid red";
+            return false;
+        }
+    if(password.length<6)
+        {
+            document.getElementById("userPassword").innerHTML=("Password must contain atleast 6 digits");
+            document.getElementById("Password").style.border = " 1px solid red";
+            return false;
+        }
+        document.getElementById("userPassword").innerHTML="";
+        document.getElementById("Password").style.border = " 1px solid green";
+         return true;
+    }
+    function validate()
+    {
+        var username=document.getElementById("Name").value;
+        var password=document.getElementById("Password").value;
+        if(username=="Swethaemp" && password=="Swetha@123")
+            {
+                window.open("../emp/employeePage.html");
+                return true;
+            }
+        else if(username=="Swethaadmin" && password=="123@Swetha")
+            {
+                window.open("/admin/adminPage.html");
+                return true;
+            }
+        else
+            {
+                alert("Invalid username and password");
+                return false;
+            }
+
+    } 
+    
+    
+</script>
+
+</body>
+</html>

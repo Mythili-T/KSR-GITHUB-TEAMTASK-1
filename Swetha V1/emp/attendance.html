@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attendance Posting</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                background-image: linear-gradient(to right,#B1D7B4, #FFF38C);
+            }
+            h1{
+                text-align: center;
+                
+            }
+            table, th, td,tr{
+                border: 20px solid transparent;
+                border-radius: 5px;
+                text-align: center;
+                padding: 5px;
+                margin-left: 50px;
+                
+            }
+            td,th{
+                border: 1px solid #DFD3C3;
+                border-collapse: separate;
+                padding: 30px;
+            }
+            tr:nth-child(even){
+                background-color:#B1D7B4;
+                
+            }
+            tr:nth-child(odd){
+                background-color: #B1D7B4;
+            }
+            .box{
+                display: inline-block;
+                border-radius: 5px;
+                height: 30px;
+                width: 150px;
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+            <h1>Post Attendance</h1>
+            <center>
+            <table>
+                <tr class="Top">
+                    <td>Date</td>
+                    <td>Attendance</td>
+                    <td>Post</td>
+                    <td><i class="fa fa-clock-o" style="font-size:30px;"></i></td>
+                </tr>
+                <tr>
+                    <td>24 Oct,2022</td>
+                    <td>
+                        <select class="box">
+                            <option value="Present">Present</option>
+                            <option value="Leave">Leave</option>
+                            <option value="Work From Home">Work From Home</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="button" type="submit" value="Submit" onclick="return postAttendance()">
+                    </td>
+                    <td id="countDown">15:00</td>
+                </tr>
+                <tr>
+                    <td>25 Oct,2022</td>
+                    <td>
+                        <select class="box">
+                            <option value="Present">Present</option>
+                            <option value="Leave">Leave</option>
+                            <option value="Work From Home">Work From Home</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="button" type="submit" value="Submit" onsubmit="return postAttendance()">
+                    </td>
+                    <td id="countDown">15:00</td>
+                </tr>
+                <tr>
+                    <td>26 Oct,2022</td>
+                    <td>
+                        <select class="box">
+                            <option value="Present">Present</option>
+                            <option value="Leave">Leave</option>
+                            <option value="Work From Home">Work From Home</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="button" type="submit" value="Submit" onsubmit="return postAttendance()">    
+                    </td>
+                    <td id="countDown">15:00</td>
+                </tr>
+                <tr>
+                    <td>27 Oct,2022</td>
+                    <td>
+                        <select class="box">
+                            <option value="Present">Present</option>
+                            <option value="Leave">Leave</option>
+                            <option value="Work From Home">Work From Home</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="button" type="submit" value="Submit" onsubmit="return postAttendance()">
+                    </td>
+                    <td id="countDown">15:00</td>
+                </tr>
+                <tr>
+                    <td>28 Oct,2022</td>
+                    <td>
+                        <select class="box">
+                            <option value="Present">Present</option>
+                            <option value="Leave">Leave</option>
+                            <option value="Work From Home">Work From Home</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="button" type="submit" value="Submit" onsubmit="postAttendance()">
+                    </td>
+                    <td id="countDown">15:00</td>
+                </tr>
+                <tr>
+            </table>
+            <a href="employeePage.html">
+            <button type="button">Back</button></a>
+        </center>
+        <script>
+            function postAttendance(){
+                alert("Attendance is Posted");
+            }
+            // const date1=new date;
+            // const date2=new date;
+            // const start=20;
+            // var time=start * 60; //totalSeconds
+            // const countStarts=document.getElementById('countDown');
+            // setInterval(updateCount,10000); 
+            // function updateCount(){
+            //     const min=Math.floor(time/60);//minutes
+            //     const sec=Math.floor(time % 60);
+            //     countStarts.innerHTML=min + ":" +sec;
+            //     time--;
+            //     if(time<0)
+            //     alert("Expired");
+            // }
+
+
+
+        </script>
+     
+    </body>
+</html>

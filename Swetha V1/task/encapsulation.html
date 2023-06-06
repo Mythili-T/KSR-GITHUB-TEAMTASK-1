@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Encapsulation</title>
+    </head>
+    <body>
+        <script>
+            class Employee{
+                constructor(){
+                    let name,salary;
+                }
+                getName()
+                {
+                    return this.name;
+                }
+                setName(name)
+                {
+                    this.name=name;
+                }
+                getSalary()
+                {
+                    return this.salary;
+                }
+                setName(salary)
+                {
+                    this.salary=salary;
+                }
+
+            }
+
+            let empDetails=new Employee();
+            empDetails.setName("Arun");
+            empDetails.setSalary("50,000");
+
+            alert("Employee Name    "+empDetails.getName()+"/n"+"Employee Salary    "+empDetails.getSalary());
+        </script>
+    </body>
+</html>

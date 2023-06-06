@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Culture</title>
+    <link rel="stylesheet" href="homePage.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+    </script>
+<style>
+        #culture{
+            background-color: whitesmoke;
+            border-radius: 15px;
+        }
+        .img-box{
+            width: 30%;
+            height: 300px;
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            transform: translate(-10%,10%);
+            box-shadow: 0 10px 20px rgb(40, 40,40);
+          
+            
+        }
+       
+        img{
+            height: 100%;
+            width: 100%;
+            
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+            background: black;
+            cursor: pointer;
+
+        }
+       .text-box{
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        transform: translate(-10%,10%);
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+       } 
+       .img-box:hover.overlay{
+        opacity: 0.8;
+       }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="slider">
+            <img src="../images/hp5.webp" id="img1">
+        </div>
+        <div class="dark">
+            <div class="heading">
+                <h1>Employee Management System</h1>
+            </div>
+            <div class="top">
+                <ul class="DropDown">
+                    <li><a href="homePage.html" id="home">Home</a></li>
+                    <li><a href="AboutUs.html" id="about">About Us</a></li>
+                    <li><a href="Culture.html" id="culture">Our Culture</a></li>
+                    <li><a href="Openings.html" id="open">Openings for</a></li>
+                    <li><a href="services.html" id="service">Services</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="img-box">
+                <dic class="bcolor">
+                    <img src="/images/grid1.jpg" id="team" onclick="select()">
+                </dic>
+                
+                <div class="overlay">
+                    <div class="text-box">
+                        <h2>Team Work</h2>
+                        <p>We provide an opportunity for everyone to work as a team eith trust to develop themselves as well as the organization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <footer>
+    <div class="wrapper">
+        <div class="button">
+           <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+           </div>
+           <span>Facebook</span>
+        </div>
+        <div class="button">
+           <div class="icon">
+              <i class="fab fa-twitter"></i>
+           </div>
+           <span>Twitter</span>
+        </div>
+        <div class="button">
+           <div class="icon">
+              <i class="fab fa-instagram"></i>
+           </div>
+           <span>Instagram</span>
+        </div>
+      
+        <div class="button">
+           <div class="icon">
+              <i class="fab fa-youtube"></i>
+           </div>
+           <span>YouTube</span>
+        </div>
+     </div>
+  
+  </footer>
+
+</body>
+
+</html>
