@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+    <header id="heaad">
+        <h1>Profile</h1>
+    </header>
+    <div class="navi">
+
+        <div class="box">
+            <a href="techtronics.html">
+                <button class="but" href="#">
+                    <i class="fa-sharp fa-solid fa-house"></i> Home
+                </button>
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="Mobiles.html">
+                <button class="but" href="#">
+                    Moblie
+                </button>
+            </a>
+            <div class="content">
+                <a href="#">Iphone</a>
+                <a href="#">Samsung</a>
+                <a href="#">Redmi</a>
+                <a href="#">Realme</a>
+                <a href="#">Motorola</a>
+                <a href="#">One plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <a href="Audio.html">
+                <button class="but" href="#">
+                    Audio
+                </button>
+            </a>
+            <div class="content">
+                <a href="#">ANC</a>
+                <a href="#">Ear buds</a>
+                <a href="#">Over head</a>
+                <a href="#">On ear</a>
+                <a href="#">TWS</a>
+                <a href="#">Neck band</a>
+            </div>
+        </div>
+        <div class="box">
+            <a href="Pheripherals.html">
+                <button class="but" href="#">
+                    Peripherals
+                </button>
+            </a>
+            <div class="content">
+                <a href="#">Keyboards</a>
+                <a href="#">Mouse</a>
+                <a href="#">Gaming</a>
+            </div>
+        </div>
+        <div class="box">
+            <a href="Laptop.html">
+                <button class="but">
+                    Laptops
+                </button>
+            </a>
+            <div class="content">
+                <a href="#">Asus</a>
+                <a href="#">Mac</a>
+                <a href="#">Dell</a>
+                <a href="#">Aser</a>
+                <a href="#">HP</a>
+                <a href="#">RealMe</a>
+            </div>
+        </div>
+        <div class="box">
+            <a href="Gaming.html">
+                <button class="but">
+                    Gaming
+                </button>
+            </a>
+            <div class="content">
+                <a href="#">Headphones</a>
+                <a href="#">Mic</a>
+                <a href="#">Console</a>
+            </div>
+        </div>
+        <div class="box">
+            <a href="About_techtronics.html">
+                <button class="but">
+                    About us
+                </button>
+            </a>
+        </div>
+        <div class="box">
+            <a href="Login.html">
+                <button class="but">
+                    Login
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="admintask">
+
+        <center>
+            <div class="bio">
+                <div class="profile">
+                    <center><img src="Images/profile Default.jpg" alt=""></center>
+                    <h2>Pranav Ram K S</h2>
+    
+                </div>
+            </div>
+            </center>
+    
+    <div class="inventory">
+        <center>
+        <h3>Inventory</h3>
+        
+       <table>
+        <tr>
+           <th>monbiles</th>
+           <th>laptops</th>
+           <th>Pheripherals</th>
+           <th>Audio</th>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>25</td>
+            <td>22</td>
+            <td>100</td>
+        </tr>
+       </table>
+       </center>
+    </div>
+
+    <div class="addProduct">
+        <form id="form">
+            <div class="header">
+                <h1>Add product</h1>
+            </div>
+            <div class="form-control">
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" name="productName" placeholder="Ex:Rob"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'" required><br><br>
+            </div>
+            <div class="form-control">
+                <label for="Company">Company:</label>
+                <input type="text" id="Company" name="Company" placeholder="Ex:Rob"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'" required><br><br>
+            </div>
+            <div class="form-control">
+                <label for="discription">Discription:</label>
+                <input type="text" id="Discription" name="Discription" placeholder="Ex:Rob"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'" required><br><br>
+            </div>
+            <div class="form-control">
+                <label for="Catogory">Catogory:</label>
+                <input type="radio" name="Catogory" value="Mobile"> Mobile
+                <input type="radio" name="Catogory" value="Audio"> Audio
+                <input type="radio" name="Catogory" value="laptop"> laptop
+                <input type="radio" name="Catogory" value="Pheripherals"> Pheripherals <br><br>
+            </div>
+
+            <div class="form-control">
+                <label for="Rate">Rate:</label>
+                <input type="number" id="Rate" name="Rate" placeholder="Ex:Rob"
+                    onfocus="this.style.backgroundColor='grey'" onblur="this.style.backgroundColor='white'" required><br><br>
+            </div>
+
+            <button type="submit" value="Submit" id="submit">Add product</button>
+
+        </form>
+    </div>
+    </div>
+</body>
+</html>
