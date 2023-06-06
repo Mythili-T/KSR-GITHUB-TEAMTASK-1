@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Register form</title>
+         <link rel="stylesheet" type="text/css" href="./CSS/regstyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="title"> Registration</div>
+            <form  id="form" onsubmit="return checkinputs()" action="../medcare/product.html">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" id="username" >
+                         <small id="uname-error"></small>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" placeholder="Enter your email id" id="email">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone number</span>
+                        <input type="tel" maxlength="10" placeholder="Enter your number" id="number" onkeyup="numpass()">
+                        <small id="num-error"></small>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Dateof birth</span>
+                        <input type="date" placeholder="Enter your DOB" >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" placeholder="Enter your password"  id="pass1" onkeyup="checking()">
+                        <small id="pass1-error"></small>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" placeholder="Retype your password"  id="pass2" onkeyup="checkpass()">
+                        <small id="pass2-error"></small>
+                    </div>
+                </div>
+                    <div class="input-box">
+                        <span class="gender-type">Gender</span>
+                        <div class="types">
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="others" name="gender" value="others">
+                        <label for="others">Others</label>
+                    </div>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Register</button>
+                    </div>
+                    <div class="login">
+                       <h3>Already have an account <span><a href="login.html">LOGIN</a></span></h3>
+                    </div>
+            </form>
+        </div>
+
+        <script src="./JS/validateform.js"></script>
+    </body>
+</html>
+ 
