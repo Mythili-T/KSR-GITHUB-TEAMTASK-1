@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+}
+.reg-dia{
+    display:flex;
+}
+#image-reg{
+    height: 60px;
+    width:60px;
+    padding-top: 5px;
+    list-style-type: none;
+        
+        
+    }.title-reg{
+        display: flex;
+        margin-left: 60px;
+    }
+
+    .title-reg p{
+    font-family: 'Smooch', cursive;
+    }
+   
+.container-reg{
+    padding: 30px 0 0 0;
+    border-radius: 10px;
+background-color: rgb(252, 251, 251);
+box-shadow: 2px 5px 9px 5px rgba(68, 65, 65, 0.5);
+margin: 20px 80px 0 80px ;
+}
+#formreg{
+    margin: 10px 0 0 10px;
+}
+.container-reg form .user{
+    display:flex;
+    flex-wrap: wrap;
+}
+form .user .box{
+    margin:10px 10px 20px 60px;
+
+    
+}
+form .user .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user .box input{
+    height:35px;
+    width:230px;
+    border-radius: 5px;
+    border:2px solid #ccc;
+    outline: none;
+    padding-left: 10px;
+
+}
+.user .box select{
+    height:37px;
+    width:245px;
+    border-radius: 5px;
+    border:2px solid #ccc;
+    outline: none;
+    padding-left: 10px;
+
+}
+
+
+.buttons-reg {
+    background-color: #064308;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+
+    font-size: 16px;
+    
+margin-left: 40px;    
+    cursor: pointer;
+  }
+  
+  .button-reg{
+    margin:10px 0 0 900px;
+  }
+  .policy a{
+    text-decoration: none;
+    color:rgb(125, 125, 213);
+  }
+  .policy{
+    padding-top: 5px;
+  }
+
+  .error{
+    color:red;
+  }
+  
+    
+  .forwhat{
+    margin-left: 60px;
+    font-size: 18px;
+  }
+  .policy{
+    padding-left: 60px;
+  }

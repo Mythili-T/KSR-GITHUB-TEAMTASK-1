@@ -1,0 +1,292 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kettimelam-Registration</title>
+    <link rel="stylesheet" href="orderNow.css"><link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+</head>
+<body>
+    
+    <div class="reg-dia">
+    <div class="container-reg">
+        <div class="title-reg">
+            <img src="assets/images/ketti.jpg" id="image-reg">
+            <p id="title-reg" style="font-size:55px;">Kettimelam</p>
+        </div>
+        <form id="formreg" action="main.html" method="post" onsubmit="return validate()">
+            <span class="forwhat">Your Details</span>
+            <div class="user">
+                <div class="box">
+                    <span class="details">Name</span> <br>
+                   <input type="text" name="fname"  id="fname" placeholder="Name"autocomplete="off"><br>
+                <span id="firstname" class="error"></span>
+                </div>
+                <div class="box">
+                    <span class="details">Email id</span> <br>
+                    <input type="text" name="email" id="email" placeholder="Email id" autocomplete="off"><br>
+                    <span id="emailreg" class="error"></span>
+                 </div>
+                
+                <div class="box">
+                    <span class="details">Moblie Number 1</span> <br>
+                    <input type="text" name="mobile" id="mobile" placeholder="Mobile number 1" autocomplete="off"><br>
+                    <span id="mobileReg" class="error"></span>
+                </div>
+                <div class="box">
+                    <span class="details"> Moblie Number 2</span><br> 
+                    <input type="text" name="mobile" id="mobile" placeholder="Mobile number 2" autocomplete="off"><br>
+                    <span id="mobileReg" class="error"></span>
+                </div>
+                </div>
+                <div class="user">
+                <div class="box">
+                    <span class="details">Address</span> <br>
+                    <input type="text" name="address" id="address" placeholder="Address" autocomplete="off"><br>
+                    <span id="addressReg" class="error"></span>
+                </div>
+                <div class="box">
+                    <span class="details">Select District</span> <br>
+                    <select name="district" id="district">
+                        <option value="Choose">Choose</option>
+
+                      <option value="Namakkal">Namakkal</option>
+                      <option value="Erode">Erode</option>
+                      <option value="Salem">Salem</option>
+                      <option value="Theni">Theni</option>
+                    </select>                    
+                    <span id="pincodereg" class="error"></span>
+                </div>
+                <div class="box">
+                    <span class="details">Pincode</span> <br>
+                    <input type="text" name="pincode" id="pincode" placeholder="Pincode" autocomplete="off"><br>
+                    <span id="pincodereg" class="error"></span>
+                 </div><div class="box">
+                    <span class="details">State</span> <br>
+                    <select name="state" id="state">
+                        <option value="Choose">Choose</option>
+
+                      <option value="Tamil Nadu">Tamil Nadu</option>
+                      <option value="Kerala">Kerala</option>
+                      <option value="Karnataka">Karnataka</option>
+                      <option value="Andra Pradesh">Andra Pradesh</option>
+                    </select>                     
+                     <span id="pincodereg" class="error"></span>
+                 </div>
+                 </div><br>
+                 <span class="forwhat">Event Details</span><br>
+
+                 <div class="user">
+                    <div class="box">
+                        <span class="details">Wedding Type</span> <br>
+                    <select name="choosetype" id="choosetype">
+                        <option value="Choose">Choose</option>
+
+                      <option value="Traditional wedding">Traditional wedding</option>
+                      <option value="royal wedding">royal wedding</option>
+                      <option value="destination wedding">destination wedding</option>
+                      <option value="vintage wedding">vintage wedding</option>
+                      <option value="beach wedding">beach wedding</option>
+                      <option value="Free style wedding">Free style wedding</option>
+
+                    </select>  
+                 </div>    
+                    <div class="box">
+                        <span class="details">Start Date</span> <br>
+                        <input type="date" id="sdate" name="sdate">
+                        <span id="sdate" class="error"></span>
+                    </div>
+                    <div class="box">
+                        <span class="details">End Date</span> <br>
+                        <input type="date" id="sdate" name="edate">
+                        <span id="edate" class="error"></span>
+                    </div>
+                    <div class="box">
+                        <span class="details">Address</span> <br>
+                        <input type="text" name="address" id="address" placeholder="Address" autocomplete="off"><br>
+                        <span id="addressReg" class="error"></span>
+                    </div>
+
+            </div>
+            
+            <div class="user">
+                <div class="box">
+                    <span class="details">Number Of People Arrive</span> <br>
+                <select name="people" id="people">
+                    <option value="Choose">Choose</option>
+
+                  <option value="100-200">100-200</option>
+                  <option value="200-300">200-300</option>
+                  <option value="300-400">300-400</option>
+                  <option value="400-500">400-500</option>
+                  <option value="500-600">500-600</option>
+                  <option value="600-700">600-700</option>
+                  <option value="600-700">800-900</option>
+                  <option value="600-700">900-1000</option>
+                  <option value="600-700">1000-2000</option>
+                  <option value="600-700">2000-3000</option>
+                  <option value="600-700">3000-4000</option>
+                  <option value="4000+">4000+</option>
+
+
+
+                </select>  
+             </div> 
+             <div class="box">
+                <span class="details">Photography and Videography</span> <br>
+            <select name="vptype" id="vptype">
+                <option value="Choose">Choose</option>
+
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              
+
+            </select>  
+         </div>             
+             <div class="box">
+                <span class="details">Food Services</span> <br>
+            <select name="foodtype" id="foodtype">
+                <option value="Choose">Choose</option>
+
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              
+
+            </select>  
+         </div>    
+         <div class="box">
+            <span class="details">Other recommendation</span> <br>
+        <select name="foodtype" id="foodtype">
+            <option value="Choose">Choose</option>
+
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+          </option>
+
+        </select>  
+     </div>    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="policy">
+                            <input type="checkbox" id="tick" name="tick" >
+                            <label for="tick">I agree to your <a href="#" >Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                        </div>
+            <div class="button-reg">
+                <input type="submit" value="Back" class="buttons-reg"> 
+                <input type="submit" value="Proceed" class="buttons-reg"> <br><br><br>
+            
+            </div>
+            
+        </form>
+
+    </div>
+    
+    </div>
+
+<script type="text/javascript">
+    var form=document.getElementById("form");
+    var fname=document.getElementById("fname");
+    var lname=document.getElementById("lname");
+    
+    function validate(){
+        var namePattern="^[A-Za-z]+$";
+        var emailPattern="^([a-zA-Z0-9\.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})$";
+        var mobPattern="^[6-9]{1}[0-9]{9}$";
+        if(fname.value.match(namePattern)){
+            document.getElementById("firstname").innerHTML=""; 
+            }
+            else{
+                document.getElementById("firstname").innerHTML="Enter First Name"; 
+            
+            }
+                
+            
+        
+        if(lname.value.match(namePattern)){
+            document.getElementById("Lastname").innerHTML=""; 
+            }
+            else{
+                document.getElementById("Lastname").innerHTML="Enter Last Name"; 
+            
+            }
+           
+            if(email.value.match(emailPattern))
+            {
+            document.getElementById("emailreg").innerHTML="";
+            
+            }
+            else{
+            document.getElementById("emailreg").innerHTML="Enter Email Id"; 
+        
+            }
+            if
+            (mobile.value.match(mobPattern))
+            {
+                document.getElementById("mobileReg").innerHTML="";
+                
+            }else{
+                document.getElementById("mobileReg").innerHTML="Enter Mobile number";
+            
+            }  
+            if(create.value!=""){
+                document.getElementById("createReg").innerHTML=""; 
+                
+    }           else
+                {document.getElementById("createReg").innerHTML="Enter Password"; 
+        
+        }    
+        if(c.value!=""){
+                document.getElementById("confirmReg").innerHTML=""; 
+                
+    }           else
+                {document.getElementById("confirmReg").innerHTML="Re-Enter Password"; 
+                return false;
+        } 
+        if(create.value==c.value){
+            document.getElementById("confirmReg").innerHTML=""; 
+        }
+        else{
+            document.getElementById("confirmReg").innerHTML=" not matched Password";
+            return false; 
+        }
+        
+                
+          
+
+
+                return true; 
+            
+}
+        </script>
+            
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

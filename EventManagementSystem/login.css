@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    
+    justify-content: center;
+    
+  }.name{
+    display: flex;
+    list-style-type:none ;
+    }
+  #image{
+    height: 60px;
+    width: 60px;
+  }
+  .list1{
+    font-family: 'Smooch', cursive;
+    padding-left: 10px;
+    font-size: 50px;
+  
+    }
+    
+    .name li a{
+    text-decoration: none;
+    color: black;
+    }
+    .name p{
+      font-family:  'Smooch', cursive;
+      font-size: 55px;
+    }
+    .regi{
+      font-size: 20px;
+      text-align: center;
+  }
+  .nametype {
+    text-align: left;
+  }
+  ::selection{
+    color: #fff;
+    background:red;
+  }
+  .wrapper{
+    width: 450px;
+    height: 500px;
+    padding: 40px 70px 50px 70px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid rgb(226, 226, 226);
+  }
+  .wrapper header{
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .wrapper form{
+    margin: 30px 0;
+  }
+  form .field{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  form .field.shake{
+    animation: shake 0.3s ease-in-out;
+  }
+  @keyframes shake {
+    0%, 100%{
+      margin-left: 0px;
+    }
+    20%, 80%{
+      margin-left: -3px;
+    }
+    40%, 60%{
+      margin-left: 3px;
+    }
+  }
+  form .field .input-area{
+    height: 50px;
+    width: 100%;
+    position: relative;
+  }
+  form input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 14px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+  
+    transition: all 0.2s ease;
+  }
+  form .field input:focus{
+    border-color: #dc3545;
+  }
+  
+  form .field.shake input,
+  form .field.error input{
+    border-color: #dc3545;
+  }
+  .field .input-area i{
+    position: absolute;
+    top: 50%;
+    font-size: 14px;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  .input-area .icon{
+    left: 6px;
+    color: #bfbfbf;
+    transition: color 0.2s ease;
+  }
+  .input-area .error-icon{
+    right: 15px;
+    color: #dc3545;
+  }
+  form input:focus ~ .icon,
+  form .field.valid .icon{
+    color: #5372F0;
+  }
+  form .field.shake input:focus ~ .icon,
+  form .field.error input:focus ~ .icon{
+    color: #bfbfbf;
+  }
+  form input::placeholder{
+    color: #bfbfbf;
+    font-size: 14px;
+  }
+  form .field .error-txt{
+    color: #dc3545;
+    text-align: left;
+    margin-top: 5px;
+  }
+  form #email_error{
+    color: #dc3545;
+    text-align: left;
+    font-size: 13px;
+  }
+  form #pass_error{
+    color:  #dc3545;
+    font-size: 13px;
+
+    text-align: left;
+  }
+  form .field .email_icon_error{
+    display: none;
+  }
+  form .field.shake .error,
+  form .field.error .error{
+    display: block;
+  }
+  
+  form .pass-txt{
+    text-align: left;
+    padding-top: 10px;
+  }
+  .wrapper a{
+    color: #5372F0;
+    text-decoration: none;
+  }
+  .wrapper a:hover{
+    text-decoration: underline;
+  }
+  form button[type="submit"]{
+    height: 40px;
+    width: 30%;
+    margin:20px 0px 10px 100px;
+    color: #fff;
+    
+    border: none;
+    background: #5372F0;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  .popup{
+    display: none;
+  }
+  .final{
+    display: flex;
+  }
+  #create{
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding:10px 2px 0 2px;
+    display:flex;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    text-decoration: none;
+  
+  }
+  #create:hover {
+    background-color: #c5c2c2;
+    color: #111114;
+    border-radius: 5px;
+  }
+  .createAccount{
+    padding: 4px;
+  }
+  #create a:hover{
+    color: bisque;
+  }
+  .popup {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 400px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    justify-content: center;
+  }
+  
+  .popup-content {
+    background-color: #fefefe;
+    margin-top:-400px;
+    border: 1px solid #888;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    font-family: 'Work Sans', sans-serif;
+  
+  }.success p{
+  text-align: center;
+  font-size: 15px;
+}
+.pop-content p{
+  align-items: center;
+}
+.pop-buttons{
+  text-align: center;
+  padding-top: 15px;
+}
+.ok-button {
+  border: 1px solid #161717;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+  
+}
