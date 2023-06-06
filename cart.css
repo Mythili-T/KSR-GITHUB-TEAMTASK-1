@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fontawesome.com/v5/icons/shopping-cart?f=classic&s=light');
+
+* {
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #79c3f2, #f8f8fa);
+}
+
+header {
+    padding: 20px 75px;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+}
+.navi {
+    margin-top: 10px;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-around;
+    margin-bottom: auto;
+    position: relative;
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+.box .but {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    border-radius: 25px;
+    font-style: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box .but:hover {
+    background-color: #3399ff;
+    color: white;
+}
+
+.box a {
+    padding: 20px;
+    text-decoration: none;
+}
+
+.content {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: 20px;
+    display: none;
+    text-align: center;
+}
+
+.box:hover .content {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    width: 125px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.content a {
+    color: white;
+    padding: 10px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: center;   
+}
+
+.content a:hover {
+    background-color: #3399ff;
+}
+
+.profile{
+    margin-top: 10vh;
+    /* margin-left: 68vh; */
+    padding: 10px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3); 
+    max-width: 500px;  
+}
+
+.profile img{
+    /* margin-left: 40%; */
+    max-width: 100px;
+   max-height: 100px;
+   border-radius: 50%;
+}
+
+.profile h2{
+    text-align: center;
+}
+
+
+.myCart{
+    margin-top: 10vh;
+    padding: 10px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border-left: rgba(255, 255, 255, 0.3);
+    border-top: rgba(255, 255, 255, 0.3); 
+    text-align: center;
+    align-items: center;
+}
+
+.myCart table td,th{
+    text-align: center;
+    padding: 40px;
+    border-bottom: 1px solid;
+}
+
+.myCart table img{
+    border-radius: 20px;
+}
+
+.myCart button{
+    padding: 10px;
+    margin-top: 10px;
+    width: 20vh;
+    color: white;
+    border: none;
+    background-color: rgb(41, 57, 194);
+    border-radius: 4px;
+}
