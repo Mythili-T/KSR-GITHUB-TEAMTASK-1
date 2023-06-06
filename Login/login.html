@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Login
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../CSS/loginStyle.css" />
+        <script src="../JavaScript/loginJS.js"></script>
+    </head>
+    <body>
+        <div class="loginpage">
+            <div class="form-box">
+                <div class="Title">
+                    <h3>Login</h3>
+                </div>
+                <form id="Login" class="inp-grp" action="#" onsubmit="return submitLog()" >
+                    <input type="text" class="inp-box" name="user" 
+                    placeholder="Enter Patient id/ Admin id/ Doctor id" id="user" onkeyup="userId()" />
+                    <p class="errorMessage" id="useId"></p>
+                    <input type="password" class="inp-box" name="l-password" placeholder="Enter Pin" id="pass" onkeyup="pin()" />
+                    <p class="errorMessage" id="pinID"></p>
+                     <br>
+                    <a href="forgotPassword.html" class="forgot">forgot password?</a><br>
+                    <input type="checkbox" class="check-box" /><span>Remember me</span><br>
+                    <button type="submit" class="sub-box" name="l-submit">Log in</button>
+                    <div class="Goto">
+                        <ul>
+                        <li><a href="../index.html">Back to Home Page</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

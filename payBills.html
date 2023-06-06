@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pay Bills</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/paybillsstyle.css" />
+    <script src="./JavaScript/paybillsjs.js"></script>
+    <script src="./JavaScript/generateBillJs.js"></script>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <h2>Hospital Management System</h2>
+            <img src="./Image/logo.png" />
+            <ul>
+                <li><a href="patientPage.html">Home</a></li>
+                <li><a href="appointmentRequest.html">Appointment Request</a></li>
+                <li><a href="payBills.html">Pay Bills</a></li>
+                <li><a href="viewReport.html">View Report</a></li>
+                <li><a href="./index.html">Patient</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="pay-bills">
+        <center>
+            <form id="form">
+                <br>
+                <h2>Pay Bills</h2>
+                <br>
+                <table border="1" class="tb">
+                    <tr>
+                        <td colspan="2" style="text-align: center;"><b>Hospital Management System</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Patient Name:</b> Manikandan S<p id="pn"></p>
+                        </td>
+                        <td><b>Date:</b>05/10/2022</td>
+                    </tr>
+                    <tr>
+                        <td><b>Patient id:</b> PI00253</td>
+                        <td><b>Phone number:</b> 9361798897</td>
+                    </tr>
+                    <tr>
+                        <td><b>Dr Name:</b> Dr.Nagarajan M</td>
+                        <td><b>Bill id:</b> BI00003615</td>
+                    </tr>
+                </table>
+                <table border="1" class="tb">
+                    <tr>
+                        <th>S.No:</th>
+                        <th>Details</th>
+                        <th>Cost</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Doctor Consulting fee</td>
+                        <td>₹500</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Pharmacy fee</td>
+                        <td>₹600</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            Total:
+                        </th>
+                        <th>
+                            ₹1100
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="tds3" style="text-align:center;"><button
+                                style="width: 50px;font-size: 20px;">Pay</button></td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </div>
+
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="patientPage.html">Home</a></li>
+                <li><a href="medicalSpecialist.html">Medical Specialists</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

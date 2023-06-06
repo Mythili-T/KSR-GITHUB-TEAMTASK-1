@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.header{
+    position: relative;
+    box-shadow: 2px 4px #eaf3fa;
+}
+.header nav h2{
+    color: #233863;
+}
+#contact{
+    color: cadetblue;
+    background-color: hsl(22, 100%, 89%);
+    border-radius: 5px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 20px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px;
+    color: #f7a955;
+}
+nav ul li a:hover{
+    color: cadetblue;
+}
+.ContactUs{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(65, 87, 102, 0.507),rgba(0,0,0,0.4)),url(../Image/contactus.jpg);
+    background-size: cover;
+    background-position: center;
+    /* opacity: 0.3; */
+}
+.Hospital{
+    margin-left: 50px;
+    padding-left: 100px;
+    padding-top: 20px;
+    float: left;
+    color: white;
+}
+.Hospital2{
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-right: 10px;
+    float: right;
+    color: white;
+}
+.footer{
+    clear: both;
+}
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Generate Bills</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/generateBillStyle.css" />
+    <script src="./JavaScript/generateBillJs.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <h2>Hospital Management System</h2>
+            <img src="./Image/logo.png" />
+            <ul>
+                <li><a href="adminPage.html">Home</a></li>
+                <li><a href="viewPatientRequest.html">View Patient Request</a></li>
+                <li><a href="generateBills.html" id="generatebills">Generate Bills</a></li>
+                <li><a href="addPatDoc.html">Add</a></li>
+                <li><a href="./index.html">Admin</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="Generate-Bills">
+        <center>
+            <form action="./generateBillSuccessful.html" onsubmit="return generateBillValidation()">
+                <br>
+                <h2>Generate Bill</h2>
+                <br>
+                <table border="1" class="tb">
+                    <tr>
+                        <td colspan="2" style="text-align:center;"> <b>Hospital Management System</b> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Patient Name: </b> <br><input type="text" class="inp-box" placeholder="Patient Name eg, Manikandan S" id="pName" onkeyup="patientNameValidate()"/>
+                            <p class="ErrorSty" id="pNameError"></p>
+                        </td>
+                        <td>
+                            <b>Date: </b> <br><input type="text" class="inp-box" placeholder="Date eg, dd-mm-yyyy" id="date" onkeyup="dateValidate()" />
+                            <p class="ErrorSty" id="dateError"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Patient id: </b> <br><input type="text" class="inp-box" placeholder="Patient id eg, PI00362" id="pId" onkeyup="patientIdValidate()"/>
+                            <p class="ErrorSty" id="pIdError"></p>
+                        </td>
+                        <td>
+                            <b>Phone number: </b> <br><input type="number" class="inp-box" name="phno" placeholder="Phone number" id="phoneNumber" onkeyup="phoneNumberValidate()" />
+                            <p class="ErrorSty" id="phoneError"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Doctor Name: </b> <br><input type="text" class="inp-box" placeholder="Dr. Name" id="drName" onkeyup="drNameValidate()" />
+                            <p class="ErrorSty" id="drNameError"></p>
+                        </td>
+                        <td>
+                            <b>Bill id: </b> <br><input type="text" class="inp-box" placeholder="Bill id eg, BI00002632" id="billId" onkeyup="billIdValidate()" />
+                            <p class="ErrorSty" id="billIdError"></p>
+                        </td>
+                    </tr>
+                    </table>
+                    <br>
+                    <table border="1" class="tb">
+                    <tr>
+                        <td> <b>S.No:</b> </td>
+                        <td> <b>Description</b> </td>
+                        <td> <b>Cost</b> </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Doctor Consulting fee</td>
+                        <td>₹<input type="number"  name="cost" id="cost1"  style="width: 70px;" /></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Pharmacy fee</td>
+                        <td>₹<input type="number" onchange="sum()" name="cost" id="cost2" style="width: 70px;"/></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            Total:
+                        </th>
+                        <th>
+                            ₹<p id="total"></p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="tds3" style="text-align:center;"><button type="submit" style="width: 180px;font-size: 20px;">Generate Bill</button></td>
+                    </tr>
+                </table>
+            </form><br>
+            <a href="./bills.html">Go back to Bills</a>
+        </center>
+    </div>
+    <br>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="adminPage.html">Home</a></li>
+                <li><a href="medicalSpecialist.html">Medical Specialists</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.header{
+    position: relative;
+    box-shadow: 2px 4px #eaf3fa;
+}
+.header nav h2{
+    color: #233863;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 20px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px;
+    color: #f7a955;
+}
+nav ul li a:hover{
+    color: cadetblue;
+}
+#generatebills{
+    color: cadetblue;
+    background-color: hsl(22, 100%, 89%);
+    border-radius: 5px;
+}
+.view-report{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.Generate-Bills{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+table{
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-color: #233863;
+    border-color: #f7a955;
+}
+form{
+    border-color: #f7a955;
+
+}
+td{
+    padding:18px;
+}
+
+.tb{
+    width: 600px;
+}
+
+.footer nav{
+    justify-content: center;
+}
+.ErrorSty{
+    margin-left: 55px;
+    font-size: 12px;
+    color: red;
+}
+.inp-box{
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    width: 80%;
+    outline: none;
+}

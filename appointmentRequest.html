@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Appointment Request</title>
+   <link rel="stylesheet" type="text/css" href="./CSS/appointmentRequestStyle.css" />
+   <script src="./JavaScript/appointmentRequestjs.js"></script>
+
+</head>
+
+<body>
+   <header class="header">
+      <nav>
+         <h2>Hospital Management System</h2>
+         <img src="./Image/logo.png" />
+         <ul>
+            <li><a href="patientPage.html">Home</a></li>
+            <li><a href="appointmentRequest.html">Appointment Request</a></li>
+            <li><a href="payBills.html">Pay Bills</a></li>
+            <li><a href="viewReport.html">View Report</a></li>
+            <li><a href="./index.html">Admin</a></li>
+         </ul>
+      </nav>
+   </header>
+   <div class="appointment-request">
+      <center>
+         <br>
+         <h2>Make Appointment</h2>
+      </center>
+      <br>
+      <div class="grid-container2">
+         <div class="grid-item2">
+            <select class="sel-box" id="input" onchange="random()">
+               <option class="heads">Medical fields</option>
+               <option value="Cardiologist">Cardiologist</option>
+               <option>Cosmetic surgery</option>
+               <option>Anesthesiologist</option>
+               <option>Pediatrician</option>
+               <option>General internists</option>
+               <option>Dentist</option>
+               <option>Gynecologist</option>
+               <option>Psychiatrist</option>
+               <option>Neurologist</option>
+               <option>Ophthalmologist </option>
+            </select>
+         </div>
+         <div class="grid-item2" id="output">
+            <center>
+               <h6 style='font-size: 20px;color:#dfa364'>Select Doctor</h6>
+            </center>
+            <select class="select2">
+            </select>
+         </div>
+         <div class="grid-item2" id="out2">
+            <center>
+               <h6 style='font-size: 20px;color:#dfa364'>Select Day</h6>
+            </center>
+            <select>
+            </select>
+         </div>
+         <div class="grid-item2">
+            <input type="date" name="date" class="insty" />
+         </div>
+         <div class="grid-item2" id="out3">
+            <center>
+               <h6 style='font-size: 20px;color:#dfa364'>Timing</h6>
+            </center>
+            <select>
+            </select>
+         </div>
+         <div class="grid-item2">
+            <button type="submit" name="submit" class="substy" onclick="submitFunction(this)">SUBMIT</button>
+            <p id="mess"></p>
+         </div>
+      </div>
+      <form action="">
+         <table>
+            <tr>
+               <td><p class="value"></p></td>
+            </tr>
+            <tr>
+               <td><p class="value2"></p></td>
+            </tr>
+         </table>
+      </form>
+   </div>
+   <footer class="footer">
+      <nav>
+         <ul>
+            <li><a href="patientPage.html">Home</a></li>
+            <li><a href="medicalSpecialist.html">Medical Specialists</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+         </ul>
+      </nav>
+   </footer>
+</body>
+
+</html>

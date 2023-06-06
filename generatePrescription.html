@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Generate Prescription</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/generatePrescriptionStyle.css" />
+    <script src="./JavaScript/generatePrescriptionJs.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <h2>Hospital Management System</h2>
+            <img src="./Image/logo.png" />
+            <ul>
+                <li><a href="doctorPage.html">Home</a></li>
+                <li><a href="viewSlot.html">View Slot</a></li>
+                <li><a href="generatePrescription.html" class="generatepres">Generate Prescription</a></li>
+                <li><a href="./index.html">Doctor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="Generate-Prescription">
+        <center>
+            <form id="form" action="./generatePrescription.html" onsubmit="return generatePrescriptionValidation()">
+                <br>
+                <h2>Generate Prescription</h2>
+                <br>
+                <table border="1" class="tb1">
+                    <tr>
+                        <td colspan="2" style="text-align:center;"> <b>Hospital Management System</b> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Dr.P.Nagarajan, M.B.B.S M.Ch(Neuro) <br>
+                            Brain, Spine, trunk, Neurosurgeon
+                            <!-- Name:<input type="text" name="pname" placeholder="Patient Name" id="pnam" /> -->
+                        </td>
+                        <td>
+                            Lanline: 0427-2260468<br>
+                            Ph.no: 9364859752
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Address: 371/205B, Selvam Street Chella kutti kadu <br>Erumapalayam (po),
+                            Salem-636015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Patient Name:<input type="text" placeholder="Patient name" class="hide" id="patientName" onkeyup="patientNameValidate()" />
+                            <p class="ErrorSty" id="pNameError"></p>
+                        </td>
+                        <td colspan="2">
+                            Date:<input type="text" class="hide" placeholder="Date eg, dd-mm-yyyy" id="date" onkeyup="dateValidate()" />
+                            <p class="ErrorSty" id="dateError"></p>
+                        </td>
+                    </tr>
+                    
+                    <br>
+                    <table border="1" class="tb2">
+                        <td>
+                            <small><b>Patient Medicine</b></small>
+                            <textarea rows = "20" cols = "67" name = "description" id="textarea"></textarea><br>
+                        </td>
+                    <tr>
+                        <td colspan="2" style="text-align:center;"><button type="submit" class="Genpres">Generate Prescription</button></td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </div>
+    <br>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="doctorPage.html">Home</a></li>
+                <li><a href="medicalSpecialist.html">Medical Specialists</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
